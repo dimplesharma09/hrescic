@@ -89,7 +89,7 @@ const getResponsiveCols = (partner) => {
 
 const BrandPartnerSec = () => {
   return (
-    <section className="bg-white py-16 md:py-18 px-4 md:px-10">
+    <section className="bg-white py-16 md:py-24 px-4 md:px-10">
       <div className="container-xl mx-auto">
         
         {/* Header */}
@@ -103,8 +103,9 @@ const BrandPartnerSec = () => {
           </p>
         </div>
 
-        {/* --- PARTNERS GRID (FIXED) --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto md:auto-rows-[250px]">
+        {/* --- PARTNERS GRID (Height Increased Again) --- */}
+        {/* Highlighted change: md:auto-rows-[320px] */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto md:auto-rows-[320px]">
           {partners.map((partner) => {
             const responsiveCols = getResponsiveCols(partner);
             
