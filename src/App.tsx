@@ -1,7 +1,6 @@
 
 import React from 'react'
 import HomePage from '@/pages/HomePage'
-import ProductPage from '@/pages/ProductPage'
 import Header from '@/components/sections/Header'
 import Footer from "@/components/sections/Footer";
 import { Route, Routes } from 'react-router-dom';
@@ -30,7 +29,7 @@ export default function App(){
       />
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/product' element={<ProductPage/>}/>
+      
        
       </Routes>
    
