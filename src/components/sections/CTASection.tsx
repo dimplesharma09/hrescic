@@ -3,7 +3,7 @@ import React from "react";
 const CTASection = () => {
   return (
     // Section ko vertical padding di hai
-    <section className="py-10 bg-white">
+    <section className="py-16 bg-white">
       
       {/* Saare content ko center aur max-width di hai */}
       <div className="container mx-auto max-w-3xl text-center px-4">

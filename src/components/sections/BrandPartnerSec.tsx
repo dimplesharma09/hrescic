@@ -89,7 +89,7 @@ const getResponsiveCols = (partner) => {
 
 const BrandPartnerSec = () => {
   return (
-    <section className="bg-white py-16 md:py-24 px-4 md:px-10">
+    <section className="bg-white py-16 md:py-10 px-4 md:px-10">
       <div className="container-xl mx-auto">
         
         {/* Header */}
