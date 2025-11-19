@@ -21,7 +21,7 @@ const CTASections: React.FC = () => {
             </button>
 
             {/* Secondary CTA */}
-            <button className="flex items-center gap-2 bg-white hover:bg-[#F2F2F2] shadow-sm text-[#2F2A4A] px-5 py-3 rounded-full text-xs md:text-sm font-medium transition-all">
+            <button className="flex items-center gap-2 bg-white hover:bg-[#fff] shadow-sm text-[#2F2A4A] px-5 py-3 rounded-full text-xs md:text-sm font-medium transition-all">
               Ask Us Anything
             </button>
           </div>

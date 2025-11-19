@@ -3,7 +3,7 @@ import React from 'react';
 // --- Icon Components (Placeholders for unique SVG paths) ---
 // You would replace these with specific icon imports from a library like Lucide/Shadcn.
 const SubscriptionIcon = ({ children }) => (
-  <div className="p-3 mb-6 bg-purple-100/50 text-purple-700 rounded-lg inline-flex">
+  <div className="p-3 mb-6 bg-purple-100/50 text-[#6F00FF] rounded-lg inline-flex">
     {children}
   </div>
 );

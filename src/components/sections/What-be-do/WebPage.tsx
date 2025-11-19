@@ -26,14 +26,14 @@ const WebPage = () => {
             Clear, aligned and conversion-focused.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex  items-center gap-4">
             {/* Primary CTA */}
-            <button className="bg-[#9B00FF] hover:bg-[#8000FF] text-white px-6 py-3 rounded-full text-sm font-medium transition-all">
+            <button className="bg-[#9B00FF] hover:bg-[#8000FF] text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-medium transition-all">
               Book a Free Demo
             </button>
 
             {/* Secondary CTA */}
-            <button className="flex items-center gap-2 bg-[#3D0377] hover:bg-[#3B0080] text-white px-5 py-3 rounded-full text-sm transition-all">
+            <button className="flex items-center gap-2 bg-[#3D0377] hover:bg-[#3B0080] text-white px-5 py-3 md:px-6 md:py-3  rounded-full text-xs md:text-sm transition-all">
               Ask Us Anything
             </button>
           </div>
