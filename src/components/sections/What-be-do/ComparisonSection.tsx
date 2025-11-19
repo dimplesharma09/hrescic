@@ -112,7 +112,7 @@ const ComparisonSection: React.FC = () => {
 
 
       {/* Card wrapper – same vibe as Private Cohorts/Membership */}
-      <div className="rounded-3xl border border-[#E1D8FF] bg-[#F8F5FF]  overflow-hidden">
+      <div className="  overflow-hidden">
         {/* Top border line like reference */}
         {/* <div className="h-[2px] w-full bg-[#3E1FFF]" /> */}
 
@@ -123,8 +123,8 @@ const ComparisonSection: React.FC = () => {
         
 
         {/* Inner light panel with table */}
-        <div className="px-5 sm:px-8 lg:px-10 py-10">
-          <div className="rounded-2xl bg-[#FDFBFF] border border-[#E8E1FF] overflow-hidden">
+        <div className="px-5 sm:px-8 lg:px-0 py-0 ">
+          <div className="rounded-2xl bg-[#FDFBFF] border border-[#E8E1FF]  overflow-hidden">
             <div className="overflow-x-auto">
               <div className="min-w-[720px]">
                 {/* Header row */}
@@ -152,7 +152,7 @@ const ComparisonSection: React.FC = () => {
                       className={`grid grid-cols-[1.6fr_1fr_1fr_1fr_1fr] text-xs md:text-sm text-[#4A4267] ${rowBg}`}
                     >
                       {/* Feature label */}
-                      <div className="px-4 py-3 border-b border-[#EEE7FF] font-medium">
+                      <div className="px-4 py-3 border-b border-[#EEE7FF] font-semibold">
                         {row.label}
                       </div>
 
