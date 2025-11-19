@@ -299,7 +299,7 @@ const Header = () => {
               <select
                 defaultValue={i18n.language}
                 onChange={onChangeLang}
-                className="text-sm font-medium text-gray-700 border border-gray-200 rounded-md px-2 py-1 bg-white"
+                className="text-sm font-medium text-gray-700 border-none border-gray-200 rounded-md px-2 py-1 bg-white focus:outline-none"
               >
                 {LANGUAGES.map(({ code, label }) => (
                   <option key={code} value={code}>

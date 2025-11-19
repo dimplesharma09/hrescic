@@ -1,4 +1,4 @@
 export const LANGUAGES = [
-  { label: "Harvatski", code: "hr" },
-  { label: "English", code: "en" },
+  { label: "HR", code: "hr" },
+  { label: "EN", code: "en" },
 ];
