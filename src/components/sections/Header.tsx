@@ -2,16 +2,24 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 
-// Top-level nav (same as client doc)
+import { LANGUAGES } from "@/constants";
+import i18n from "@/i18n";
+import { Link } from "react-router-dom";
+
+// Top-level nav (page urls added)
 const navItems = [
-  { name: "What We Do", href: "#", megaKey: "whatWeDo" },
-  { name: "Who We Create For", href: "#", megaKey: "whoWeCreateFor" },
-  { name: "Brands We Partner With", href: "#", megaKey: "brands" },
-  { name: "Ideas & Insights", href: "#", megaKey: "ideas" },
-  { name: "Let's Talk", href: "#", megaKey: "contact" },
+  { name: "What We Do", href: "/what-we-do", megaKey: "whatWeDo" },
+  { name: "Who We Create For", href: "/who-we-create-for", megaKey: "whoWeCreateFor" },
+  {
+    name: "Brands We Partner With",
+    href: "/brands-we-partner-with",
+    megaKey: "brands",
+  },
+  { name: "Ideas & Insights", href: "/ideas-insights", megaKey: "ideas" },
+  { name: "Let's Talk", href: "/lets-talk", megaKey: "contact" },
 ];
 
-// Mega-menu data (content from client screenshot)
+// Mega-menu data (each card now has href)
 const megaMenuData: Record<
   string,
   {
@@ -38,16 +46,19 @@ const megaMenuData: Record<
             title: "Web",
             description:
               "Web dizajn i development s fokusom na UX, brzinu i SEO-friendly arhitekturu.",
+            href: "/what-we-do/web-design-development",
           },
           {
             title: "Marketing",
             description:
               "Performance marketing, SEO i content strategija za dugoročni rast brenda.",
+            href: "/what-we-do/marketing",
           },
           {
             title: "AI & Video",
             description:
               "AI-asistirana video produkcija, automatizacija i personalizirane kampanje.",
+            href: "/what-we-do/ai-and-video",
           },
         ],
       },
@@ -68,11 +79,13 @@ const megaMenuData: Record<
             title: "Hotels & Villas",
             description:
               "Brendiranje hotela i vila, web stranice, booking i vidljivost na tražilicama.",
+            href: "/who-we-create-for/hotels-and-villas",
           },
           {
             title: "Travel Agencies",
             description:
               "Lead-gen funneli, landing stranice i kampanje za turističke agencije.",
+            href: "/who-we-create-for/travel-agencies",
           },
         ],
       },
@@ -85,6 +98,7 @@ const megaMenuData: Record<
             title: "Yacht Charters",
             description:
               "Premium web prezentacija, itinereri i booking sistemi za chartere.",
+            href: "/who-we-create-for/yacht-charters",
           },
         ],
       },
@@ -97,6 +111,7 @@ const megaMenuData: Record<
             title: "Clinics & Wellness",
             description:
               "Pacijent-centrične web stranice i kampanje za poliklinike, salone i wellness centre.",
+            href: "/who-we-create-for/clinics-and-wellness",
           },
         ],
       },
@@ -109,6 +124,7 @@ const megaMenuData: Record<
             title: "Local Brands",
             description:
               "Storytelling, produkt fotografija i lokalni SEO za male i boutique brendove.",
+            href: "/who-we-create-for/local-brands",
           },
         ],
       },
@@ -129,6 +145,7 @@ const megaMenuData: Record<
             title: "Featured Projects",
             description:
               "Najzanimljiviji projekti – rezultati, brojke i konkretni primjeri rasta.",
+            href: "/brands-we-partner-with/case-studies",
           },
         ],
       },
@@ -149,11 +166,13 @@ const megaMenuData: Record<
             title: "Articles",
             description:
               "Praktični vodiči i insighti o brandingu, marketingu i AI alatima.",
+            href: "/ideas-insights/articles",
           },
           {
             title: "Resources",
             description:
               "Templatei, checkliste i materijali koji pomažu vašem marketing timu.",
+            href: "/ideas-insights/resources",
           },
         ],
       },
@@ -174,6 +193,7 @@ const megaMenuData: Record<
             title: "Book a Free Demo",
             description:
               "Glavni poziv na akciju – kreativni demo, marketing konzultacije i free strategy call.",
+            href: "/lets-talk/book-demo",
           },
         ],
       },
@@ -199,9 +219,14 @@ const Header = () => {
       ? currentMega.items[activeSubIndex]
       : null;
 
-  // kaunsa card primary style lega
+  // which card is primary-styled
   const activeCardIndex =
     hoveredCardIndex !== null ? hoveredCardIndex : 0;
+
+  const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const lang_code = e.target.value;
+    i18n.changeLanguage(lang_code);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white">
@@ -216,8 +241,8 @@ const Header = () => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="flex items-center gap-2 text-3xl font-serif font-medium text-gray-900"
               >
                 <img
@@ -225,7 +250,7 @@ const Header = () => {
                   alt="Hrescic logo"
                   className="h-8 w-auto"
                 />
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
@@ -236,9 +261,9 @@ const Header = () => {
                   item.megaKey && megaMenuData[item.megaKey as string];
 
                 return (
-                  <button
+                  <Link
                     key={item.name}
-                    type="button"
+                    to={item.href}
                     onMouseEnter={() =>
                       hasMega ? setActiveMega(item.megaKey as string) : null
                     }
@@ -258,19 +283,30 @@ const Header = () => {
                         }`}
                       />
                     )}
-                  </button>
+                  </Link>
                 );
               })}
 
               {/* CTA Button */}
-              <button className="bg-[#6F00FF] hover:bg-[#5a00d1] text-white px-6 py-3 rounded-full text-sm font-medium transition-all">
+              <Link
+                to="/lets-talk/book-demo"
+                className="bg-[#6F00FF] hover:bg-[#5a00d1] text-white px-6 py-3 rounded-full text-sm font-medium transition-all"
+              >
                 Book a Free Demo
-              </button>
+              </Link>
 
               {/* Language Selector */}
-              <button className="flex items-center gap-1 text-sm font-medium text-gray-700">
-                ENG <ChevronDown className="w-4 h-4" />
-              </button>
+              <select
+                defaultValue={i18n.language}
+                onChange={onChangeLang}
+                className="text-sm font-medium text-gray-700 border border-gray-200 rounded-md px-2 py-1 bg-white"
+              >
+                {LANGUAGES.map(({ code, label }) => (
+                  <option key={code} value={code}>
+                    {label}
+                  </option>
+                ))}
+              </select>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -344,18 +380,20 @@ const Header = () => {
                   <div className="grid grid-cols-2 gap-x-20 gap-y-10">
                     {currentSub.cards.map((card, index) => {
                       const isPrimary = index === activeCardIndex;
+                      const href = card.href ?? "#";
 
                       if (isPrimary) {
-                        // BIG highlighted panel (Hotels & Villas OR hovered card)
+                        // BIG highlighted panel
                         return (
-                          <div
+                          <Link
                             key={card.title}
+                            to={href}
                             onMouseEnter={() => setHoveredCardIndex(index)}
                             className="relative bg-[#F6F7F9] rounded-md border border-gray-100 flex items-center px-6 py-5 cursor-pointer transition-all"
                           >
                             <span className="absolute left-0 top-0 h-full w-1 rounded-l-md bg-[#8000FF]" />
                             <div className="relative flex items-center gap-4">
-                              <div className="flex items-center justify-center w-[49px] h-[37px]  rounded-full border border-gray-300 text-xs font-semibold text-gray-700">
+                              <div className="flex items-center justify-center w-[49px] h-[37px] rounded-full border border-gray-300 text-xs font-semibold text-gray-700">
                                 L
                               </div>
                               <div>
@@ -367,14 +405,15 @@ const Header = () => {
                                 </p>
                               </div>
                             </div>
-                          </div>
+                          </Link>
                         );
                       }
 
-                      // Normal cards – hover → thoda bg + border change
+                      // Normal cards
                       return (
-                        <div
+                        <Link
                           key={card.title}
+                          to={href}
                           onMouseEnter={() => setHoveredCardIndex(index)}
                           className="flex items-center gap-4 px-6 py-5 rounded-md border border-transparent hover:border-[#8000FF] hover:bg-[#F6F7F9] cursor-pointer transition-all"
                         >
@@ -389,7 +428,7 @@ const Header = () => {
                               {card.description}
                             </p>
                           </div>
-                        </div>
+                        </Link>
                       );
                     })}
                   </div>
@@ -407,18 +446,24 @@ const Header = () => {
         >
           <nav className="flex flex-col px-4 pt-2 pb-6 space-y-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
+                onClick={() => setMobileOpen(false)}
                 className="text-base font-medium text-gray-600 hover:text-gray-900"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
 
-            <button className="bg-[#6F00FF] hover:bg-[#8000FF] text-white w-full py-3 rounded-full text-sm font-medium transition-all">
+            <Link
+              to="/lets-talk/book-demo"
+              onClick={() => setMobileOpen(false)}
+              className="bg-[#6F00FF] hover:bg-[#8000FF] text-white w-full py-3 rounded-full text-sm font-medium text-center transition-all"
+            >
               Book a Free Demo
-            </button>
+            </Link>
+
             <button className="flex items-center justify-center gap-1 w-full text-sm font-medium text-gray-700">
               ENG <ChevronDown className="w-4 h-4" />
             </button>

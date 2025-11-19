@@ -14,8 +14,8 @@ export default function Hero() {
       <div className=" mx-auto md:ps-16 ps-4 py-20 grid md:grid-cols-[55%_45%] gap-10 items-center">
         {/* 🔹 Left Text Content */}
         <div className="max-w-xl px-2">
-     <h1 className="text-white font-normal text-3xl sm:text-4xl lg:text-[50px] mb-6 font-serif">
-            Marketing that goes on – even after campaign ends.
+          <h1 className="text-white font-normal text-3xl sm:text-4xl lg:text-[50px] mb-6 font-serif">
+           Marketing that goes on – even after campaign ends.
           </h1>
 
           <p className="text-gray-300 text-sm sm:text-base max-w-md mb-10">

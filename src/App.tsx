@@ -4,6 +4,7 @@ import HomePage from '@/pages/HomePage'
 import Header from '@/components/sections/Header'
 import Footer from "@/components/sections/Footer";
 import { Route, Routes } from 'react-router-dom';
+import WebPage from './components/sections/What-be-do/WebPage';
 
 
 
@@ -29,6 +30,8 @@ export default function App(){
       />
       <Routes>
         <Route path='/' element={<HomePage/>}/>
+        <Route path='/what-we-do' element={<WebPage/>}/>
+
       
        
       </Routes>
