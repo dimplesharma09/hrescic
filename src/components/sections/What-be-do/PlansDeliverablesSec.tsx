@@ -152,9 +152,9 @@ const PlansDeliverablesSec: React.FC = () => {
             {/* Purple illustration band (like screenshot) */}
             <div className="mb-7">
               <div className="relative rounded-2xl bg-[#D9CFFF] px-6 py-6 md:px-10 md:py-8 flex items-center justify-center overflow-hidden">
-                <div className="flex gap-4 md:gap-8 items-end w-full max-w-3xl">
+                <div className="flex gap-4 md:gap-8 items-end md:w-full md:max-w-3xl max-w-2xl">
                   <div className="flex-1 bg-white rounded-xl shadow-md p-4">
-                    <div className="mb-2 h-4 w-32 rounded-full bg-[#E5E1FF]" />
+                    <div className="mb-2 h-4 md:w-32 w-24 rounded-full bg-[#E5E1FF]" />
                     <div className="space-y-2 mt-2">
                       <div className="h-8 rounded-md bg-[#F5F3FF]" />
                       <div className="h-8 rounded-md bg-[#F5F3FF]" />

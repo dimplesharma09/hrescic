@@ -79,7 +79,6 @@ const partners = [
   },
 ];
 
-// Responsive helper function
 const getResponsiveCols = (partner) => {
   if (partner.gridCols === 'lg:col-span-2') {
     return 'md:col-span-2 lg:col-span-2';
@@ -92,7 +91,6 @@ const BrandPartnerSec = () => {
     <section className="bg-white py-16 md:py-10 px-4 md:px-10">
       <div className="container-xl mx-auto">
         
-        {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-[40px] font-normal text-gray-900 mb-4">
             Brands We Partner With
@@ -103,77 +101,55 @@ const BrandPartnerSec = () => {
           </p>
         </div>
 
-        {/* --- PARTNERS GRID (Height Increased Again) --- */}
-        {/* Highlighted change: md:auto-rows-[320px] */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto md:auto-rows-[320px]">
-          {partners.map((partner) => {
-            const responsiveCols = getResponsiveCols(partner);
-            
-            return (
-              <div
-                key={partner.id}
-                className={`bg-[#330066] rounded-2xl p-6 
-                            ${responsiveCols} ${partner.gridRows} 
-                            relative overflow-hidden 
-                            flex flex-col`} // Card is always flex-col
-              >
-                {/* 1. Top content (Common to all sizes) */}
-                <div className='flex items-center gap-2'>
-                  <span className="text-white text-[16px] font-semibold block">
-                    {partner.name}
-                  </span>
-                  <span className="text-gray-300 text-sm italic">
-                    {partner.category}
-                  </span>
-                </div>
+        {/* GRID UPDATED HERE */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[320px]">
+  {partners.map((partner) => {
+    const responsiveCols = getResponsiveCols(partner);
 
-                {/* 2. Mobile Layout (Visible by default, hidden on md+) */}
-                <div className="md:hidden mt-4 space-y-4">
-                  {/* Mobile Deliverables */}
-                  <div>
-                    <span className="text-white text-[14px] italic">
-                      Deliverables: {partner.deliverables}
-                    </span>
-                  </div>
-                  {/* Mobile Highlight */}
-                  {partner.highlight && (
-                    <div className="text-left">
-                      <p className="text-gray-300 font-light text-xs leading-tight italic mb-1 max-w-[200px]">
-                        {partner.highlight.text}
-                      </p>
-                      <span className="text-white text-4xl font-medium">
-                        {partner.highlight.value}
-                      </span>
-                    </div>
-                  )}
-                </div>
-
-                {/* 3. Desktop Layout (Hidden by default, visible on md+) */}
-                {/* This div grows to fill remaining space on desktop */}
-                <div className="hidden md:flex flex-col flex-grow"> 
-                  {/* Desktop Highlight (Absolute) */}
-                  {partner.highlight && (
-                    <div className="absolute bottom-6 right-6 text-right">
-                      <p className="text-gray-300 font-light text-xs leading-tight italic mb-1 max-w-[140px] ml-auto">
-                        {partner.highlight.text}
-                      </p>
-                      <span className="text-white text-4xl font-medium">
-                        {partner.highlight.value}
-                      </span>
-                    </div>
-                  )}
-
-                  {/* Desktop Deliverables (Pushed to bottom) */}
-                  <div className={`mt-auto ${partner.highlight ? 'max-w-[60%]' : 'w-full'}`}>
-                    <span className="text-white text-[14px] italic">
-                      Deliverables: {partner.deliverables}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+    return (
+      <div
+        key={partner.id}
+        className={`bg-[#330066] rounded-2xl p-6 ${responsiveCols} ${partner.gridRows} relative overflow-hidden flex flex-col`}
+      >
+        {/* Top Content */}
+        <div className="flex items-center gap-2">
+          <span className="text-white text-[16px] font-semibold">
+            {partner.name}
+          </span>
+          <span className="text-gray-300 text-sm italic">
+            {partner.category}
+          </span>
         </div>
+
+        {/* Deliverables — same for mobile & desktop */}
+  {partner.highlight && (
+         <p className="text-gray-300 text-xs italic mb-1 max-w-xl mt-4 ml-auto md:hidden block">
+              {partner.highlight.text}
+            </p>
+     )}
+        <div className="absolute bottom-6 md:bottom-6 left-6 right-6 md:w-auto w-48">
+          <span className="text-white text-[14px] italic leading-tight block">
+            Deliverables: {partner.deliverables}
+          </span>
+        </div>
+
+
+        {/* If highlight exists */}
+        {partner.highlight && (
+          <div className="absolute bottom-6 md:bottom-6 right-6 text-right">
+            <p className="text-gray-300 hidden md:block text-xs italic mb-1 max-w-[140px] ml-auto ">
+              {partner.highlight.text}
+            </p>
+            <span className="text-white text-4xl font-medium">
+              {partner.highlight.value}
+            </span>
+          </div>
+        )}
+      </div>
+    );
+  })}
+</div>
+
 
       </div>
     </section>

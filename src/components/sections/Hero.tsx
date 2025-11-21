@@ -10,8 +10,8 @@ import { FaPlay } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="container-xl mt-2 mx-auto relative w-full bg-[#220052] rounded-2xl overflow-hidden border border-[#5A1AFF]/30 ">
-      <div className=" mx-auto md:ps-16 ps-4 py-20 grid md:grid-cols-[55%_45%] gap-10 items-center">
+    <section className="md:container-xl sm:container-xl max-w-[90%] mt-2 mx-auto relative w-full bg-[#220052] rounded-2xl overflow-hidden border border-[#5A1AFF]/30 ">
+      <div className=" mx-auto md:ps-16 px-4 py-20 grid md:grid-cols-[55%_45%] gap-10 items-center">
         {/* 🔹 Left Text Content */}
         <div className="max-w-xl px-2">
           <h1 className="text-white font-normal text-3xl sm:text-4xl lg:text-[50px] mb-6 font-serif">
@@ -23,12 +23,12 @@ export default function Hero() {
             growing — long after the ads stop running.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4">
-            <button className="bg-[#9B00FF] hover:bg-[##8000FF] text-white px-6 py-3 rounded-full text-sm font-medium transition-all">
+          <div className="flex  items-center gap-4">
+            <button className="bg-[#9B00FF] hover:bg-[##8000FF] text-white md:px-6 md:py-3 px-5 py-3 text-xs  rounded-full md:text-sm font-medium transition-all">
               Book a Free Demo
             </button>
 
-            <button className="flex items-center gap-2 bg-[#3D0377] hover:bg-[#3B0080] text-white px-5 py-3 rounded-full text-sm transition-all">
+            <button className="flex items-center gap-2 bg-[#3D0377] hover:bg-[#3B0080] text-white md:px-6 md:py-3 px-5 py-3 text-xs  rounded-full md:text-sm transition-all">
               {/* <Play className="w-4 h-4" /> Play Showreel */}
               <FaPlay className="w-4 h-4"/> Play Showreel
 

@@ -8,8 +8,8 @@ import GuidesSection from './GuidesSection'
 const WorkPage = () => {
   return (
    <>
-     <section className="container-xl mt-2 mx-auto relative w-full bg-[#300060] rounded-2xl overflow-hidden border border-[#5A1AFF]/30">
-      <div className="mx-auto md:ps-16 ps-4 py-20 grid md:grid-cols-[55%_45%] gap-10 items-center">
+     <section className="md:container-xl sm:container-xl max-w-[90%]  mt-2 mx-auto relative w-full bg-[#300060] rounded-2xl overflow-hidden border border-[#5A1AFF]/30">
+      <div className="mx-auto md:ps-16  px-4 py-20 grid md:grid-cols-[55%_45%] gap-10 items-center">
         {/* 🔹 Left Text Content */}
         <div className="max-w-xl px-2">
           <h1 className="text-white font-normal text-3xl sm:text-4xl lg:text-[50px] mb-6 font-serif">
