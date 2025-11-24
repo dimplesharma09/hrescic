@@ -99,8 +99,8 @@ export default function WhatWeDo() {
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className={
               expanded
-                ? "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[520px] md:h-[560px]"
-                : "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[450px] p-6 flex flex-col justify-between"
+                ? "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[400px] md:h-[560px]"
+                : "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[400px] md:h-[450px] p-6 flex flex-col justify-between"
             }
           >
             {/* Collapsed state overlay (logo + play button) */}
