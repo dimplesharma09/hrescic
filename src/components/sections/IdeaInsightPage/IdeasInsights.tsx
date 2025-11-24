@@ -11,17 +11,17 @@ const IdeasInsights = () => {
    <FeaturedArticles/>
 
 
-   <section className="w-full py-14 md:py-20 bg-white">
+   <section className="w-full pb-24 pt-16 md:pt-32 md:pb-40 bg-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h4 className="text-[#2F2A4A] text-2xl md:text-[36px] font-semibold tracking-tight">
           Ready to turn ideas into real brand momentum?
         </h4>
 
-        <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <div className="mt-7 flex md:flex-col sm:flex-row items-center justify-center md:gap-3 gap-2">
           {/* Primary button */}
           <button
             className="
-              px-7 py-3 rounded-full
+              md:px-7 px-5 py-3 rounded-full
               bg-[#8000FF] text-white font-medium text-sm md:text-[16px]
               shadow-sm transition-all
               hover:brightness-95 hover:-translate-y-0.5
@@ -34,7 +34,7 @@ const IdeasInsights = () => {
           {/* Secondary button */}
           <button
             className="
-              px-7 py-3 rounded-full
+             md:px-7 px-5 py-3 rounded-full
               bg-[#F3EEFF] text-[#3D0377] font-medium text-sm md:text-[16px]
               border border-[#834CF680]
               transition-all

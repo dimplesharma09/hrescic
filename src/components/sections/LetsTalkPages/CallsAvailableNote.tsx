@@ -12,7 +12,7 @@ const CallsAvailableNote = () => {
           </div>
 
           {/* Title */}
-          <h2 className="text-2xl md:text-[50px] font-medium text-[#555555] tracking-tight">
+          <h2 className="text-2xl md:text-[48px] font-medium text-[#555555] tracking-tight">
             Calls available Mon–Fri.
           </h2>
 

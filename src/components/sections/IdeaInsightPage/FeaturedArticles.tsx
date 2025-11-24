@@ -92,7 +92,7 @@ const ArticleCard: React.FC<{ a: Article }> = ({ a }) => {
           </p>
         </div>
 
-        <div className="mt-4 border-t border-[#591F94] pt-3 flex items-center gap-2 font-semibold text-lg">
+        <div className="mt-4 border-t border-[#591F94] pt-3 flex items-center gap-2 font-semibold text-md md:text-lg">
           <span>Read Article</span>
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </div>

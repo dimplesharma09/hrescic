@@ -7,7 +7,7 @@ const WhatToExpect = () => {
         <div
           className="
             bg-[#F8F8F8]
-            rounded-2xl
+            rounded-[20px]
             min-h-[260px] md:min-h-[320px]
             flex flex-col items-center justify-center
             text-center
@@ -15,7 +15,7 @@ const WhatToExpect = () => {
       
           "
         >
-          <h2 className="text-2xl md:text-[50px] font-medium text-[#555555] mb-4">
+          <h2 className="text-2xl md:text-[48px] font-medium text-[#555555] mb-4">
             What to Expect
           </h2>
 

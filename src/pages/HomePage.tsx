@@ -11,6 +11,7 @@ import SliderBrand from "@/components/sections/SliderBrand";
 import BrandPartnerSec from "@/components/sections/BrandPartnerSec";
 import CTASection from "@/components/sections/CTASection";
 import IdeaInSightPage from "@/components/sections/IdeaInSightPage";
+import HomeHeroSec from "@/components/sections/HomeHeroSec";
 
 const pettyProducts: Product[] = [
   { id: "p1", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
@@ -32,6 +33,7 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
+      {/* <HomeHeroSec/> */}
       <SliderBrand/>
       <AboutStrip/>
       <OurWork/>
