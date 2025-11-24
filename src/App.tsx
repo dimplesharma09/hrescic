@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import WebPage from './components/sections/What-be-do/WebPage';
 import WorkPage from './components/sections/Who-We-Create/WorkPage';
 import IdeasInsights from './components/sections/IdeaInsightPage/IdeasInsights';
+import LetsTalkPage from './pages/LetsTalkPage';
 
 
 
@@ -35,6 +36,8 @@ export default function App(){
         <Route path='/what-we-do' element={<WebPage/>}/>
         <Route path='/who-we-create-for' element={<WorkPage/>}/>
         <Route path='/ideas-insights' element={<IdeasInsights/>}/>
+        <Route path='/lets-talk' element={<LetsTalkPage/>}/>
+
 
 
 

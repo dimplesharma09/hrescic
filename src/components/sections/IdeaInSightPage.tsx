@@ -32,7 +32,7 @@ const IdeaInSightPage = () => {
           {/* === Top Header Section === */}
           <div className="text-center max-w-lg mx-auto mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-normal text-gray-color">
-              Ideas & Insights
+              Ideas & Insights 
             </h2>
             <p className="mt-4 text-base md:text-lg text-[#555555] leading-relaxed">
               Creative thinking meets real-world marketing. We share

@@ -1,10 +1,52 @@
 import React from 'react'
-import HeroSection from './HeroSection'
+import HeroSection from './MarketingBlogCart'
+import MarketingBlogCart from './MarketingBlogCart'
+import FeaturedArticles from './FeaturedArticles'
 
 const IdeasInsights = () => {
   return (
     <div>
-   <HeroSection/>
+   {/* <HeroSection/> */}
+   <MarketingBlogCart/>
+   <FeaturedArticles/>
+
+
+   <section className="w-full py-14 md:py-20 bg-white">
+      <div className="max-w-4xl mx-auto px-4 text-center">
+        <h4 className="text-[#2F2A4A] text-2xl md:text-[36px] font-semibold tracking-tight">
+          Ready to turn ideas into real brand momentum?
+        </h4>
+
+        <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
+          {/* Primary button */}
+          <button
+            className="
+              px-7 py-3 rounded-full
+              bg-[#8000FF] text-white font-medium text-sm md:text-[16px]
+              shadow-sm transition-all
+              hover:brightness-95 hover:-translate-y-0.5
+              focus:outline-none focus:ring-2 focus:ring-[#6C2CF5]/40
+            "
+          >
+            Book a Free Demo
+          </button>
+
+          {/* Secondary button */}
+          <button
+            className="
+              px-7 py-3 rounded-full
+              bg-[#F3EEFF] text-[#3D0377] font-medium text-sm md:text-[16px]
+              border border-[#834CF680]
+              transition-all
+              hover:bg-[#EEE6FF] hover:-translate-y-0.5
+              focus:outline-none focus:ring-2 focus:ring-[#6C2CF5]/30
+            "
+          >
+            Ask Us Anything
+          </button>
+        </div>
+      </div>
+    </section>
     </div>
   )
 }
