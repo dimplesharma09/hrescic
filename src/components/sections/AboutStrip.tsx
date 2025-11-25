@@ -74,7 +74,7 @@ export default function WhatWeDo() {
         {/* Header */}
         <div className="max-w-lg mx-auto text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-normal text-[#555555] mb-4">
-            What We Do
+            What We Do 
           </h2>
           <p className="text-lg text-[#555555] md:text-lg">
             We combine brand strategy, web design and content to build creative

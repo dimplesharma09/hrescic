@@ -38,26 +38,87 @@ const megaMenuData: Record<
       "Pregled svih usluga i modela pretplate (branding, web, content, AI video). SEO: creative services, marketing subscription, branding agency Croatia.",
     items: [
       {
-        title: "Branding",
+        title: "CORE SERVICES",
         description:
           "Pregled svih usluga i modela pretplate – branding, web, content i AI video.",
         cards: [
           {
-            title: "Web",
+            title: "Brand & Strategy",
             description:
-              "Web dizajn i development s fokusom na UX, brzinu i SEO-friendly arhitekturu.",
+              "Clear foundations, positioning, messaging.",
             href: "/what-we-do/web-design-development",
           },
           {
-            title: "Marketing",
+            title: "Web & Digital",
             description:
-              "Performance marketing, SEO i content strategija za dugoročni rast brenda.",
+              "Websites that convert, not decorate.",
+            href: "/what-we-do/web-design-development",
+          },
+          {
+            title: "Content & Marketing",
+            description:
+              "Monthly content system that drives demand.",
             href: "/what-we-do/marketing",
           },
           {
-            title: "AI & Video",
+            title: "AI Video Production",
             description:
-              "AI-asistirana video produkcija, automatizacija i personalizirane kampanje.",
+              "Short videos that boost conversions & visibility.",
+            href: "/what-we-do/ai-and-video",
+          },
+        ],
+      },
+        {
+        title: "DEEP SECTIONS",
+        description:
+          "Pregled svih usluga i modela pretplate – branding, web, content i AI video.",
+        cards: [
+          {
+            title: "Brand Positioning & Messaging",
+            description:
+              "What makes you different — explained simply.",
+            href: "/what-we-do/web-design-development",
+          },
+          {
+            title: "Visual Identity",
+            description:
+              "Your brand’s visual language, modern & consistent.",
+            href: "/what-we-do/web-design-development",
+          },
+          {
+            title: "UX/UI & Website Experience",
+            description:
+              "Clear flows that turn visitors into clients.",
+            href: "/what-we-do/marketing",
+          },
+          {
+            title: "SEO & Technical Structure",
+            description:
+              "Structure that helps clients (and Google) find you.",
+            href: "/what-we-do/ai-and-video",
+          },
+           {
+            title: "Content System",
+            description:
+              "Your monthly communication rhythm.",
+            href: "/what-we-do/ai-and-video",
+          },
+           {
+            title: "Video for Web & Ads",
+            description:
+              "Scroll-stopping storytelling for your brand.",
+            href: "/what-we-do/ai-and-video",
+          },
+           {
+            title: "Subscription Plans",
+            description:
+              "Choose the creative system that fits your growth.",
+            href: "/what-we-do/ai-and-video",
+          },
+           {
+            title: "Comparison Table",
+            description:
+              "See what’s included in each plan.",
             href: "/what-we-do/ai-and-video",
           },
         ],
