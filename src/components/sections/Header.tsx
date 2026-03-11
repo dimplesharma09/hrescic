@@ -427,7 +427,7 @@ const Header = () => {
                             {/* CTA Button */}
                             <Link
                                 to="/lets-talk/book-demo"
-                                className="bg-[#6F00FF] hover:bg-[#5a00d1] text-white px-6 py-3 rounded-full text-sm font-medium transition-all"
+                                className="bg-[#37C100] hover:bg-[#2d9802] text-white px-6 py-3 rounded-full text-sm font-medium transition-all"
                             >
                                 Book a Free Demo
                             </Link>

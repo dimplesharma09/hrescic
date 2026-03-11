@@ -129,7 +129,7 @@ const MasonryShuffleBlocks: React.FC = () => {
  *  ----------------------------------------------------- */
 export default function Hero() {
   return (
-    <section className="md:container-xl sm:container-xl max-w-[90%] mt-2 mx-auto relative w-full bg-[#220052] rounded-2xl overflow-hidden border border-[#5A1AFF]/30">
+    <section className="md:container-xl sm:container-xl max-w-[90%] mt-2 mx-auto relative w-full bg-[#1D2931] rounded-2xl overflow-hidden border border-[#5A1AFF]/30">
       <div className="mx-auto md:ps-16 px-4 py-20 grid md:grid-cols-[55%_45%] gap-10 items-center">
         {/* Left Text Content */}
         <div className="max-w-xl px-2">
@@ -144,11 +144,11 @@ export default function Hero() {
           </p>
 
           <div className="flex items-center gap-4">
-            <button className="bg-[#9B00FF] hover:bg-[#8000FF] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm font-medium transition-all">
+            <button className="bg-[#37C100] hover:bg-[#2d9802] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm font-medium transition-all">
               Let's Talk
             </button>
 
-            <button className="flex items-center gap-2 bg-[#3D0377] hover:bg-[#3B0080] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm transition-all">
+            <button className="flex items-center gap-2 bg-[#FFFFFF1A] hover:bg-[#fff] hover:text-[#000] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm transition-all">
               <FaPlay className="w-4 h-4" /> Play Showreel
             </button>
           </div>
