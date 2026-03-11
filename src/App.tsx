@@ -8,7 +8,8 @@ import WebPage from './components/sections/What-be-do/WebPage';
 import WorkPage from './components/sections/Who-We-Create/WorkPage';
 import IdeasInsights from './components/sections/IdeaInsightPage/IdeasInsights';
 import LetsTalkPage from './pages/LetsTalkPage';
-
+import HealthPharmaPage from './pages/healthPharmaPage';
+import LocalBoutiqueBrands from './pages/LocalBoutiqueBrands';
 
 
 export default function App(){
@@ -37,6 +38,12 @@ export default function App(){
         <Route path='/who-we-create-for' element={<WorkPage/>}/>
         <Route path='/ideas-insights' element={<IdeasInsights/>}/>
         <Route path='/lets-talk' element={<LetsTalkPage/>}/>
+
+        <Route path='/health-pharma-beauty' element={<HealthPharmaPage/>}/>
+        <Route path='/local-boutique-brands' element={<LocalBoutiqueBrands/>}/>
+
+
+
 
 
 
