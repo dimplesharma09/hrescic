@@ -289,19 +289,19 @@ Education & e-learning brands don’t scale by adding more products. They scale 
       <section className="w-full px-3 pb-6 pt-0 sm:px-5 sm:pb-8 lg:py-14">
         <div className="mx-auto container-xl">
           <div className="mx-auto max-w-[760px] text-left lg:ml-[108px]">
-            <h3 className="text-[16px] sm:text-[17px] font-semibold text-[#544b47]">
+            <h3 className="text-[16px] sm:text-[17px] font-semibold text-[#0F0F3D]">
              Why clarity beats complexity in education?
             </h3>
 
             <p
-              className="mt-3 text-[22px] sm:text-[26px] md:text-[28px] font-normal leading-[1.33] tracking-[-0.015em] text-[#6f5e58]"
+              className="mt-3 text-[22px] sm:text-[26px] md:text-[28px] font-normal leading-[1.33] tracking-[-0.015em] text-[#0F0F3D]"
               style={{ fontFamily: "Georgia, Times New Roman, serif" }}
             >
              Education businesses don’t struggle because they lack expertise. They struggle because complexity hides value.
             </p>
           </div>
 
-      <div className="mx-auto mt-8 container-xl lg:px-[108px]">
+      <div className="mx-auto mt-8 md:container-xl sm:container lg:px-[108px] "> 
   <div className="overflow-hidden rounded-[16px] bg-[#fff] border border-[#EEEEEE] p-4 lg:grid lg:grid-cols-[0.95fr_1.05fr]">
 
     {/* LEFT TEXT */}

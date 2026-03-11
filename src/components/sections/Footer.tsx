@@ -70,7 +70,7 @@ interface FooterHeadingProps {
 }
 
 const FooterHeading: React.FC<FooterHeadingProps> = ({ title }) => (
-  <h6 className="text-white mb-3 flex items-center text-lg font-semibold">
+  <h6 className="text-white mb-6 flex items-center text-lg font-semibold">
     {title}
   </h6>
 );
@@ -79,9 +79,15 @@ const FooterHeading: React.FC<FooterHeadingProps> = ({ title }) => (
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-slate-200 pt-16 pb-8">
+    <footer className="text-slate-200 pt-16 pb-8 bg-[#26353F]">
+
+
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
 
+
+<div className="mb-10">
+  <img src="../assets/Image/hrescic-logo-white.svg"></img>
+</div>
         {/* Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Explore */}
@@ -135,12 +141,12 @@ const Footer: React.FC = () => {
         {/* Bottom bar */}
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm text-slate-300/80">
           <div className="flex flex-col gap-1">
-            <p className="text-base">
-              © 2025 Hreščić.com. All rights reserved.
+            <p className="text-base font-normal italic">
+              © 2026 Hreščić.com. All rights reserved.
             </p>
           </div>
           <div className="flex flex-wrap justify-center md:justify-end gap-4 text-xs md:text-sm">
-            <p className="text-base italic">
+            <p className="text-base italic font-normal">
               Made with strategy, storytelling &amp; strong coffee in Samobor. ☕
             </p>
           </div>
