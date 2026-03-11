@@ -127,7 +127,7 @@ const HealthPharmaPages = () => {
           <div className="px-4 py-10 sm:px-8 sm:py-12 md:px-10 lg:px-[120px] lg:py-[68px]">
             <div className="mx-auto max-w-[700px] text-center">
               <h2
-                className="text-[26px] sm:text-[31px] md:text-[38px] lg:text-[42px] font-normal leading-[1.2] tracking-[-0.02em] text-[#6b5a53]"
+                className="text-[26px] sm:text-[31px] md:text-[38px] lg:text-[40px] font-normal leading-[1.2] tracking-[-0.02em] text-[#6b5a53]"
                 style={{ fontFamily: "Georgia, Times New Roman, serif" }}
               >
                 The reality of health, pharma &amp; beauty brands

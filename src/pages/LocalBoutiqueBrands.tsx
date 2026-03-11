@@ -1,39 +1,39 @@
 import React from "react";
 
 const issueList = [
-  "Fragmented brand trust",
-  "Overlapping or competing digital presences",
-  "Complex, inefficient user journeys",
-  "SEO dilution across brands and products",
-  "Strong medical authority not fully translated into digital growth",
+  "Strong product, weak brand",
+  "No clear differentiation",
+  "Low pricing power",
+  "Limited recognition beyond local markets",
+  "No system for scalable growth",
 ];
 
 const scaleList = [
-  "A clear hierarchy of brands, products and services",
-  "Digital journeys built around trust, not persuasion",
-  "SEO structures that protect long-term authority",
-  "Systems that allow expansion without fragmentation or dilution",
+  "A clear identity customers can connect with instantly",
+  "A story that turns products into meaningful choices",
+  "Visual systems that justify premium pricing",
+  "A brand foundation that supports growth beyond one product or channel",
 ];
 
 const caseCards = [
   {
     title: "Case - ",
     highlight: "Intro",
-    text: "One example of scaling a multi-brand health ecosystem without losing trust or authority.",
+    text: "One example of transforming a high-quality product into a premium, scalable brand.",
     image: "assets/Image/case-brand-img.png",
     alt: "Case intro collage",
   },
   {
     title: "Case - ",
     highlight: "Highlight Headline",
-    text: "Building a scalable medical & cosmetic ecosystem across three brands",
+    text: "From commodity to premium: Building Castania into a boutique brand.",
     image: "assets/Image/case-brand-2.png",
     alt: "Case highlight visual",
   },
   {
     title: "Case - ",
     highlight: "Summary",
-    text: "As the Poliderma ecosystem expanded across clinical services, cosmetic dermatology and skincare products, structural weaknesses became visible. The challenge wasn’t visibility, it was scaling traffic, conversions and product expansion without fragmenting trust or SEO equity.",
+    text: "Castania began as a small producer with an excellent product, competing in a low-margin, price-driven market. The challenge wasn’t quality, it was creating identity, differentiation and a system that could support long-term growth.",
     image: "assets/Image/case-brand-3.png",
     alt: "Case summary visual",
   },
@@ -81,7 +81,7 @@ const LocalBoutiqueBrands = () => {
 
                 <div>
                   <h1
-                    className="max-w-[500px] text-[28px] sm:text-[34px] md:text-[40px] lg:text-[38px] font-[400] leading-[1.08] tracking-[-0.03em] text-[#555555]"
+                    className="max-w-[450px] text-[28px] sm:text-[34px] md:text-[40px] lg:text-[38px] font-[400] leading-[1.08] tracking-[-0.03em] text-[#555555]"
                     style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                   >
                     Local & boutique brands don’t win on price. <span className="text-[#327E92]">
@@ -125,33 +125,30 @@ const LocalBoutiqueBrands = () => {
       <section className="w-full px-3 pb-6 pt-0 sm:px-5 sm:pb-8 lg:pb-10">
         <div className="mx-auto container-xl rounded-[2px]">
           <div className="px-4 py-10 sm:px-8 sm:py-12 md:px-10 lg:px-[120px] lg:py-[68px]">
-            <div className="mx-auto max-w-[700px] text-center">
+            <div className="mx-auto  text-center">
               <h2
-                className="text-[26px] sm:text-[31px] md:text-[38px] lg:text-[42px] font-normal leading-[1.2] tracking-[-0.02em] text-[#6b5a53]"
+                className="text-[26px] sm:text-[31px] md:text-[38px] lg:text-[40px] font-normal leading-[1.2] tracking-[-0.02em] text-[#6b5a53]"
                 style={{ fontFamily: "Georgia, Times New Roman, serif" }}
               >
-                The reality of health, pharma &amp; beauty brands
+                 The reality of local & boutique brands
               </h2>
 
-              <p className="mx-auto mt-3 max-w-[340px] text-[14px] sm:text-[15px] leading-[1.55] text-[#786d68]">
-                As health and beauty ecosystems grow, complexity increases,
-                fast.
+              <p className="mx-auto mt-3 max-w-[420px] text-[14px] sm:text-[15px] leading-[1.55] text-[#786d68]">
+                 Many boutique brands start with an excellent product, but struggle to grow beyond local reach.
               </p>
             </div>
 
             <div className="mt-10 sm:mt-[60px] grid gap-y-10 lg:grid-cols-[1fr_1.14fr] lg:gap-x-[70px] xl:gap-x-[110px]">
               <div className="max-w-[390px]">
                 <h3 className="text-[16px] sm:text-[17px] font-semibold leading-[1.3] text-[#4d4541]">
-                  Why it happens?
+                 Why it happens?
                 </h3>
 
                 <p
                   className="mt-4 sm:mt-5 text-[22px] sm:text-[26px] md:text-[26px] font-normal leading-[1.28] tracking-[-0.015em] text-[#6e5f58]"
                   style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                 >
-                  What starts as a single clinic, product or service often
-                  expands into multiple brands, platforms and offerings,
-                  competing for attention instead of reinforcing one another.
+                 Quality alone isn’t enough in crowded markets where everything looks similar and price becomes the default differentiator.
                 </p>
               </div>
 
@@ -183,16 +180,14 @@ const LocalBoutiqueBrands = () => {
             <div className="grid border-b border-[#e2dbd7] bg-[#F5F1EF] lg:grid-cols-[1.02fr_0.98fr]">
               <div className="px-4 py-8 sm:px-8 sm:py-10 md:px-10 lg:ps-[86px] lg:pe-[24px] lg:pb-[56px] lg:pt-[34px]">
                 <h3 className="text-[14px] sm:text-[22px] font-semibold text-[#2F888A]">
-                  What actually drives growth in health &amp; beauty
+               What actually drives growth for boutique brands
                 </h3>
 
                 <p
                   className="mt-8 sm:mt-10 md:mt-14 lg:mt-[72px] text-[22px] sm:text-[24px] md:text-[26px] font-normal leading-[1.35] tracking-[-0.015em] text-[#6f5e57]"
                   style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                 >
-                  Growth in regulated, trust-based industries doesn’t come from
-                  campaigns. It comes from structural clarity across the entire
-                  ecosystem - clinical, commercial and digital.
+                  Boutique brands don’t grow by shouting louder or discounting more.  They grow by making their value unmistakably clear, emotionally, visually and strategically.
                 </p>
               </div>
 
@@ -210,7 +205,7 @@ const LocalBoutiqueBrands = () => {
                 className="text-[22px] sm:text-[24px] md:text-[26px] font-normal leading-[1.3] tracking-[-0.015em] text-[#75645d]"
                 style={{ fontFamily: "Georgia, Times New Roman, serif" }}
               >
-                Health, pharma and beauty brands scale when they have:
+               Boutique brands scale when they have:
               </h3>
 
               <div className="mt-6 sm:mt-7 space-y-[14px]">
@@ -230,8 +225,7 @@ const LocalBoutiqueBrands = () => {
                   className="text-[20px] sm:text-[22px] font-normal leading-[1.35] tracking-[-0.015em] text-[#74625b]"
                   style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                 >
-                  That’s what we build, by treating growth as ecosystem
-                  architecture, not marketing execution.
+                 That’s what we build, by turning products into brands and brands into scalable systems.
                 </p>
               </div>
             </div>
@@ -247,10 +241,14 @@ const LocalBoutiqueBrands = () => {
               className="text-[26px] sm:text-[31px] md:text-[36px] lg:text-[40px] font-normal leading-[1.18] tracking-[-0.02em] text-[#6d5b55]"
               style={{ fontFamily: "Georgia, Times New Roman, serif" }}
             >
-              How this works in real medical &amp; cosmetic ecosystems
+             How this works in real boutique brands
             </h2>
-            <p className="mt-2 text-[15px] sm:text-[16px] font-semibold text-[#655852]">
-              (Poliderma &amp; My Skin - Case Study):
+ <p className="mt-2 text-[15px] sm:text-[16px] font-[500] text-[#555555] py-3">
+            One example of transforming a high-quality product <br></br> into a premium, scalable brand.
+            </p>
+
+            <p className="mt-2 text-[15px] sm:text-[22px] font-semibold text-[#655852]">
+              (Castania - Case Study):
             </p>
           </div>
 
@@ -283,7 +281,7 @@ const LocalBoutiqueBrands = () => {
           </div>
 
           <div className="mt-8 flex justify-center">
-            <GoldButton>See how trust-driven ecosystems scale</GoldButton>
+            <GoldButton> See how premium positioning changes everything</GoldButton>
           </div>
         </div>
       </section>
@@ -293,15 +291,14 @@ const LocalBoutiqueBrands = () => {
         <div className="mx-auto container-xl">
           <div className="mx-auto max-w-[760px] text-left lg:ml-[108px]">
             <h3 className="text-[16px] sm:text-[17px] font-semibold text-[#544b47]">
-              Why structure beats campaigns in health &amp; beauty?
+             Why meaning beats price in boutique markets?
             </h3>
 
             <p
-              className="mt-3 max-w-[620px] text-[22px] sm:text-[26px] md:text-[28px] font-normal leading-[1.33] tracking-[-0.015em] text-[#6f5e58]"
+              className="mt-3 text-[22px] sm:text-[26px] md:text-[28px] font-normal leading-[1.33] tracking-[-0.015em] text-[#6f5e58]"
               style={{ fontFamily: "Georgia, Times New Roman, serif" }}
             >
-              In health-related industries, trust compounds slowly, and breaks
-              quickly.
+             Boutique brands can’t win by copying mass-market tactics.  They win by creating meaning customers are willing to pay for.
             </p>
           </div>
 
@@ -312,12 +309,11 @@ const LocalBoutiqueBrands = () => {
                   className=" text-center text-[22px] sm:text-[24px] md:text-[26px] font-normal leading-[1.38] tracking-[-0.015em] text-[#73635b]"
                   style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                 >
-                  Instead of running isolated campaigns,{" "}
+                  Instead of competing on volume or discounts,
                   <span className="text-[#96AB3D]">
-                    we design ecosystems where medical authority, content, UX
-                    and performance reinforce one another,
+                   we build brands that compete on identity, trust and perceived value,
                   </span>{" "}
-                  allowing growth without compromising credibility.
+                allowing growth without eroding the brand.
                 </p>
               </div>
 

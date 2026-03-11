@@ -11,6 +11,10 @@ import LetsTalkPage from './pages/LetsTalkPage';
 
 import LocalBoutiqueBrands from './pages/LocalBoutiqueBrands';
 import HealthPharmaPages from './pages/HealthPharmaPages';
+import EducationELearningPage from './pages/EducationELearningPage';
+// import EducationELearningPage from './pages/EducationELearningPage';
+
+
 
 
 
@@ -44,9 +48,7 @@ export default function App(){
 
         <Route path='/health-pharma-beauty' element={<HealthPharmaPages/>}/>
         <Route path='/local-boutique-brands' element={<LocalBoutiqueBrands/>}/>
-
-
-
+        <Route path='/education-e-learning' element={<EducationELearningPage/>}/>
 
 
 
