@@ -79,20 +79,13 @@ const FooterHeading: React.FC<FooterHeadingProps> = ({ title }) => (
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-slate-200 pt-10 pb-8">
-      <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-0">
-        {/* Brand signature */}
-        {/* <div className="mb-12 flex gap-2">
-          <h5 className="text-xl font-bold text-white mb-1">hrescic.com</h5>
-          <p className="text-slate-300/80 text-lg">
-            — Creatives that keep your brand live&amp;kicking.
-          </p>
-        </div> */}
+    <footer className="text-slate-200 pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
 
         {/* Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Explore */}
-          <div className="md:col-span-2">
+          <div>
             <FooterHeading title="Explore" />
             <ul className="space-y-1.5">
               {exploreLinks.map((link) => (
@@ -104,7 +97,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Connect */}
-          <div className="md:col-span-1">
+          <div>
             <FooterHeading title="Connect" />
             <ul className="space-y-3">
               {connectDetails.map((item) => (
@@ -122,7 +115,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Follow */}
-          <div className="md:col-span-1">
+          <div>
             <FooterHeading title="Follow" />
             <div className="flex gap-4">
               {socialIcons.map((social) => (
@@ -157,42 +150,4 @@ const Footer: React.FC = () => {
   );
 };
 
-/* ---------- PAGE / APP ---------- */
-
-const App: React.FC = () => {
-  return (
-    <div
-      className="relative min-h-screen text-white"
-      style={{
-        backgroundImage:
-          "linear-gradient(to bottom, rgba(2,24,20,0.15) 0%, rgba(2,24,20,0.75) 40%, rgba(1,10,8,0.98) 85%), url('https://static.vecteezy.com/system/resources/previews/007/359/627/non_2x/close-up-of-businessman-hands-pointing-at-turnover-graph-while-discussing-it-on-wooden-desk-with-pen-in-meeting-room-business-financial-working-concept-business-people-pointing-at-business-document-free-photo.JPG')",
-        backgroundSize: "cover",
-        backgroundPosition: "center top",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="flex flex-col min-h-screen">
-        {/* Hero */}
-        <header className="flex-1 flex items-center justify-center pt-20 pb-16">
-          <div className="text-center px-4">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight max-w-4xl mx-auto">
-              {/* <span>Your </span>
-              <span className="italic font-serif">creative team’s</span>
-              <br />
-              <span>creative team™</span> */}
-              Creatives that keep your brand live and kicking.
-            </h1>
-            <button className="mt-8 inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold bg-[#6F00FF] text-white shadow-md hover:bg-[#5a00d1] transition-colors">
-              Book a demo
-            </button>
-          </div>
-        </header>
-
-        {/* Footer */}
-        <Footer />
-      </div>
-    </div>
-  );
-};
-
-export default App;
+export default Footer;

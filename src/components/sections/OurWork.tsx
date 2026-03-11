@@ -7,26 +7,30 @@ const industries = [
   {
     title: "Tourism & Travel",
     description:
-      "For brands that host the world. We help villas, boutique hotels and rental agencies boost bookings and visibility.",
+      "For brands that host the world. We help villas, boutique hotels, rental agencies, and yacht charters boost bookings and visibility.",
     linkText: "See tourism projects",
+    image: "/assets/Image/travel.png",
   },
   {
-    title: "Yacht & Charter",
+    title: "Learning & Development",
     description:
-      "For brands that sail above the noise. Booking-ready websites, AI videos and digital campaigns that stand out.",
+      "For brands that educate professionals to reach their goals. Complete marketing funnel services to capture, nurture and convert leads into course sales.",
     linkText: "Explore charter projects",
+    image: "/assets/Image/learning.png",
   },
   {
     title: "Health, Pharma & Beauty",
     description:
       "For brands that build trust through care. From clinics to pharma and beauty — clarity, empathy, credibility.",
     linkText: "See health & beauty work",
+    image: "/assets/Image/Beauty.png",
   },
   {
     title: "Local & Boutique Brands",
     description:
       "For makers, doers and dreamers. Authentic identities and digital presence for independent brands.",
     linkText: "Discover boutique projects",
+    image: "/assets/Image/local-Boutique.png",
   },
 ];
 
@@ -50,7 +54,7 @@ export default function WhoWeCreateFor() {
   return (
     <section className="bg-white py-16 md:py-18 px-4 md:px-10">
       <div className="container-xl mx-auto">
-        
+
         {/* 1. Header Text */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-[40px] font-normal text-gray-color mb-4">
@@ -63,53 +67,53 @@ export default function WhoWeCreateFor() {
         </div>
 
         {/* 2. Top Row: Industry Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {industries.map((item) => (
             <div
               key={item.title}
-              // h-[409px] REMOVED. Grid will auto-balance height.
-              className="bg-[#3E0577] rounded-2xl p-8 flex flex-col"
+              className="bg-white rounded-[16px] overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.08)] flex flex-col transition-all duration-300 hover:-translate-y-1.5"
             >
-              <h4 className="text-white text-[24px] font-semibold mb-4">
-                {item.title}
-              </h4>
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-[220px] object-cover"
+              />
+              <div className="p-6 md:p-7 flex flex-col flex-grow">
+                <h4 className="text-[#1F1F1F] text-[18px] md:text-[20px] font-semibold mb-3">
+                  {item.title}
+                </h4>
 
-              {/* === EMPTY SPACE AS REQUESTED === */}
-              <div className="h-16"></div> 
-              {/* ================================ */}
+                <p className="text-[#666666] text-[14px] md:text-[15px] leading-relaxed mb-6">
+                  {item.description}
+                </p>
 
-              <p className="text-gray-300 text-sm">
-                {item.description}
-              </p>
-              
-              {/* This flex-grow div pushes the link to the bottom */ }
-              {/* <div className="flex-grow"></div> */}
-
-              {/* mt-auto REMOVED from here */ }
-              <hr className="bg-[#6003BD] border-[#6003BD] my-3"/>
-              <a
-                href="#"
-                className="pt-3 italic text-white text-sm font-light group flex items-center gap-1 transition-all"
-              >
-                {item.linkText}
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </a>
+                <div className="mt-auto">
+                  <hr className="border-gray-200 mb-4" />
+                  <a
+                    href="#"
+                    className="text-[#3aaa35] text-[15px] font-medium group flex items-center gap-1 transition-all hover:underline"
+                  >
+                    {item.linkText}
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </a>
+                </div>
+              </div>
             </div>
           ))}
         </div>
 
         {/* 3. Bottom Row: Stats Block */}
-        <div className="bg-[#3E0577] text-white rounded-2xl p-10 md:p-14 mt-6 text-center">
+        <div className="bg-[#1A222B] text-white rounded-2xl p-10 md:p-14 mt-6 text-center">
           <h3 className="md:text-[30px] text-[24px]  font-normal max-w-3xl mx-auto py-5 md:mb-12">
-            Brands from different worlds - connected by one thing: 
-            they all want their marketing to outlive the campaign.
+            Delivering on-demand excellence
+            for brands around the world
           </h3>
 
           {/* Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-10 md:mb-12">
             {stats.map((stat) => (
               <div key={stat.value}>
-                <div className=" text-white mb-2">
+                <div className=" text-[#41C717] mb-2">
                   <h3 className=" font-normal text-4xl lg:text-[50px]">{stat.value}</h3>
                 </div>
                 <p className="text-[#fff] font-light text-[14px] max-w-[250px] mx-auto">
@@ -120,8 +124,8 @@ export default function WhoWeCreateFor() {
           </div>
 
           {/* CTA Button */}
-          <button className="bg-[#8000FF] hover:bg-[#8000FF] text-white px-6 py-3 rounded-full text-md font-medium transition-all">
-            Book a Free Demo
+          <button className="bg-[#41C717] hover:bg-[#3aa914] text-white px-6 py-3 rounded-full text-md font-medium transition-all">
+            Let’s Talk
           </button>
         </div>
 
