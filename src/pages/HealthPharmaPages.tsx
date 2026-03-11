@@ -60,7 +60,7 @@ const GoldButton = ({ children }) => (
   </button>
 );
 
-const HealthPharmaPage = () => {
+const HealthPharmaPages = () => {
   return (
     <div className="w-full bg-white overflow-x-hidden">
       {/* HERO SECTION */}
@@ -361,4 +361,4 @@ const HealthPharmaPage = () => {
   );
 };
 
-export default HealthPharmaPage;
+export default HealthPharmaPages;
