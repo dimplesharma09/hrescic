@@ -87,7 +87,7 @@ const TourismTravelPage = () => {
                                         className="max-w-[450px] text-[28px] sm:text-[34px] md:text-[40px] lg:text-[38px] font-[400] leading-[1.08] tracking-[-0.03em] text-[#fff]"
                                         style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                                     >
-                                        <span className="text-[#3EDA00]">
+                                        <span className="text-[#3EDA00] pe-2">
                                             Tourism & Travel brands
                                         </span>
                                         need more than campaigns. They need clarity that converts. Directly.

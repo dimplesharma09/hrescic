@@ -13,6 +13,7 @@ import LocalBoutiqueBrands from './pages/LocalBoutiqueBrands';
 import HealthPharmaPages from './pages/HealthPharmaPages';
 import EducationELearningPage from './pages/EducationELearningPage';
 import TourismTravelPage from './pages/TourismTravelPage';
+import MyRent from './pages/caseStudiesPage/MyRent';
 // import EducationELearningPage from './pages/EducationELearningPage';
 
 
@@ -51,8 +52,8 @@ export default function App(){
         <Route path='/local-boutique-brands' element={<LocalBoutiqueBrands/>}/>
         <Route path='/education-e-learning' element={<EducationELearningPage/>}/>
         <Route path='/tourism-travel' element={<TourismTravelPage/>}/>
-
-
+        <Route path="/case-studies/myrent" element={<MyRent />} />
+  
 
 
       

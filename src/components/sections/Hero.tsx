@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { FaPlay } from "react-icons/fa";
 
@@ -9,9 +9,18 @@ import { FaPlay } from "react-icons/fa";
  *  ----------------------------------------------------- */
 type Tile = {
   id: number;
-  // you can switch these to actual images later
   bgClass: string;
   image: string;
+};
+
+type Slot = {
+  slotId: string;
+  className: string;
+};
+
+type AssignedTile = {
+  tile: Tile;
+  slot: Slot;
 };
 
 const shuffle = <T,>(arr: T[]) => {
@@ -25,7 +34,7 @@ const shuffle = <T,>(arr: T[]) => {
 };
 
 /** -------------------------------------------------------
- *  MASONRY SHUFFLE GRID (uneven slots)
+ *  IMAGE DATA
  *  ----------------------------------------------------- */
 const tileData: Tile[] = [
   { id: 1, bgClass: "bg-[#3E0577]", image: "/assets/Image/img1.png" },
@@ -35,97 +44,137 @@ const tileData: Tile[] = [
   { id: 5, bgClass: "bg-[#4A0A8F]", image: "/assets/Image/img5.png" },
 ];
 
-type Slot = {
-  slotId: string;
-  className: string; // fixed masonry placement
-  heightClass?: string;
-};
-
+/** -------------------------------------------------------
+ *  EXACT LAYOUT LIKE SCREENSHOT
+ *  ----------------------------------------------------- */
 const slots: Slot[] = [
-  // Large rectangle top-middle
+  // left large card
   {
     slotId: "slot-large",
-    className: "col-span-3 row-span-2 col-start-2 row-start-1",
-    heightClass: "h-[220px]",
+    className: "col-start-1 row-start-1 row-span-2",
   },
-  // Small rectangle right-top
+  // top-right long
   {
-    slotId: "slot-right-top",
-    className: "col-span-1 row-span-1 col-start-5 row-start-1",
-    heightClass: "h-[100px]",
+    slotId: "slot-top-right",
+    className: "col-start-2 row-start-1 col-span-2",
   },
-  // Small rectangle right-bottom
+  // middle-right long
   {
-    slotId: "slot-right-mid",
-    className: "col-span-1 row-span-1 col-start-5 row-start-2",
-    heightClass: "h-[110px]",
+    slotId: "slot-middle-right",
+    className: "col-start-2 row-start-2 col-span-2",
   },
-  // Small square bottom-left
+  // bottom small square
   {
-    slotId: "slot-bottom-left",
-    className: "col-span-1 row-span-1 col-start-1 row-start-3",
-    heightClass: "h-[100px]",
+    slotId: "slot-bottom-square",
+    className: "col-start-2 row-start-3",
   },
-  // Long rectangle bottom-middle
+  // bottom-right long
   {
-    slotId: "slot-bottom-wide",
-    className: "col-span-3 row-span-1 col-start-2 row-start-3",
-    heightClass: "h-[100px]",
+    slotId: "slot-bottom-right",
+    className: "col-start-3 row-start-3",
   },
 ];
 
-const MasonryShuffleBlocks: React.FC = () => {
-  const timeoutRef = useRef<number | null>(null);
+const createInitialAssignments = (): AssignedTile[] => {
+  return tileData.map((tile, index) => ({
+    tile,
+    slot: slots[index],
+  }));
+};
 
-  const generateTilesForSlots = () => {
-    const shuffled = shuffle(tileData);
-    return slots.map((slot, idx) => ({
-      slot,
-      tile: shuffled[idx % shuffled.length],
+const createNextAssignments = (prev: AssignedTile[]): AssignedTile[] => {
+  let next: AssignedTile[] = [];
+  let tries = 0;
+
+  do {
+    const shuffledSlots = shuffle(slots);
+    next = tileData.map((tile, index) => ({
+      tile,
+      slot: shuffledSlots[index],
     }));
-  };
+    tries++;
+  } while (
+    tries < 8 &&
+    next.every(
+      (item, index) => item.slot.slotId === prev[index]?.slot.slotId
+    )
+  );
 
-  const [assigned, setAssigned] = useState(generateTilesForSlots());
+  return next;
+};
+
+/** -------------------------------------------------------
+ *  RIGHT SIDE ANIMATED IMAGE BLOCKS
+ *  ----------------------------------------------------- */
+const MasonryShuffleBlocks: React.FC = () => {
+  const intervalRef = useRef<number | null>(null);
+  const [assigned, setAssigned] = useState<AssignedTile[]>(createInitialAssignments());
 
   useEffect(() => {
-    const run = () => {
-      setAssigned(generateTilesForSlots());
-      timeoutRef.current = window.setTimeout(run, 3000);
-    };
-    run();
+    intervalRef.current = window.setInterval(() => {
+      setAssigned((prev) => createNextAssignments(prev));
+    }, 3000);
+
     return () => {
-      if (timeoutRef.current) window.clearTimeout(timeoutRef.current);
+      if (intervalRef.current) window.clearInterval(intervalRef.current);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="relative hidden md:grid grid-cols-5 grid-rows-3 gap-4 h-[350px] items-end">
-      {assigned.map(({ slot, tile }) => (
-        <motion.div
-          key={tile.id}
-          layout
-          transition={{ duration: 1.5, type: "spring" }}
-          className={[
-            tile.bgClass,
-            "rounded-2xl shadow-inner/10 overflow-hidden",
-            slot.className,
-            slot.heightClass,
-          ].join(" ")}
-        >
-          <img
-            src={tile.image}
-            alt=""
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
-      ))}
+    <div className="relative hidden md:flex w-full justify-center lg:justify-end right-[30px]">
+      <div
+        className="grid gap-3 lg:gap-4"
+    style={{
+  gridTemplateColumns: "300px 92px 176px",
+  gridTemplateRows: "108px 108px 108px",
+}}
+      >
+        {assigned.map(({ tile, slot }) => {
+          const showPlay =
+            slot.slotId === "slot-top-right" ||
+            slot.slotId === "slot-middle-right";
+
+          return (
+            <motion.div
+              key={tile.id}
+              layout
+              transition={{
+                layout: {
+                  duration: 1.1,
+                  type: "spring",
+                  stiffness: 180,
+                  damping: 20,
+                },
+              }}
+              className={[
+                "relative overflow-hidden rounded-[16px] shadow-inner/10",
+                tile.bgClass,
+                slot.className,
+              ].join(" ")}
+            >
+              <img
+                src={tile.image}
+                alt=""
+                className="h-full w-full object-cover"
+              />
+
+              {showPlay && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/20">
+                    <FaPlay className="ml-[2px] text-white text-xs" />
+                  </div>
+                </div>
+              )}
+            </motion.div>
+          );
+        })}
+      </div>
     </div>
   );
 };
 
 /** -------------------------------------------------------
- *  HERO (design from your first code)
+ *  HERO
  *  ----------------------------------------------------- */
 export default function Hero() {
   return (
@@ -145,7 +194,7 @@ export default function Hero() {
 
           <div className="flex items-center gap-4">
             <button className="bg-[#37C100] hover:bg-[#2d9802] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm font-medium transition-all">
-              Let's Talk
+              Let&apos;s Talk
             </button>
 
             <button className="flex items-center gap-2 bg-[#FFFFFF1A] hover:bg-[#fff] hover:text-[#000] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm transition-all">

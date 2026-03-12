@@ -102,23 +102,25 @@ export default function WhatWeDo() {
                 ? "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[400px] md:h-[560px]"
                 : "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[400px] md:h-[450px] p-6 flex flex-col justify-between"
             }
+
+            style={{backgroundImage: "url('/assets/Image/group-img.png')"}}
           >
             {/* Collapsed state overlay (logo + play button) */}
             {!expanded && (
               <>
-                <h4 className="font-light text-white text-3xl">hrescic</h4>
+                {/* <h4 className="font-light text-white text-3xl">hrescic</h4> */}
 
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button
                     onClick={() => setExpanded(true)}
-                    className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all"
+                    className="w-20 h-20 bg-black/20 hover:bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all"
                     aria-label="Play showreel"
                   >
                     <Play className="w-8 h-8 fill-white" />
                   </button>
                 </div>
 
-                <span className="text-white text-sm">Showreel, 2026</span>
+                {/* <span className="text-white text-sm">Showreel, 2026</span> */}
               </>
             )}
 
