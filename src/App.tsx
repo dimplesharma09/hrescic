@@ -16,6 +16,8 @@ import TourismTravelPage from './pages/TourismTravelPage';
 import MyRent from './pages/caseStudiesPage/MyRent';
 import ExpoLifefarandbeyond from './pages/caseStudiesPage/ExpoLifefarandbeyond';
 
+import Castania from './pages/caseStudiesPage/Castania';
+import Poliderma from './pages/caseStudiesPage/Poliderma';
 // import EducationELearningPage from './pages/EducationELearningPage';
 
 
@@ -56,6 +58,13 @@ export default function App() {
         <Route path='/tourism-travel' element={<TourismTravelPage />} />
         <Route path="/case-studies/myrent" element={<MyRent />} />
         <Route path="/case-studies/ExpoLifefarandbeyond" element={<ExpoLifefarandbeyond />} />
+        <Route path="/case-studies/castania" element={<Castania />} />
+        <Route path="/case-studies/poliderma" element={<Poliderma />} />
+
+
+        
+  
+
 
 
 

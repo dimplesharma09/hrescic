@@ -99,3 +99,23 @@ span {
 .btn-primary:hover{
   background-color: #2d9802;
 }
+
+.text-gray{
+  color: #555555 !important;
+}
+
+.bg-light-green{
+  background-color: #8DA117 !important;
+}
+
+.bg-orange{
+  background-color: #DD9842 !important;
+}
+
+.bg-orange:hover{
+  background-color: #c28d3d !important;
+}
+
+.bg-light-green:hover{
+  background-color: #98b012 !important;
+}

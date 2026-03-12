@@ -9,14 +9,26 @@ const issueList = [
 ];
 
 const scaleList = [
-    "A fragmented and unclear user journey",
-    "Content overload that obscured the value of the offer",
-    "Weak logical connections between individual services",
-    "The need for strong yet fast SEO optimization",
-    "Lack of clear market positioning beyond functional descriptions",
-
+    "A highly complex and fragile SEO system, with over 2,000 URLs on Poliderma alone",
+    "Multiple brands competing for attention instead of reinforcing one another",
+    "Long, inefficient user journeys across platforms",
+    "Strong medical authority that was not fully translated into scalable digital growth",
 
 ];
+
+const resultsGallery = {
+  topLeft: "/assets/Image/polyderma-brand-img6.png",
+  centerTall: "/assets/Image/polyderma-brand-img5.png",
+  topRight: "/assets/Image/polyderma-brand-img3.png",
+   statJar: "/assets/Image/our-approach-img.png",
+  midRight: "/assets/Image/polyderma-brand-img-4.png",
+
+  bottomCenterSmall: "/assets/Image/our-approach-img2.png",
+  bottomCenterWide: "/assets/Image/polyderma-brand-img.png",
+  bottomRight: "/assets/Image/our-approach-img1.png",
+   bottomLeft: "/assets/Image/our-approach-delivery.png",
+};
+
 
 
 
@@ -152,23 +164,23 @@ const StrategicRoleIcon = ({ type }: { type: string }) => {
 };
 
 const AlertDot = () => (
-    <span className="mt-[3px] flex h-[21px] w-[21px] min-w-[14px] items-center justify-center rounded-full bg-[#05C4D9] text-[14px] font-bold leading-none text-white">
+    <span className="mt-[3px] flex h-[21px] w-[21px] min-w-[14px] items-center justify-center rounded-full bg-[#DD9842] text-[14px] font-bold leading-none text-white">
         !
     </span>
 );
 
 const QuoteMark = () => (
-    <span className="flex h-[33px] w-[35px] min-w-[30px] items-center justify-center rounded-[6px] bg-[#ECECEC] text-[20px] font-semibold leading-none text-[#05C4D9]">
+    <span className="flex h-[33px] w-[35px] min-w-[30px] items-center justify-center rounded-[6px] bg-[#E0D4CF] text-[20px] font-semibold leading-none text-[#DD9842]">
         !
     </span>
 );
 
 
-const MyRent = () => {
+const Poliderma = () => {
     const PillButton = ({ children }: { children: React.ReactNode }) => (
         <button
             type="button"
-            className="w-fit rounded-full bg-[#49E000] px-5 sm:px-6 py-[12px] sm:py-[13px] text-[13px] sm:text-[15px] font-medium leading-none text-[#003C42] transition duration-300 hover:translate-y-[-1px] hover:shadow-[0_10px_24px_rgba(73,224,0,0.22)]"
+            className="w-fit rounded-full bg-orange px-5 sm:px-6 py-[12px] sm:py-[13px] text-[13px] sm:text-[15px] font-medium leading-none text-white transition duration-300 hover:translate-y-[-1px] hover:shadow-[0_10px_24px_rgba(73,224,0,0.22)]"
         >
             {children}
         </button>
@@ -194,22 +206,22 @@ const MyRent = () => {
     ];
 
     const CaseStudyPointIcon = () => (
-        <span className="mt-[2px] flex h-[14px] w-[14px] min-w-[14px] items-center justify-center rounded-full bg-[#49E000]">
+        <span className="mt-[2px] flex h-[14px] w-[14px] min-w-[14px] items-center justify-center rounded-full bg-[#DD9842]">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="none"
-                className="h-[16px] w-[16px]"
+                className="h-[16px] w-[16px] text-[#fff]"
             >
                 <path
                     d="M6 10H14"
-                    stroke="#003C42"
+                    stroke="#fff"
                     strokeWidth="2"
                     strokeLinecap="round"
                 />
                 <path
                     d="M11 7L14 10L11 13"
-                    stroke="#003C42"
+                    stroke="#fff"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -221,43 +233,61 @@ const MyRent = () => {
 
     const caseCards = [
         {
-            title: "A Clear and Logical User Journey",
+            title: "Surgical Website & Content Restructuring (Poliderma)",
             highlight: "Intro",
-            text: "Users needed to immediately understand:",
-            image: "/assets/Image/tourism-case-study.png",
+            text: "Poliderma required precision rather than disruption:",
+            image: "/assets/Image/polyderma-brand-img.png",
             alt: "Case intro collage",
             bg: "bg-[#003C42]",
             points: [
-                "Where they are",
-                "Who the platform is for",
-                "How services connect to one another",
-                "What the next step is for their specific business type",
+                "Cleaning and restructuring 2,000+ pages",
+                "Preserving high-ranking URLs and accumulated SEO equity",
+                "Modernizing UX without impacting Google visibility or patient trust",
+               
             ],
         },
         {
-            title: "High-Performance Structural SEO",
+            title: "Strategic Brand & Content Build (Regenerative)",
             highlight: "Headline",
-            text: "Despite the platform’s complexity, the website had to:",
-            image: "/assets/Image/tourism-brand-img1.png",
+            text: "For the regenerative medicine vertical, we delivered:",
+            image: "/assets/Image/polyderma-brand-img9.png",
             alt: "Case highlight visual",
             bg: "bg-[#003C42]",
             points: [
-                "Load fast",
-                "Be technically sound",
-                "Support long-term organic growth across markets",
+                "Full branding and positioning",
+                "Clear separation from cosmetic dermatology, without breaking authority signals",
+                "Educational, trust-driven content aligned with clinical credibility",
             ],
         },
         {
-            title: "Radical Content Reduction Without Value Loss",
+            title: "UX, Journey & Product Redesign (MySkin)",
             highlight: "Summary",
-            text: "Total content volume was reduced to approximately one fifth of the original, while preserving:",
-            image: "/assets/Image/tourism-brand-img2.png",
+            text: "The MySkin webshop was rebuilt around conversion logic and trust:",
+            image: "/assets/Image/polyderma-brand-img8.png",
             alt: "Case summary visual",
             bg: "bg-[#003C42]",
             points: [
-                "Informational clarity",
-                "Market credibility",
-                "SEO relevance",
+                "Complete UX and user-journey redesign",
+                "Dramatically shortened path from first visit to purchase",
+                "Introduction of educational and reference-based content",
+                "Product naming, packaging guidance, and portfolio structuring",
+
+            ],
+        },
+
+         {
+            title: "Marketing & Advertising Aligned With Strategy",
+            highlight: "Summary",
+            text: "All marketing activities were aligned with real operational capacity:",
+            image: "/assets/Image/polyderma-brand-img7.png",
+            alt: "Case summary visual",
+            bg: "bg-[#003C42]",
+            points: [
+                "Paid campaigns designed for actual treatment availability",
+                "Unified messaging across clinic, treatments, and products",
+                "Continuous optimization across all three brands",
+               
+
             ],
         },
     ];
@@ -268,40 +298,35 @@ const MyRent = () => {
             {/* HERO SECTION */}
             <section className="w-full px-3 py-3 sm:px-5 sm:py-5">
                 <div className="mx-auto container-xl">
-                    <div className="grid overflow-hidden rounded-[18px] bg-[#003C42] lg:grid-cols-[0.95fr_1.05fr]">
+                    <div className="grid overflow-hidden rounded-[18px] bg-[#F5F1EF] lg:grid-cols-[0.95fr_1.05fr]">
                         {/* LEFT CONTENT */}
                         <div className="order-2 flex items-center lg:order-1">
                             <div className="w-full px-4 py-8 sm:px-8 sm:py-10 lg:ps-[40px] lg:py-[42px]">
-                                <div className="mb-10 flex flex-wrap items-center gap-3 text-white">
+                                <div className="mb-10 flex flex-wrap items-center gap-3 text-[#555555]">
                                     <span className="text-[15px] font-semibold">Case Study</span>
-                                    <span className="text-white/45">|</span>
-                                    <span className="text-[13px] italic text-white/90">
+                                    <span className="text-[#DCCECA]">|</span>
+                                    <span className="text-[13px] italic text-[#555555]/90">
                                         Tourism &amp; Travel
                                     </span>
                                 </div>
 
                                 <div>
                                     <h1
-                                        className="text-[30px] sm:text-[38px] md:text-[40px] lg:text-[38px] font-normal leading-[1.08] tracking-normal text-white"
+                                        className="text-[30px] sm:text-[38px] md:text-[40px] lg:text-[38px] font-normal leading-[1.08] tracking-normal text-[#685956]"
                                         style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                                     >
-                                        <span className="text-[#49E000]">
-                                            Building Clarity at Scale:
+                                        <span className="text-[#DD9842]">
+                                           Building a scalable medical & cosmetic ecosystem across three brands,
                                         </span>
                                         <br />
-                                        How MyRent Transformed a Complex Platform into a Growth
-                                        System
+                                        without fragmenting trust, traffic, or revenue
                                     </h1>
 
-                                    <p className="mt-6 max-w-[425px] text-[15px] sm:text-[16px] leading-[1.7] text-white">
-                                        The objective was not visibility alone, but positioning
-                                        MyRent as a serious, credible player within the broader
-                                        hospitality ecosystem.
-                                    </p>
+                                  
 
                                     <div className="mt-10 flex max-w-[470px] flex-wrap gap-3">
                                         <PillButton>The Challenge</PillButton>
-                                        <PillButton>The Goals of Collaboration</PillButton>
+                                        <PillButton>Our Approach & Delivery</PillButton>
                                         <PillButton>Our Strategic Role</PillButton>
                                         <PillButton>The Results</PillButton>
                                     </div>
@@ -313,7 +338,7 @@ const MyRent = () => {
                         <div className="order-1 lg:order-2">
                             <div className="relative h-[300px] sm:h-[420px] md:h-[520px] lg:h-full lg:min-h-[488px]">
                                 <img
-                                    src="/assets/Image/my-rent-case-study.png"
+                                    src="/assets/Image/polyderma-hero-img.png"
                                     alt="MyRent case study"
                                     className="h-full w-full object-cover object-center"
                                 />
@@ -323,7 +348,7 @@ const MyRent = () => {
                                 <div className="absolute bottom-6 left-6 sm:bottom-8 sm:left-8">
                                     <button
                                         type="button"
-                                        className="inline-flex items-center gap-3 rounded-full bg-white px-5 sm:px-7 py-3 sm:py-4 text-[14px] sm:text-[15px] font-medium text-[#003C42] shadow-[0_10px_30px_rgba(0,0,0,0.12)] transition duration-300 hover:translate-y-[-1px]"
+                                        className="inline-flex items-center gap-3 rounded-full bg-orange px-5 sm:px-7 py-[13px] sm:py-[12px] text-[13px] sm:text-[15px] font-medium text-white shadow-[0_10px_30px_rgba(0,0,0,0.12)] transition duration-300 hover:translate-y-[-1px]"
                                     >
                                         Read the Case Study
                                         <span className="text-[20px] leading-none">→</span>
@@ -335,39 +360,7 @@ const MyRent = () => {
                 </div>
             </section>
 
-            {/* STATS SECTION */}
-            <section className="w-full px-3 py-8 sm:px-5 sm:py-10 lg:py-12">
-                <div className="mx-auto container-xl">
-                    <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-4 lg:gap-x-0">
-                        {stats.map((item, index) => (
-                            <div
-                                key={index}
-                                className="relative px-4 sm:px-6 lg:px-8"
-                            >
-                                <div className="lg:min-h-[112px]">
-                                    <h3
-                                        className="text-[42px] sm:text-[48px] lg:text-[50px] font-normal leading-[0.95] text-[#32B100]"
-                                        style={{ fontFamily: "Georgia, Times New Roman, serif" }}
-                                    >
-                                        {item.value}
-                                    </h3>
-                                    <p className="mt-3 max-w-[210px] text-[14px] sm:text-[15px] leading-[1.45] text-[#5B5B5B]">
-                                        {item.text}
-                                    </p>
-                                </div>
-
-                                {index !== stats.length - 1 && (
-                                    <div className="hidden lg:block absolute right-0 top-1/2 h-[64px] w-px -translate-y-1/2 bg-[#D4D4D0]" />
-                                )}
-
-                                {index !== stats.length - 1 && (
-                                    <div className="block sm:hidden mt-8 h-px w-full bg-[#D4D4D0]" />
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+  
 
 
             {/* REALITY SECTION */}
@@ -379,11 +372,11 @@ const MyRent = () => {
                                 className="text-[26px] sm:text-[31px] md:text-[38px] lg:text-[40px] font-normal leading-[1.2] tracking-[-0.02em] text-[#00353A]"
                                 style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                             >
-                                MyRent is a property management platform serving private renters and professional agencies across multiple markets.
+                             This project was not about marketing execution.
                             </h2>
 
                             <p className="mx-auto mt-6  text-[14px] sm:text-[18px] leading-[1.55] text-[#555555]">
-                                This collaboration was not a one-off project, it was a long-term, partnership-based development model designed to support continuous growth, evolving market needs, and operational scalability. The work spanned strategy, structure, UX, SEO, content, and marketing delivered through multiple collaboration models depending on context and growth phase.
+                               It was about building a coherent, scalable medical and cosmetic ecosystem, without losing trust, SEO equity, or clinical authority.
                             </p>
                         </div>
 
@@ -397,24 +390,24 @@ const MyRent = () => {
             {/* WHAT DRIVES GROWTH */}
             <section className="w-full px-3 pb-6 pt-0 sm:px-5 sm:pb-8 lg:pb-10">
                 <div className="mx-auto container-xl">
-                    <div className="overflow-hidden rounded-[14px] bg-[#F8F8F8]">
-                        <div className="grid border-b border-[#e2dbd7] bg-[#00646E] lg:grid-cols-[1.02fr_0.98fr]">
+                    <div className="overflow-hidden rounded-[14px] bg-[#EDE8E6]">
+                        <div className="grid border-b border-[#e2dbd7] bg-[#F5F1EF] lg:grid-cols-[1.02fr_0.98fr]">
                             <div className="px-4 py-8 sm:px-8 sm:py-10 md:px-10 lg:ps-[86px] lg:pe-[24px] lg:pb-[56px] lg:pt-[34px]">
-                                <h3 className="text-[14px] sm:text-[22px] font-semibold text-[#05C4D9]">
-                                    The Challenge
+                                <h3 className="text-[14px] sm:text-[22px] font-semibold text-[#DD9842]">
+                                  The Challenge
                                 </h3>
 
                                 <p
-                                    className="mt-8 sm:mt-10 md:mt-14 lg:mt-[72px] text-[22px] sm:text-[24px] md:text-[26px] font-normal leading-[1.35] tracking-[-0.015em] text-[#fff]"
+                                    className="mt-8 sm:mt-10 md:mt-14 lg:mt-[72px] text-[22px] sm:text-[24px] md:text-[26px] font-normal leading-[1.35] tracking-[-0.015em] text-[#685956]"
                                     style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                                 >
-                                    MyRent operates within a highly complex ecosystem that includes multiple user types, a wide range of interconnected services, diverse market contexts, and a strong requirement for both scalability and operational speed.
+                                  As the ecosystem grew, structural weaknesses became visible. What initially appeared as a need for marketing support revealed a deeper challenge: rapid expansion without a shared strategic backbone.
                                 </p>
                             </div>
 
                             <div className="flex items-center justify-center px-5 py-7 sm:px-8 sm:py-8 md:px-10 lg:px-[46px]">
                                 <img
-                                    src="/assets/Image/tourism-growth.png"
+                                    src="/assets/Image/polyderma-about.png"
                                     alt="Health beauty digital ecosystem examples"
                                     className="w-full max-w-[410px] object-contain"
                                 />
@@ -423,17 +416,17 @@ const MyRent = () => {
 
                         <div className="px-4 py-8 sm:px-8 sm:py-10 md:px-10 lg:px-[86px] lg:pb-[50px] lg:pt-[60px]">
                             <h3
-                                className="text-[22px] sm:text-[24px] md:text-[26px] font-normal leading-[1.3] tracking-[-0.015em] text-[#00353A]"
+                                className="text-[22px] sm:text-[24px] md:text-[26px] font-normal leading-[1.3] tracking-[-0.015em] text-[#685956]"
                                 style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                             >
-                                As the platform evolved, several structural issues emerged:
+                               Key issues included:
                             </h3>
 
                             <div className="mt-6 sm:mt-7 space-y-[14px]">
                                 {scaleList.map((item, index) => (
                                     <div key={index} className="flex items-start gap-3">
                                         <AlertDot />
-                                        <p className="text-[14px] sm:text-[15px] leading-[1.5] text-[#555555]">
+                                        <p className="text-[14px] sm:text-[15px] leading-[1.5] text-[#685956]">
                                             {item}
                                         </p>
                                     </div>
@@ -446,7 +439,7 @@ const MyRent = () => {
                                     className="text-[20px] sm:text-[22px] font-normal leading-[1.35] tracking-[-0.015em] text-[#00353A]"
                                     style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                                 >
-                                    The challenge was not building more. It was creating clarity within complexity.
+                                 This was not three separate projects. The real task was to build one coherent brand ecosystem around a single medical authority, while simultaneously scaling traffic, conversions, and product and service expansion.
                                 </p>
                             </div>
                         </div>
@@ -458,22 +451,22 @@ const MyRent = () => {
                 <div className="mx-auto container-xl">
                     <div className="text-center">
                         <h2
-                            className="text-[26px] sm:text-[31px] md:text-[36px] lg:text-[40px] font-normal leading-[1.18] tracking-[-0.02em] text-[#00353A]"
+                            className="text-[26px] sm:text-[31px] md:text-[36px] lg:text-[40px] font-normal leading-[1.18] tracking-[-0.02em] text-[#685956]"
                             style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                         >
-                            How this works in real tourism businesses
+                          Our approach and delivery
                         </h2>
 
-                        <p className="mt-2 text-[15px] sm:text-[22px] font-semibold text-[#00353A]">
-                            (My Rent - Case Study):
+                        <p className="mt-2 text-[15px] sm:text-[16px] font-normal text-[#685956]">
+                         We treated the collaboration as ecosystem architecture, not campaign-based marketing.
                         </p>
                     </div>
 
-                    <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                    <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
                         {caseCards.map((card, index) => (
                             <div
                                 key={index}
-                                className={`overflow-hidden rounded-[16px] ${card.bg} h-full`}
+                                className={`overflow-hidden rounded-[16px] bg-[#F5F1EF] h-full`}
                             >
                                 <div className="h-[210px] sm:h-[220px] w-full overflow-hidden">
                                     <img
@@ -484,11 +477,11 @@ const MyRent = () => {
                                 </div>
 
                                 <div className="px-4 sm:px-[24px] pb-5 sm:pb-[20px] pt-4 sm:pt-[16px]">
-                                    <h3 className="border-b border-[#1E6A70] pb-4 text-[16px] sm:text-[17px] font-semibold text-[#fff]">
+                                    <h3 className="border-b border-[#1E6A70] pb-4 text-[16px] sm:text-[17px] font-semibold text-[#685956]">
                                         {card.title}
                                     </h3>
 
-                                    <p className="pt-4 text-[14px] sm:text-[14  px] leading-[1.7] text-[#fff]">
+                                    <p className="pt-4 text-[14px] sm:text-[14px] leading-[1.7] text-[#685956]">
                                         {card.text}
                                     </p>
 
@@ -496,7 +489,7 @@ const MyRent = () => {
                                         {card.points?.map((point, pointIndex) => (
                                             <div key={pointIndex} className="flex items-start gap-2.5">
                                                 <CaseStudyPointIcon />
-                                                <p className="text-[13px] sm:text-[14px] leading-[1.55] text-white">
+                                                <p className="text-[13px] sm:text-[14px] leading-[1.55] text-[#685956]">
                                                     {point}
                                                 </p>
                                             </div>
@@ -511,136 +504,271 @@ const MyRent = () => {
 
 
 
-            {/* STRUCTURE BEATS CAMPAIGNS */}
-            <section className="w-full px-3 pb-6 pt-0 sm:px-5 sm:pb-8 lg:py-14">
-                <div className="mx-auto max-w-[70%]">
-                    <div className="mx-auto text-left ">
-                        <h3 className="text-[16px] sm:text-[22px] font-semibold text-[#003C42]">
-                            Our Strategic Role
-                        </h3>
+<section className="w-full px-3 pb-10 pt-2 sm:px-5 sm:pb-24 lg:py-20">
+  <div className="mx-auto container-xl max-w-[1240px]">
+    <div className="text-center">
+      <h2
+        className="text-[28px] sm:text-[34px] md:text-[40px] font-normal leading-[1.15] tracking-[-0.02em] text-[#685956]"
+        style={{ fontFamily: "Georgia, Times New Roman, serif" }}
+      >
+        The results & outcome
+      </h2>
 
-                        <p
-                            className="mt-3 text-[22px] sm:text-[26px] md:text-[26px] font-normal leading-[1.33] tracking-[-0.015em] text-[#555555]"
-                            style={{ fontFamily: "Georgia, Times New Roman, serif" }}
-                        >
-                            We operated as an external strategic and operational partner, focused on clarity, structure, and scalability. Our role included:
-                        </p>
-                    </div>
+      <p className="mx-auto mt-3 max-w-[620px] text-[14px] sm:text-[15px] leading-[1.65] text-[#685956]">
+        What emerged from this work is not a collection of brands, but a
+        single, well-orchestrated system. Each brand now plays a precise role
+        within a unified ecosystem led by one medical authority, allowing
+        growth without fragmentation or dilution of trust.
+      </p>
+    </div>
 
+    {/* DESKTOP */}
+    <div className="mt-8 hidden md:grid md:grid-cols-[1fr_1fr_1fr] gap-4 lg:gap-5">
+      {/* LEFT COLUMN */}
+      <div className="grid gap-4 lg:gap-5">
+        <div className="grid grid-cols-[0.92fr_1fr] gap-4 lg:gap-5">
+          <div className="overflow-hidden rounded-[18px] bg-[#ece7e2]">
+            <img
+              src={resultsGallery.topLeft}
+              alt="Product in hand"
+              className="h-[92px] lg:h-[96px] w-full object-cover"
+            />
+          </div>
 
-                    <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-                        {strategicRoles.map((item, index) => (
-                            <div
-                                key={index}
-                                className="rounded-[16px] bg-[#F2F2F2] px-5 py-6 sm:px-6 sm:py-7"
-                            >
-                                <div className="flex h-[58px] w-[58px] items-center justify-center rounded-[14px] bg-[#D9D9D9]">
-                                    <StrategicRoleIcon type={item.icon} />
-                                </div>
+          <div className="flex h-[92px] lg:h-[96px] flex-col justify-center rounded-[18px] bg-transparent px-2">
+            <h3
+              className="text-[30px] lg:text-[34px] font-normal leading-none text-[#d88d3d]"
+              style={{ fontFamily: "Georgia, Times New Roman, serif" }}
+            >
+              100%
+            </h3>
+            <p className="mt-2 max-w-[130px] text-[10px] lg:text-[11px] leading-[1.45] text-[#7a6d67]">
+              Fully booked for months in advance through a single ad campaign
+            </p>
+          </div>
+        </div>
 
-                                <h4 className="mt-5 text-[18px] sm:text-[19px] font-semibold text-[#003C42]">
-                                    {item.title}
-                                </h4>
+        <div className="overflow-hidden rounded-[18px] bg-[#ece7e2]">
+          <img
+            src={resultsGallery.bottomCenterWide}
+            alt="Brand content collage"
+            className="h-[92px] lg:h-[96px] w-full object-cover"
+          />
+        </div>
 
-                                <p className="mt-3 max-w-[210px] text-[14px] sm:text-[15px] leading-[1.6] text-[#666666]">
-                                    {item.text}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
+        <div className="overflow-hidden rounded-[18px] bg-[#ece7e2]">
+          <img
+            src={resultsGallery.bottomLeft}
+            alt="Customer holding product"
+            className="h-[200px] lg:h-[206px] w-full object-cover"
+          />
+        </div>
+      </div>
 
-                    <div className="mx-auto mt-8 "
+      {/* CENTER COLUMN */}
+      <div className="grid gap-4 lg:gap-5">
+        <div className="overflow-hidden rounded-[18px] bg-[#ece7e2]">
+          <img
+            src={resultsGallery.centerTall}
+            alt="Main skincare product"
+            className="h-[306px] lg:h-[312px] w-full object-cover"
+          />
+        </div>
 
-                    >
-                        <div
-                            className="overflow-hidden rounded-xl bg-[#fff]  px-4 py-14 lg:grid lg:grid-cols-[0.95fr_1.05fr] "
-                            style={{ backgroundImage: "url('/assets/Image/tourism-brand-img.png')", backgroundSize: "cover", backgroundPosition: "center" }}
-                        >
+        <div className="grid grid-cols-[0.9fr_1fr] gap-4 lg:gap-5">
+          <div className="overflow-hidden rounded-[18px] bg-[#ece7e2]">
+            <img
+              src={resultsGallery.bottomCenterSmall}
+              alt="Social post preview"
+              className="h-[94px] lg:h-[98px] w-full object-cover"
+            />
+          </div>
 
-                            {/* LEFT TEXT */}
-                            <div className="flex items-center justify-center px-5 py-8 sm:px-8 sm:py-10 lg:px-[25px]">
-                                <p
-                                    className="text-center text-[22px] sm:text-[24px] md:text-[26px] font-normal leading-[1.38] tracking-[-0.015em] text-[#fff]"
-                                    style={{ fontFamily: "Georgia, Times New Roman, serif" }}
-                                >
-                                    Rather than optimizing isolated elements, we designed
-                                    <span className="text-[#05C4D9] ps-2">
-                                        a system where all components reinforce one another.
-                                    </span>{" "}
+          <div className="overflow-hidden rounded-[18px] bg-[#ece7e2]">
+            <img
+              src={resultsGallery.bottomRight}
+              alt="Hand holding product"
+              className="h-[94px] lg:h-[98px] w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
 
-                                </p>
-                            </div>
+      {/* RIGHT COLUMN */}
+      <div className="grid gap-4 lg:gap-5">
+        <div className="overflow-hidden rounded-[18px] bg-[#ece7e2]">
+          <img
+            src={resultsGallery.topRight}
+            alt="Red product campaign visual"
+            className="h-[200px] lg:h-[206px] w-full object-cover"
+          />
+        </div>
 
+        <div className="grid grid-cols-[0.88fr_1fr] gap-4 lg:gap-5">
+          <div className="flex h-[200px] lg:h-[206px] flex-col justify-between rounded-[18px] bg-transparent py-3">
+            <div className="border-l border-[#d9ccc3] pl-4">
+              <h3
+                className="text-[34px] lg:text-[38px] font-normal leading-none text-[#d88d3d]"
+                style={{ fontFamily: "Georgia, Times New Roman, serif" }}
+              >
+                15+
+              </h3>
+              <p className="mt-2 max-w-[125px] text-[10px] lg:text-[11px] leading-[1.45] text-[#7a6d67]">
+                cosmetic products successfully designed & launched
+              </p>
+            </div>
 
-                        </div>
+            <div className="border-l border-[#d9ccc3] pl-4">
+              <h3
+                className="text-[34px] lg:text-[38px] font-normal leading-none text-[#d88d3d]"
+                style={{ fontFamily: "Georgia, Times New Roman, serif" }}
+              >
+                6X
+              </h3>
+              <p className="mt-2 max-w-[125px] text-[10px] lg:text-[11px] leading-[1.45] text-[#7a6d67]">
+                increase in website traffic for Polderm year-over-year
+              </p>
+            </div>
+          </div>
 
+          <div className="overflow-hidden rounded-[18px] bg-[#f0e5df]">
+            <img
+              src={resultsGallery.midRight}
+              alt="Skincare lifestyle visual"
+              className="h-[200px] lg:h-[206px] w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
-                    </div>
+    {/* MOBILE */}
+    <div className="mt-8 grid gap-3 md:hidden">
+      <div className="grid grid-cols-[1fr_1fr] gap-3">
+        <div className="overflow-hidden rounded-[16px] bg-[#ece7e2]">
+          <img
+            src={resultsGallery.topLeft}
+            alt="Mobile gallery 1"
+            className="h-[130px] w-full object-cover"
+          />
+        </div>
 
+        <div className="rounded-[16px] bg-transparent px-2 py-3 flex flex-col justify-center">
+          <h3
+            className="text-[34px] font-normal leading-none text-[#d88d3d]"
+            style={{ fontFamily: "Georgia, Times New Roman, serif" }}
+          >
+            100%
+          </h3>
+          <p className="mt-2 text-[11px] leading-[1.45] text-[#7a6d67]">
+            Fully booked for months in advance through a single ad campaign
+          </p>
+        </div>
+      </div>
 
-                </div>
-            </section>
+      <div className="overflow-hidden rounded-[16px] bg-[#ece7e2]">
+        <img
+          src={resultsGallery.centerTall}
+          alt="Mobile gallery 2"
+          className="h-[320px] w-full object-cover"
+        />
+      </div>
 
+      <div className="overflow-hidden rounded-[16px] bg-[#ece7e2]">
+        <img
+          src={resultsGallery.topRight}
+          alt="Mobile gallery 3"
+          className="h-[220px] w-full object-cover"
+        />
+      </div>
 
-            {/* PARTNERSHIP MODEL & RESULTS */}
-            <section className="w-full px-3 py-10 sm:px-5 sm:py-12 lg:py-16">
-                <div className="mx-auto container-xl">
-                    <div className="mx-auto max-w-[760px] text-center">
-                        <h2
-                            className="text-[28px] sm:text-[34px] md:text-[40px] font-normal leading-[1.15] tracking-[-0.02em] text-[#003C42]"
-                            style={{ fontFamily: "Georgia, Times New Roman, serif" }}
-                        >
-                            Partnership Model &amp; Results
-                        </h2>
+      <div className="overflow-hidden rounded-[16px] bg-[#ece7e2]">
+        <img
+          src={resultsGallery.bottomCenterWide}
+          alt="Mobile gallery 4"
+          className="h-[140px] w-full object-cover"
+        />
+      </div>
 
-                        <p className="mx-auto mt-4 max-w-[720px] text-[15px] sm:text-[16px] leading-[1.75] text-[#666666]">
-                            Providing additional expertise MyRent did not require in-house,
-                            without expanding their internal team. This flexible model allowed
-                            MyRent to scale efficiently, maintain control, and ensure
-                            consistent quality across initiatives. The results:
-                        </p>
-                    </div>
+      <div className="overflow-hidden rounded-[16px] bg-[#ece7e2]">
+        <img
+          src={resultsGallery.bottomLeft}
+          alt="Mobile gallery 5"
+          className="h-[250px] w-full object-cover"
+        />
+      </div>
 
-                    <div className="mx-auto mt-8 max-w-[1020px] rounded-[20px] bg-[#004B53] px-5 py-7 sm:px-8 sm:py-9 lg:mt-10 lg:px-10 lg:py-10">
-                        <div className="grid gap-y-7 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-0">
-                            {stats.map((item, index) => (
-                                <div key={index} className="relative px-3 lg:px-10">
-                                    <div className="min-h-[104px]">
-                                        <h3
-                                            className="text-[42px] sm:text-[48px] lg:text-[54px] font-normal leading-[0.95] text-[#49E000]"
-                                            style={{ fontFamily: "Georgia, Times New Roman, serif" }}
-                                        >
-                                            {item.value}
-                                        </h3>
+      <div className="grid grid-cols-[0.95fr_1fr] gap-3">
+        <div className="overflow-hidden rounded-[16px] bg-[#ece7e2]">
+          <img
+            src={resultsGallery.bottomCenterSmall}
+            alt="Mobile gallery 6"
+            className="h-[110px] w-full object-cover"
+          />
+        </div>
 
-                                        <p className="mt-3 max-w-[200px] text-[13px] sm:text-[14px] leading-[1.45] text-white/90">
-                                            {item.text}
-                                        </p>
-                                    </div>
+        <div className="overflow-hidden rounded-[16px] bg-[#ece7e2]">
+          <img
+            src={resultsGallery.bottomRight}
+            alt="Mobile gallery 7"
+            className="h-[110px] w-full object-cover"
+          />
+        </div>
+      </div>
 
-                                    {index !== stats.length - 1 && (
-                                        <div className="hidden lg:block absolute right-0 top-1/2 h-[62px] w-px -translate-y-1/2 bg-[#0F6972]" />
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <div className="grid grid-cols-[1fr_1fr] gap-3">
+        <div className="rounded-[16px] bg-transparent py-4">
+          <div className="border-l border-[#d9ccc3] pl-4">
+            <h3
+              className="text-[32px] font-normal leading-none text-[#d88d3d]"
+              style={{ fontFamily: "Georgia, Times New Roman, serif" }}
+            >
+              15+
+            </h3>
+            <p className="mt-2 text-[11px] leading-[1.45] text-[#7a6d67]">
+              cosmetic products successfully designed & launched
+            </p>
+          </div>
+
+          <div className="mt-5 border-l border-[#d9ccc3] pl-4">
+            <h3
+              className="text-[32px] font-normal leading-none text-[#d88d3d]"
+              style={{ fontFamily: "Georgia, Times New Roman, serif" }}
+            >
+              6X
+            </h3>
+            <p className="mt-2 text-[11px] leading-[1.45] text-[#7a6d67]">
+              increase in website traffic for Polderm year-over-year
+            </p>
+          </div>
+        </div>
+
+        <div className="overflow-hidden rounded-[16px] bg-[#f0e5df]">
+          <img
+            src={resultsGallery.midRight}
+            alt="Mobile gallery 8"
+            className="h-full min-h-[220px] w-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
             {/* FINAL CTA */}
-            <section className="w-full px-3 pb-[54px] pt-3 sm:px-5 sm:pb-[80px] lg:pb-[90px]">
+            <section className="w-full px-3 pb-[54px] pt-6 sm:px-5 sm:pb-[80px] lg:pb-[90px]">
                 <div className="mx-auto container-xl">
                     <div className="flex flex-col items-center justify-center px-2 sm:px-4 py-4 sm:py-8 text-center">
                         <h2
                             className=" text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-normal leading-[1.15] tracking-[-0.02em] text-[#555555]"
                             style={{ fontFamily: "Georgia, Times New Roman, serif" }}
                         >
-                            Marketing Excellence That Works On Your Terms
+                           Marketing Excellence That Works On Your Terms
                         </h2>
 
                         <p className="mt-4 max-w-2xl text-[15px] sm:text-[16px] leading-[1.6] text-[#555555]">
-                            Because great marketing doesn’t stop — it evolves. Whether you need a website that books guests, a video that tells your story, or a full creative system that scales with you — we’re here to help your brand stay relevant, consistent and alive.
+                          Because great marketing doesn’t stop — it evolves. Whether you need a website that books guests, a video that tells your story, or a full creative system that scales with you — we’re here to help your brand stay relevant, consistent and alive.
                         </p>
 
                         <div className="mt-7 flex w-full max-w-[420px] flex-col items-center gap-3">
@@ -656,4 +784,4 @@ const MyRent = () => {
     );
 };
 
-export default MyRent;
+export default Poliderma;
