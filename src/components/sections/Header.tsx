@@ -233,7 +233,7 @@ const megaMenuData: Record<
                     {
                         title: "Platform Clarity",
                         description: "Scaling a tourism platform without losing structure or bookings.",
-                        href: "/case-studies/platform-clarity",
+                        href: "/tourism-travel",
                     },
                 ],
             },
@@ -244,7 +244,7 @@ const megaMenuData: Record<
                     {
                         title: "Ecosystem Scale",
                         description: "Turning fragmented education products into one scalable system.",
-                        href: "/case-studies/ecosystem-scale",
+                        href: "/education-e-learning",
                     },
                 ],
             },
@@ -255,7 +255,7 @@ const megaMenuData: Record<
                     {
                         title: "Trust Architecture",
                         description: "Building a multi-brand medical ecosystem without diluting authority.",
-                        href: "/case-studies/trust-architecture",
+                        href: "/health-pharma-beauty",
                     },
                 ],
             },
@@ -266,7 +266,7 @@ const megaMenuData: Record<
                     {
                         title: "Premium Positioning",
                         description: "Transforming a quality product into a premium, scalable brand.",
-                        href: "/case-studies/premium-positioning",
+                        href: "/local-boutique-brands",
                     },
                 ],
             },
