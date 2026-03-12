@@ -10,7 +10,7 @@ import OurWork from "@/components/sections/OurWork";
 import SliderBrand from "@/components/sections/SliderBrand";
 import BrandPartnerSec from "@/components/sections/BrandPartnerSec";
 import CTASection from "@/components/sections/CTASection";
-import IdeaInSightPage from "@/components/sections/IdeaInSightPage";
+// import IdeaInSightPage from "@/components/sections/IdeaInSightPage";
 import HomeHeroSec from "@/components/sections/HomeHeroSec";
 
 const pettyProducts: Product[] = [
@@ -34,12 +34,12 @@ export default function HomePage() {
     <main>
       <Hero />
       {/* <HomeHeroSec/> */}
-      <SliderBrand/>
-      <AboutStrip/>
-      <OurWork/>
-      <BrandPartnerSec/>
+      <SliderBrand />
+      <AboutStrip />
+      <OurWork />
+      <BrandPartnerSec />
       <CTASection />
-      <IdeaInSightPage/>
+      {/* <IdeaInSightPage/> */}
     </main>
   );
 }

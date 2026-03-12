@@ -72,7 +72,7 @@ const WhatWeDoSection = () => {
         </h3>
         <a
           href="#"
-          className="text-purple-600 hover:text-purple-800 flex items-center group"
+          className="text-[#41C717] hover:text-[#3aa914] flex items-center group"
         >
           Learn more
           <svg
