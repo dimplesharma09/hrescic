@@ -426,7 +426,7 @@ export default function Castania() {
       </section>
 
       {/* OUR STRATEGIC ROLE */}
-      <section className="w-full px-3 pb-6 pt-0 sm:px-5 sm:pb-8 lg:py-14">
+      <section className="w-full px-7 pb-6 pt-0 sm:px-5 sm:pb-8 lg:py-14">
         <div className="mx-auto md:max-w-[70%]">
           <div className="mx-auto">
             <h3 className="text-[16px] sm:text-[18px] font-semibold text-[#00353A]">
@@ -469,7 +469,7 @@ export default function Castania() {
                 key={index}
                 className="rounded-[14px] bg-[#F3F3F3] p-4 sm:p-5"
               >
-                <div className="flex h-[44px] w-[44px] items-center justify-center overflow-hidden rounded-[10px] bg-[#D9D9D9]">
+                <div className="flex h-[80px] w-[80px] items-center justify-center overflow-hidden rounded-[10px] ">
                   {item.image ? (
                     <img
                       src={item.image}
@@ -495,7 +495,7 @@ export default function Castania() {
           <div className="mt-3 rounded-[14px] bg-[#F3F3F3] p-4 sm:p-5">
             <div className="grid gap-4 md:grid-cols-[320px_1fr] md:items-center">
               <div className="flex items-center gap-3">
-                <div className="h-[44px] w-[44px] overflow-hidden rounded-[10px] bg-[#D9D9D9]">
+                <div className="h-[70px] w-[80px] overflow-hidden rounded-[10px] ">
                   <img
                     src="/assets/Image/castania-brand-img1.svg"
                     alt="Marketing and communication framework"
@@ -520,7 +520,7 @@ export default function Castania() {
         </div>
       </section>
 
-<section className="w-full px-3 pb-10 pt-2 sm:px-5 sm:pb-14 lg:pb-16">
+<section className="w-full px-3 pb-10 pt-2 sm:px-5 sm:pb-14 lg:pt-16 lg:pb-28">
   <div className="mx-auto container-xl max-w-[1240px]">
     <div className="text-center">
       <h2
@@ -737,6 +737,30 @@ export default function Castania() {
     </div>
   </div>
 </section>
+
+
+ {/* FINAL CTA */}
+            <section className="w-full px-3 pb-[54px] pt-6 sm:px-5 sm:pb-[80px] lg:pb-[90px]">
+                <div className="mx-auto container-xl">
+                    <div className="flex flex-col items-center justify-center px-2 sm:px-4 py-4 sm:py-8 text-center">
+                        <h2
+                            className=" text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-normal leading-[1.15] tracking-[-0.02em] text-[#555555]"
+                            style={{ fontFamily: "Georgia, Times New Roman, serif" }}
+                        >
+                         Marketing Excellence That Works On Your Terms
+                        </h2>
+
+                        <p className="mt-4 max-w-2xl text-[15px] sm:text-[16px] leading-[1.6] text-[#555555]">
+                       Because great marketing doesn’t stop — it evolves. Whether you need a website that books guests, a video that tells your story, or a full creative system that scales with you — we’re here to help your brand stay relevant, consistent and alive.
+                        </p>
+
+                        <div className="mt-7 flex w-full max-w-[420px] flex-col items-center gap-3">
+                            <button className="btn-primary">Let’s Talk</button>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
     </div>
   );
 }

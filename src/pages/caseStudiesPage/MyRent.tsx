@@ -513,7 +513,7 @@ const MyRent = () => {
 
             {/* STRUCTURE BEATS CAMPAIGNS */}
             <section className="w-full px-3 pb-6 pt-0 sm:px-5 sm:pb-8 lg:py-14">
-                <div className="mx-auto max-w-[70%]">
+                <div className="mx-auto md:max-w-[70%] lg:max-w-[70%] max-w-[90%]">
                     <div className="mx-auto text-left ">
                         <h3 className="text-[16px] sm:text-[22px] font-semibold text-[#003C42]">
                             Our Strategic Role
@@ -613,7 +613,7 @@ const MyRent = () => {
                                             {item.value}
                                         </h3>
 
-                                        <p className="mt-3 max-w-[200px] text-[13px] sm:text-[14px] leading-[1.45] text-white/90">
+                                        <p className="mt-3 md:max-w-[200px] lg:max-w-[200px] text-[13px] sm:text-[14px] leading-[1.45] text-white/90">
                                             {item.text}
                                         </p>
                                     </div>

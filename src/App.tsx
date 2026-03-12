@@ -56,9 +56,12 @@ export default function App() {
         <Route path='/local-boutique-brands' element={<LocalBoutiqueBrands />} />
         <Route path='/education-e-learning' element={<EducationELearningPage />} />
         <Route path='/tourism-travel' element={<TourismTravelPage />} />
+
         <Route path="/case-studies/myrent" element={<MyRent />} />
-        <Route path="/case-studies/ExpoLifefarandbeyond" element={<ExpoLifefarandbeyond />} />
+
+        <Route path="/case-studies/expo-life-far-beyond" element={<ExpoLifefarandbeyond />} />
         <Route path="/case-studies/castania" element={<Castania />} />
+        
         <Route path="/case-studies/poliderma" element={<Poliderma />} />
 
 
