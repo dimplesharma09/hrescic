@@ -14,6 +14,8 @@ import HealthPharmaPages from './pages/HealthPharmaPages';
 import EducationELearningPage from './pages/EducationELearningPage';
 import TourismTravelPage from './pages/TourismTravelPage';
 import MyRent from './pages/caseStudiesPage/MyRent';
+import ExpoLifefarandbeyond from './pages/caseStudiesPage/ExpoLifefarandbeyond';
+
 // import EducationELearningPage from './pages/EducationELearningPage';
 
 
@@ -53,7 +55,7 @@ export default function App() {
         <Route path='/education-e-learning' element={<EducationELearningPage />} />
         <Route path='/tourism-travel' element={<TourismTravelPage />} />
         <Route path="/case-studies/myrent" element={<MyRent />} />
-
+        <Route path="/case-studies/ExpoLifefarandbeyond" element={<ExpoLifefarandbeyond />} />
 
 
 
