@@ -21,8 +21,8 @@ import MyRent from './pages/caseStudiesPage/MyRent';
 
 
 
-export default function App(){
-  const [view, setView] = React.useState<'home'|'product'>('home')
+export default function App() {
+  const [view, setView] = React.useState<'home' | 'product'>('home')
   const leftNav = [
     {
       label: "Noževi",
@@ -42,24 +42,25 @@ export default function App(){
       <Header
       />
       <Routes>
-        <Route path='/' element={<HomePage/>}/>
-        <Route path='/what-we-do' element={<WebPage/>}/>
-        <Route path='/who-we-create-for' element={<WorkPage/>}/>
-        <Route path='/ideas-insights' element={<IdeasInsights/>}/>
-        <Route path='/lets-talk' element={<LetsTalkPage/>}/>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/what-we-do' element={<WebPage />} />
+        <Route path='/who-we-create-for' element={<WorkPage />} />
+        <Route path='/ideas-insights' element={<IdeasInsights />} />
+        <Route path='/lets-talk' element={<LetsTalkPage />} />
 
-        <Route path='/health-pharma-beauty' element={<HealthPharmaPages/>}/>
-        <Route path='/local-boutique-brands' element={<LocalBoutiqueBrands/>}/>
-        <Route path='/education-e-learning' element={<EducationELearningPage/>}/>
-        <Route path='/tourism-travel' element={<TourismTravelPage/>}/>
+        <Route path='/health-pharma-beauty' element={<HealthPharmaPages />} />
+        <Route path='/local-boutique-brands' element={<LocalBoutiqueBrands />} />
+        <Route path='/education-e-learning' element={<EducationELearningPage />} />
+        <Route path='/tourism-travel' element={<TourismTravelPage />} />
         <Route path="/case-studies/myrent" element={<MyRent />} />
-  
 
 
-      
-       
+
+
+
+
       </Routes>
-   
+
       <Footer />
     </div>
   )
