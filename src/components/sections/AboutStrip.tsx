@@ -164,7 +164,7 @@ export default function WhatWeDo() {
                 <hr className="mt-auto" />
                 <a
                   href={service.href}
-                  className="text-purple-600 hover:text-purple-800 text-sm font-medium pt-2 group flex items-center gap-1 transition-all"
+                  className="text-[#41C717] hover:text-[#3aa914] text-sm font-medium pt-2 group flex items-center gap-1 transition-all"
                 >
                   {service.linkText}
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
