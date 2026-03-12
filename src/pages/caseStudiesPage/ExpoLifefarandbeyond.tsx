@@ -11,7 +11,7 @@ const ExpoLifefarandbeyond = () => {
       <section className="w-full max-w-[1200px] mx-auto bg-[#242b33] rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-lg">
 
         {/* Left Content */}
-        <div className="flex-1 p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-start relative">
+        <div className="flex-1 p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-start relative py-16">
 
           <div className="absolute top-6 sm:top-8 md:top-10 left-6 sm:left-8 md:left-12 lg:left-16 xl:left-20 flex flex-wrap items-center gap-2 text-white/70 text-[11px] sm:text-xs md:text-sm font-light">
             <span className="text-white font-[600] tracking-wide text-[22px]">Work</span>
@@ -21,22 +21,22 @@ const ExpoLifefarandbeyond = () => {
             </span>
           </div>
 
-          <p
-            className="text-[35px] leading-[120%] text-white pt-20"
+          <h2
+            className="text-[25px] md:text-[35px] leading-[120%] text-white pt-20 md:pe-14 pe-4 "
             style={{ fontFamily: '"Optima", sans-serif' }}
           >
             The packaging served as
-            <br />
+           
             the initial reference point;
-            <br />
+          
             the full visual direction and
-            <br />
+           
             all supporting assets were
-            <br />
+         
             developed and produced in
-            <br />
+         
             my studio.
-          </p>
+          </h2>
         </div>
 
         {/* Right Image */}
