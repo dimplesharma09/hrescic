@@ -23,7 +23,7 @@ type MegaSection = {
 const navItems = [
     { name: "What We Do", href: "/what-we-do", megaKey: "whatWeDo" },
     { name: "Who We Create For", href: "/who-we-create-for", megaKey: "whoWeCreateFor" },
-    // { name: "Brands We Partner With", href: "/brands-we-partner-with", megaKey: "brands" },
+    { name: "Brands We Partner With", href: "/brands-we-partner-with", megaKey: "brands" },
     // { name: "Ideas & Insights", href: "/ideas-insights", megaKey: "ideas" },
     { name: "Let's Talk", href: "/lets-talk", megaKey: "contact" },
 ];
@@ -55,7 +55,7 @@ const megaMenuData: Record<
         sections: [
             {
                 title: "Branding & Strategy", // Main Category (Left Column)
-                href: "/what-we-do/branding-strategy",
+                href: "what-we-do",
                 subcategories: [
                     {
                         title: "Brand Strategy & Positioning",
@@ -77,7 +77,7 @@ const megaMenuData: Record<
             },
             {
                 title: "Web & Digital", // Main Category (Left Column)
-                href: "/what-we-do/web-design-development",
+                href: "/what-we-do",
                 subcategories: [
                     {
                         title: "UX/UI & Web Design",
@@ -99,7 +99,7 @@ const megaMenuData: Record<
             },
             {
                 title: "Content & Marketing", // Main Category (Left Column)
-                href: "/what-we-do/marketing",
+                href: "/what-we-do",
                 subcategories: [
                     {
                         title: "Content System",
@@ -121,7 +121,7 @@ const megaMenuData: Record<
             },
             {
                 title: "AI Video Production", // Main Category (Left Column)
-                href: "/what-we-do/ai-and-video",
+                href: "/what-we-do",
                 subcategories: [
                     {
                         title: "Video for Social and Ads",
@@ -275,51 +275,91 @@ const megaMenuData: Record<
 
     brands: {
         title: "Brands We Partner With",
-        subtitle:
-            "Case study sekcija; SEO: marketing results, case studies, agency portfolio.",
+        subtitle: "Case study sekcija; SEO: marketing results, case studies, agency portfolio.",
         items: [
             {
-                title: "Case Studies",
-                description:
-                    "Pregled suradnji i rezultata koje smo ostvarili za klijente.",
+                title: "CASE STUDIES",
                 cards: [
                     {
-                        title: "Featured Projects",
-                        description:
-                            "Najzanimljiviji projekti – rezultati, brojke i konkretni primjeri rasta.",
-                        href: "/brands-we-partner-with/case-studies",
+                        title: "CDC",
+                        description: "Web Design Case Study - 2025",
+                        href: "/case-studies/cdc",
+                    },
+                    {
+                        title: "MyRent",
+                        description: "Web Design Case Study - 2025",
+                        href: "/case-studies/myrent",
+                    },
+                    {
+                        title: "Castania",
+                        description: "Web Design Case Study - 2025",
+                        href: "/case-studies/castania",
+                    },
+                    {
+                        title: "Poliderma",
+                        description: "Web Design Case Study - 2025",
+                        href: "/case-studies/poliderma",
+                    },
+                    {
+                        title: "L'Oreal",
+                        description: "Web Design Case Study - 2025",
+                        href: "/case-studies/loreal",
+                    },
+                    {
+                        title: "Karlo Ban",
+                        description: "Web Design Case Study - 2025",
+                        href: "/case-studies/karlo-ban",
+                    },
+                    {
+                        title: "NAVADA",
+                        description: "Web Design Case Study - 2025",
+                        href: "/case-studies/navada",
+                    },
+                    {
+                        title: "IDS",
+                        description: "Web Design Case Study - 2025",
+                        href: "/case-studies/ids",
+                    },
+                    {
+                        title: "Minglanje V Klanjcu",
+                        description: "Web Design Case Study - 2025",
+                        href: "/case-studies/minglanje-v-klanjcu",
+                    },
+                    {
+                        title: "EXPO - Life far and beyond",
+                        description: "Web Design Case Study - 2025",
+                        href: "case-studies/expo-life-far-beyond",
                     },
                 ],
             },
         ],
     },
-
-    ideas: {
-        title: "Ideas & Insights",
-        subtitle:
-            "Blog / resource center; SEO: marketing insights, creative strategy, content ideas.",
-        items: [
-            {
-                title: "Insights Hub",
-                description:
-                    "Blog i resursi: SEO, content marketing, kreativna strategija.",
-                cards: [
-                    {
-                        title: "Articles",
-                        description:
-                            "Praktični vodiči i insighti o brandingu, marketingu i AI alatima.",
-                        href: "/ideas-insights/articles",
-                    },
-                    {
-                        title: "Resources",
-                        description:
-                            "Templatei, checkliste i materijali koji pomažu vašem marketing timu.",
-                        href: "/ideas-insights/resources",
-                    },
-                ],
-            },
-        ],
-    },
+    // ideas: {
+    //     title: "Ideas & Insights",
+    //     subtitle:
+    //         "Blog / resource center; SEO: marketing insights, creative strategy, content ideas.",
+    //     items: [
+    //         {
+    //             title: "Insights Hub",
+    //             description:
+    //                 "Blog i resursi: SEO, content marketing, kreativna strategija.",
+    //             cards: [
+    //                 {
+    //                     title: "Articles",
+    //                     description:
+    //                         "Praktični vodiči i insighti o brandingu, marketingu i AI alatima.",
+    //                     href: "/ideas-insights/articles",
+    //                 },
+    //                 {
+    //                     title: "Resources",
+    //                     description:
+    //                         "Templatei, checkliste i materijali koji pomažu vašem marketing timu.",
+    //                     href: "/ideas-insights/resources",
+    //                 },
+    //             ],
+    //         },
+    //     ],
+    // },
 
     contact: {
         title: "Let’s Talk",
