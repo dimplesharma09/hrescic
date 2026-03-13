@@ -426,7 +426,7 @@ const Header = () => {
 
                             {/* CTA Button */}
                             <Link
-                                to="/lets-talk/book-demo"
+                                to="/lets-talk"
                                 className="bg-[#37C100] hover:bg-[#2d9802] text-white px-6 py-3 rounded-full text-sm font-medium transition-all"
                             >
                                 Book a Free Demo
@@ -602,7 +602,7 @@ const Header = () => {
                         ))}
 
                         <Link
-                            to="/lets-talk/book-demo"
+                            to="/lets-talk"
                             onClick={() => setMobileOpen(false)}
                             className="bg-[#6F00FF] hover:bg-[#8000FF] text-white w-full py-3 rounded-full text-sm font-medium text-center transition-all"
                         >

@@ -19,7 +19,9 @@ const IdeasInsights = () => {
 
         <div className="mt-7 flex md:flex-col sm:flex-row items-center justify-center md:gap-3 gap-2">
           {/* Primary button */}
-          <button
+
+          <a href="/lets-talk">
+  <button
             className="
               md:px-7 px-5 py-3 rounded-full
               bg-[#8000FF] text-white font-medium text-sm md:text-[16px]
@@ -30,9 +32,11 @@ const IdeasInsights = () => {
           >
             Book a Free Demo
           </button>
+          </a>
 
           {/* Secondary button */}
-          <button
+         
+  <button
             className="
              md:px-7 px-5 py-3 rounded-full
               bg-[#F3EEFF] text-[#3D0377] font-medium text-sm md:text-[16px]

@@ -9,16 +9,18 @@ const CTASections: React.FC = () => {
           <h4 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#2F2A4A] mb-4">
             Ready to build your own creative system?
           </h4>
-
+  
           <p className="text-sm md:text-base text-[#5A5672] mb-1 py-2">
             Let’s make your brand clear, consistent and impossible to ignore.
           </p>
 
           <div className="flex  items-center gap-4 md:flex-nowrap md:gap-4 mt-6">
             {/* Primary CTA */}
+             <a href="/lets-talk">
             <button className="bg-[#6F00FF] hover:bg-[#5a00d1] text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-medium transition-all ">
               Book a Free Demo
             </button>
+            </a>
 
             {/* Secondary CTA */}
             <button className="flex items-center gap-2 bg-white hover:bg-[#fff] shadow-sm text-[#2F2A4A] px-5 py-3 rounded-full text-xs md:text-sm font-medium transition-all">
