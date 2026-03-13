@@ -14,11 +14,11 @@ import {
 
 // Explore links
 const exploreLinks = [
-  { label: "What We Do", href: "#" },
-  { label: "Who We Create For", href: "#" },
+  { label: "What We Do", href: "/what-we-do" },
+  { label: "Who We Create For", href: "/who-we-create-for" },
   { label: "Brands We Partner With", href: "#" },
-  { label: "Ideas & Insights", href: "#" },
-  { label: "Let’s Talk", href: "#" },
+  { label: "Ideas & Insights", href: "/Ideas-Insights" },
+  { label: "Let’s Talk", href: "/lets-talk" },
 ];
 
 // Connect details
@@ -85,9 +85,9 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
 
 
-<div className="mb-10">
-  <img src="../assets/Image/hrescic-logo-white.svg"></img>
-</div>
+        <div className="mb-10">
+          <img src="../assets/Image/hrescic-logo-white.svg"></img>
+        </div>
         {/* Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Explore */}
