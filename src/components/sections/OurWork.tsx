@@ -124,9 +124,11 @@ export default function WhoWeCreateFor() {
           </div>
 
           {/* CTA Button */}
+           <a href="/lets-talk">
           <button className="bg-[#41C717] hover:bg-[#3aa914] text-white px-6 py-3 rounded-full text-md font-medium transition-all">
             Let’s Talk
           </button>
+          </a>
         </div>
 
       </div>
