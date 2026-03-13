@@ -18,8 +18,10 @@ import ExpoLifefarandbeyond from './pages/caseStudiesPage/ExpoLifefarandbeyond';
 
 import Castania from './pages/caseStudiesPage/Castania';
 import Poliderma from './pages/caseStudiesPage/Poliderma';
+import MinglanjeVKlanjcu from './pages/caseStudiesPage/Minglanje-V-Klanjcu';
 // import EducationELearningPage from './pages/EducationELearningPage';
-
+import IDS from './pages/caseStudiesPage/IDS';
+import NavadaPage from './pages/caseStudiesPage/NavadaPage';
 
 
 
@@ -61,12 +63,16 @@ export default function App() {
 
         <Route path="/case-studies/expo-life-far-beyond" element={<ExpoLifefarandbeyond />} />
         <Route path="/case-studies/castania" element={<Castania />} />
-        
+
         <Route path="/case-studies/poliderma" element={<Poliderma />} />
 
+        <Route path="/case-studies/minglanje-v-klanjcu" element={<MinglanjeVKlanjcu />} />
+        <Route path="/case-studies/ids" element={<IDS />} />
+        <Route path="/case-studies/navada" element={<NavadaPage />} />
 
-        
-  
+
+
+
 
 
 
