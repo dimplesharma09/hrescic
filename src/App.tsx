@@ -63,24 +63,21 @@ export default function App() {
         <Route path='/education-e-learning' element={<EducationELearningPage />} />
         <Route path='/tourism-travel' element={<TourismTravelPage />} />
 
+
         <Route path="/case-studies/myrent" element={<MyRent />} />
-
         <Route path="/case-studies/expo-life-far-beyond" element={<ExpoLifefarandbeyond />} />
-       
         <Route path="/case-studies/castania" element={<Castania />} />
-
         <Route path="/case-studies/poliderma" element={<Poliderma />} />
+
+
 
         <Route path="/case-studies/minglanje-v-klanjcu" element={<MinglanjeVKlanjcu />} />
         <Route path="/case-studies/ids" element={<IDS />} />
         <Route path="/case-studies/navada" element={<NavadaPages />} />
-
-        <Route path="/case-studies/poliderma" element={<Poliderma />} />
-
+        {/* <Route path="/case-studies/poliderma" element={<Poliderma />} /> */}
          <Route path="/case-studies/loreal" element={<LorealPage />} />
          <Route path="/case-studies/karlo-ban" element={<KarloBanPage />} />
-         <Route path="/case-studies/navada" element={<NavadaPage />} />
-
+         {/* <Route path="/case-studies/navada" element={<NavadaPage />} /> */}
          <Route path="/case-studies/cdc" element={<CDCPage />} />
 
 

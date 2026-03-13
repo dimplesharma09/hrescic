@@ -20,7 +20,7 @@ const IDS = () => {
                     <div className="flex-1 pt-16 pb-20 px-8 sm:px-12 md:px-16 lg:px-[80px] flex flex-col justify-start z-20">
 
                         {/* Top Meta Info */}
-                        <div className="flex items-center gap-4 text-[14px] text-[#444] mb-14">
+                        <div className="flex items-center gap-4 text-[20px] text-[#444] mb-14">
                             <span className="font-semibold text-[#333]">Work</span>
 
                             <div className="w-[1px] h-4 bg-gray-300"></div>
