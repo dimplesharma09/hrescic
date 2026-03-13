@@ -19,9 +19,13 @@ import ExpoLifefarandbeyond from './pages/caseStudiesPage/ExpoLifefarandbeyond';
 import Castania from './pages/caseStudiesPage/Castania';
 import Poliderma from './pages/caseStudiesPage/Poliderma';
 import MinglanjeVKlanjcu from './pages/caseStudiesPage/Minglanje-V-Klanjcu';
+import LorealPage from './pages/caseStudiesPage/LorealPage';
+import KarloBanPage from './pages/caseStudiesPage/KarloBanPage';
+import NavadaPage from './pages/caseStudiesPage/NavadaPages';
 // import EducationELearningPage from './pages/EducationELearningPage';
 import IDS from './pages/caseStudiesPage/IDS';
-import NavadaPage from './pages/caseStudiesPage/NavadaPage';
+import NavadaPages from './pages/caseStudiesPage/NavadaPages';
+import CDCPage from './pages/caseStudiesPage/CDCPage';
 
 
 
@@ -62,13 +66,23 @@ export default function App() {
         <Route path="/case-studies/myrent" element={<MyRent />} />
 
         <Route path="/case-studies/expo-life-far-beyond" element={<ExpoLifefarandbeyond />} />
+       
         <Route path="/case-studies/castania" element={<Castania />} />
 
         <Route path="/case-studies/poliderma" element={<Poliderma />} />
 
         <Route path="/case-studies/minglanje-v-klanjcu" element={<MinglanjeVKlanjcu />} />
         <Route path="/case-studies/ids" element={<IDS />} />
-        <Route path="/case-studies/navada" element={<NavadaPage />} />
+        <Route path="/case-studies/navada" element={<NavadaPages />} />
+
+        <Route path="/case-studies/poliderma" element={<Poliderma />} />
+
+         <Route path="/case-studies/loreal" element={<LorealPage />} />
+         <Route path="/case-studies/karlo-ban" element={<KarloBanPage />} />
+         <Route path="/case-studies/navada" element={<NavadaPage />} />
+
+         <Route path="/case-studies/cdc" element={<CDCPage />} />
+
 
 
 

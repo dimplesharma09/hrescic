@@ -119,3 +119,10 @@ span {
 .bg-light-green:hover{
   background-color: #98b012 !important;
 }
+
+/* karlo ban page */
+@media (max-width: 767px) {
+.container-xl{
+  padding:0px !important;
+}
+}
