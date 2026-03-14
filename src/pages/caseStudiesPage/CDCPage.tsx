@@ -287,7 +287,6 @@ const CDCPage = () => {
                     
                 </div>
             </section>
-    
         </div>
     );
 };
