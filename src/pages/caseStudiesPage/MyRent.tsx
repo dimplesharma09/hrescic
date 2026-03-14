@@ -266,7 +266,7 @@ const MyRent = () => {
     return (
         <div className="w-full">
             {/* HERO SECTION */}
-      
+
 
 
             <section className="w-full px-3 pt-3 sm:px-5 sm:pt-5">
@@ -292,7 +292,7 @@ const MyRent = () => {
 
                                     <h1
                                         className="hero-title text-[30px] sm:text-[38px] md:text-[40px] lg:text-[38px] font-normal leading-[1.08] tracking-normal text-white"
-                                      
+
                                     >
                                         <span className="text-[#49E000]">
                                             Building Clarity at Scale:
@@ -302,9 +302,9 @@ const MyRent = () => {
                                         System
                                     </h1>
 
-                                    <p className="mt-6 max-w-[425px] text-[15px] sm:text-[16px] leading-[1.7] text-white">
-                                        The objective was not visibility alone, but positioning
-                                        MyRent as a serious, credible player within the broader
+                                    <p className="mt-6 text-[15px] sm:text-[16px] leading-[1.7] text-white font-light ">
+                                        The objective was not visibility alone, but positioning <br className="hidden md:block" />
+                                        MyRent as a serious, credible player within the <br className="hidden md:block" /> broader
                                         hospitality ecosystem.
                                     </p>
 
@@ -355,7 +355,7 @@ const MyRent = () => {
                                 <div className="lg:min-h-[112px]">
                                     <h3
                                         className="text-[42px] sm:text-[48px] lg:text-[50px] font-normal leading-[0.95] text-[#32B100]"
-                                        
+
                                     >
                                         {item.value}
                                     </h3>
@@ -609,7 +609,7 @@ const MyRent = () => {
                         </p>
                     </div>
 
-                    <div className="mx-auto mt-8 max-w-[1020px] rounded-[20px] bg-[#004B53] px-5 py-7 sm:px-8 sm:py-9 lg:mt-10 lg:px-10 lg:py-10">
+                    <div className="mx-auto mt-8 container-xl rounded-[20px] bg-[#004B53] px-5 py-7 sm:px-8 sm:py-9 lg:mt-10 lg:px-10 lg:py-10">
                         <div className="grid gap-y-7 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-0">
                             {stats.map((item, index) => (
                                 <div key={index} className="relative px-3 lg:px-10">

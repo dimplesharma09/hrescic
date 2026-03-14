@@ -188,14 +188,14 @@ const CDCPage = () => {
         <div className="mx-auto container-xl">
           <div className="grid overflow-hidden rounded-[18px] bg-[#F8EDF2] lg:grid-cols-[1fr_1fr]">
             <div className="order-2 flex items-center lg:order-1">
-              <div className="w-full px-4 py-7 sm:px-6 sm:py-9 md:px-8 md:py-10 lg:px-[58px] lg:py-[54px]">
+              <div className="w-full px-4 pb-7 sm:px-6 sm:pb-9 md:px-8 md:pb-10 lg:px-[58px] lg:pb-[54px] pt-7">
                 <div className="mb-8 flex flex-wrap items-center justify-between gap-4 sm:mb-10 lg:mb-14">
                   <div className="flex flex-wrap items-center gap-2 text-[13px] text-[#1B1642]">
-                    <span className="text-[13px] font-semibold text-[#16123F] sm:text-[14px] md:text-[15px]">
+                    <span className="text-[13px] font-semibold text-[#16123F] sm:text-[14px] md:text-[22px]">
                       Case Study
                     </span>
                     <span className="text-[#8F8A96]">|</span>
-                    <span className="text-[12px] italic text-[#16123F] sm:text-[13px]">
+                    <span className="text-[12px] italic text-[#16123F] sm:text-[14px]">
                       e-Learning
                     </span>
                   </div>
@@ -220,7 +220,7 @@ const CDCPage = () => {
                 </div>
 
                 <h1
-                  className="max-w-[470px] text-[28px] font-normal leading-[1.08] tracking-[-0.02em] text-transparent sm:text-[34px] md:text-[38px] lg:text-[40px]"
+                  className=" hero-title max-w-[470px] text-[28px] font-normal leading-[1.08] tracking-[-0.02em] text-transparent sm:text-[34px] md:text-[38px] lg:text-[40px]"
                   style={{
                     fontFamily: "Georgia, Times New Roman, serif",
                     backgroundImage:

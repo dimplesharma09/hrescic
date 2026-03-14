@@ -52,13 +52,13 @@ const brands = [
 
 const SliderBrand = () => {
   return (
-    <div className="bg-white py-16 container-xl">
+    <div className="bg-white py-16 container-xl ">
       <div className=" mx-auto">
         {/* ---------- Bottom Brand Slider ---------- */}
         <div className="flex justify-center italic text-sm font-medium text-[#555555]">
-        <span className="text-center pb-6">Trusted by Industry Professionals From:</span>
+        <span className="text-center pb-6 pt-6">Trusted by Industry Professionals From:</span>
         </div>
-        <div className="pt-8">
+        <div className="pt-8 px-4 md:px-0">
           <Swiper
             slidesPerView={8}
             spaceBetween={30}

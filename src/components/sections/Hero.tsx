@@ -193,11 +193,9 @@ export default function Hero() {
           </p>
 
           <div className="flex items-center gap-4">
-            <a href="/lets-talk">
             <button className="bg-[#37C100] hover:bg-[#2d9802] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm font-medium transition-all">
               Let&apos;s Talk
             </button>
-            </a>
 
             <button className="flex items-center gap-2 bg-[#3D0377] hover:bg-[#3D0388] hover:text-[#fff] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm transition-all">
               <FaPlay className="w-4 h-4" /> Play Showreel

@@ -9,12 +9,32 @@
 
 @font-face {
   font-family: "Optima";
-  src: url(../../public//assets//Optima.ttf) format("truetype");
-  src: url(../../public//assets//Optima.ttf) format("truetype");
-
-  font-weight: normal;
+  src: url("/public/assets/OPTIMA.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
+
+/* @font-face {
+  font-family: "Optima";
+  src: url("/public/assets/Optima-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+/* @font-face {
+  font-family: "Optima";
+  src: url("/assets/Optima Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Optima";
+  src: url("/assets/OPTIMA_B.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+} */
 
 /* @font-face {
   font-family: "Optima";
@@ -132,6 +152,9 @@ span {
 
 /* karlo ban page */
 @media (max-width: 767px) {
+
+ 
+
 .container-xl{
   padding:0px !important;
 }
@@ -139,6 +162,6 @@ span {
 
 .hero-title span{
   font-family: "Optima", sans-serif !important;
-  font-size: 40px !important;
+  font-size: 40px;
 }
 
