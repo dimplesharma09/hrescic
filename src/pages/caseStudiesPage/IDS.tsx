@@ -1,167 +1,143 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from "react";
 
 const IDS = () => {
-    // Scroll to top on mount
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    // State banayenge video ko toggle karne ke liye
-    const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
-    return (
-        <div className="bg-white min-h-screen pt-24 pb-24 sm:pt-28 sm:pb-32">
-            <div className="w-full max-w-[1320px] mx-auto px-4 md:px-8 flex flex-col gap-16 sm:gap-24 lg:gap-32">
-                {/* --- Section 1: Hero --- */}
-                {/* Container needs top/bottom margin to allow phone to pop out */}
-                <section className="w-full bg-[#f5f5f5] rounded-[24px] flex flex-col lg:flex-row relative min-h-[560px] overflow-visible">
+  return (
+    <div className="min-h-screen px-4 md:px-0  bg-white pt-10 sm:pt-20 md:pt-24 lg:pt-12 pb-14 sm:pb-20 md:pb-24">
 
-                    {/* Left Content */}
-                    <div className="flex-1 pt-16 pb-20 px-8 sm:px-12 md:px-16 lg:px-[80px] flex flex-col justify-start z-20">
+        {/* Section 1: Hero */}
+        <section className="container-xl">
+            <div className="relative overflow-hidden rounded-[18px] bg-[#f3f3f3] sm:rounded-[22px] lg:rounded-[24px]">
+          <div className="grid min-h-[420px] grid-cols-1 lg:min-h-[560px] lg:grid-cols-[0.92fr_1.08fr]">
+            {/* Left Content */}
+            <div className="relative z-20 flex flex-col justify-start ps-5 pb-8 pt-6 sm:ps-8 sm:pb-10 sm:pt-8 md:ps-10 md:pb-12 md:pt-10 lg:ps-[56px] lg:pb-16 lg:pt-8 xl:ps-[58px]">
+              {/* Top Meta */}
+              <div className="mb-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] text-[#5a5a5a] sm:mb-10 sm:text-[12px] md:mb-32 md:text-[12.5px]">
+                <span className="font-semibold text-[#353535] text-[22px]">Work</span>
+                <span className="h-3.5 w-px bg-[#cfcfcf]" />
+                <span className="italic text-[#7b7b7b] text-[14px]">
+                  Web UX &amp; UI, Illustration, Video Direction
+                </span>
+              </div>
 
-                        {/* Top Meta Info */}
-                        <div className="flex items-center gap-4 text-[20px] text-[#444] mb-14">
-                            <span className="font-semibold text-[#333]">Work</span>
+              {/* Logo */}
+              <div className="mb-5 h-8 w-fit sm:h-10 md:h-11 lg:mb-6">
+                <img
+                  src="/assets/Image/Mask group.png"
+                  alt="ODO Logo"
+                  className="h-full w-auto object-contain"
+                />
+              </div>
 
-                            <div className="w-[1px] h-4 bg-gray-300"></div>
-
-                            <span className="italic text-gray-500">
-                                Web UX & UI, Illustration, Video Direction
-                            </span>
-                        </div>
-
-                        {/* Logo */}
-                        <div className="w-auto h-12 mb-6">
-                            <img
-                                src="/assets/Image/Mask group.png"
-                                alt="ODO Logo"
-                                className="h-full w-auto object-contain"
-                            />
-                        </div>
-
-                        {/* Heading */}
-                        <h1
-                            className="text-[34px] sm:text-[40px] md:text-[46px] lg:text-[40px] leading-[1.15] text-[#6f6f6f] font-light max-w-[620px]"
-                            style={{ fontFamily: '"Optima", "Times New Roman", serif' }}
-                        >
-                            Coaching.com e-learning
-                            <br />
-                            Platform, creative direction,
-                            <br />
-                            video production, and
-                            <br />
-                            delivery system
-                        </h1>
-                    </div>
-
-                    {/* Right Images */}
-                    <div className="flex-1 relative flex items-center justify-center pr-8 sm:pr-12 md:pr-16 lg:pr-[80px]">
-
-
-                        {/* Background Screens */}
-                        <div className="absolute right-0 top-0 h-full z-0">
-                            <img
-                                src="/assets/Image/Rectangle 1740 - Sepia 1.png"
-                                alt="Background Screens"
-                                className="w-full h-full object-cover object-right-top"
-
-                            />
-                        </div>
-
-                        {/* Phone Mockup */}
-                        {/* <div className="relative z-30 w-[300px] sm:w-[320px] md:w-[340px] lg:w-[360px] drop-shadow-[0_40px_60px_rgba(0,0,0,0.25)]">
-                            <img
-                                src="/assets/Image/ids-phone-mockup.png"
-                                alt="Mobile App Screens"
-                                className="w-full h-auto object-contain"
-                            />
-                        </div> */}
-
-                    </div>
-                </section>
-
-                {/* --- Section 2: Video & Text --- */}
-                <section className="w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16 lg:gap-24">
-                    {/* Left: Video/Animation Square */}
-                    <div className="relative w-full md:w-[50%] lg:w-[45%] flex flex-col justify-center rounded-3xl overflow-hidden aspect-square bg-gray-100">
-
-                        {!isVideoPlaying ? (
-                            <>
-                                <img
-                                    src="/assets/Image/Rectangle 1817.png"
-                                    alt="IDS Showreel Content"
-                                    className="w-full h-full object-cover absolute inset-0"
-                                />
-
-                                {/* Play Button Overlay (Center) */}
-                                <button
-                                    onClick={() => setIsVideoPlaying(true)}
-                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 md:w-16 md:h-16 bg-[#D83669] rounded-full flex items-center justify-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer z-10"
-                                    aria-label="Play Video"
-                                >
-                                    <svg
-                                        className="w-6 h-6 text-white ml-1"
-                                        fill="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </button>
-
-                                {/* Bottom Text Overlay */}
-                                <div className="absolute bottom-4 left-5 md:bottom-6 md:left-6 z-10 pointer-events-none">
-                                    <p className="text-white text-[10px] sm:text-[11px] md:text-xs font-light tracking-wide drop-shadow-md">
-                                        IDS showreel storyboard, video direction, in cooperation with hrescic.com
-                                    </p>
-                                </div>
-                            </>
-                        ) : (
-                            /* Video Iframe */
-                            <iframe
-                                className="w-full h-full absolute inset-0"
-                                src="https://www.youtube.com/embed/L_LUpnjgPso?autoplay=1"
-                                title="Showreel Video"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
-                        )}
-
-                    </div>
-
-                    {/* Right: Paragraph Text */}
-                    <div className="w-full md:w-[50%] lg:w-[45%] flex flex-col justify-center">
-                        <p className="text-[14px] sm:text-[15px] md:text-[16px] leading-[1.8] text-[#333333] font-sans max-w-[480px]">
-                            Creative Director with 20+ years of experience across education, consulting, healthcare, and tourism, turning complex business goals into high-performing creative systems that grow long-term value and revenue.
-                        </p>
-                    </div>
-                </section>
-
-                {/* --- Section 3: Bottom Full Width Image (Right Aligned) --- */}
-                <section className="w-full flex justify-end">
-                    {/* Diagonal floating tablets mockup */}
-                    {/* Added 'relative' class here so the absolute text positions correctly */}
-                    <div className="relative w-full md:w-[70%] lg:w-[65%] rounded-[24px] overflow-hidden drop-shadow-xl bg-gray-100">
-                        <img
-                            src="/assets/Image/Rectangle 1818.png"
-                            alt="Tablet UI Mockups"
-                            className="w-full h-auto object-cover"
-                        />
-                        {/* Gradient Overlay: Text ko highlight karne ke liye bottom me dark shadow */}
-                        <div className="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none"></div>
-
-                        {/* Text Overlay */}
-                        <div className="absolute bottom-4 left-5 md:bottom-6 md:left-6">
-                            <p className="text-white text-[13px] sm:text-[14px] md:text-base font-medium tracking-wide">
-                                Web UX & UI
-                            </p>
-                        </div>
-                    </div>
-
-                </section>
-
+              {/* Heading */}
+              <h1
+                className="text-[28px] font-light leading-[1.1] text-[#6c6c6c] sm:text-[34px] md:text-[38px]  lg:text-[38px] xl:text-[38px]"
+                style={{ fontFamily: '"Optima", "Times New Roman", serif' }}
+              >
+                Coaching.com e-learning
+                Platform, creative direction,
+                video production, and
+                delivery system
+              </h1>
             </div>
-        </div>
-    );
+
+            {/* Right Visual */}
+            <div className="relative min-h-[260px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-full">
+              <div className="absolute inset-0 lg:left-auto lg:w-full">
+                <img
+                  src="/assets/Image/ids-images.png"
+                  alt="IDS visual collage"
+                  className="h-full w-full object-cover object-center sm:object-right-top lg:object-contain lg:object-right-top"
+                />
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        {/* Section 2 */}
+        <section className="container-xl" >
+            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-[1.02fr_0.98fr] md:gap-10 lg:gap-16 my-6">
+          {/* Video Block */}
+          <div className="relative aspect-square w-full overflow-hidden rounded-[18px] bg-[#efefef] sm:rounded-[22px] lg:rounded-[24px]">
+            {!isVideoPlaying ? (
+              <>
+                <img
+                  src="/assets/Image/Rectangle 1817.png"
+                  alt="IDS Showreel Content"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+
+                <button
+                  onClick={() => setIsVideoPlaying(true)}
+                  aria-label="Play video"
+                  className="absolute left-1/2 top-1/2 z-10 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#d83a6b] shadow-[0_14px_30px_rgba(216,58,107,0.28)] transition duration-300 hover:scale-105 sm:h-14 sm:w-14"
+                >
+                  <svg
+                    className="ml-0.5 h-5 w-5 text-white sm:h-6 sm:w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+
+                <div className="pointer-events-none absolute bottom-3 left-3 z-10 sm:bottom-4 sm:left-4 md:bottom-5 md:left-5">
+                  <p className="text-[8px] font-light tracking-wide text-white drop-shadow-md sm:text-[9px] md:text-[10px]">
+                    IDS showreel storyboard, video direction, in cooperation with
+                    hrescic.com
+                  </p>
+                </div>
+              </>
+            ) : (
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/L_LUpnjgPso?autoplay=1"
+                title="Showreel Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            )}
+          </div>
+
+          {/* Right Text */}
+          <div className="flex items-center md:justify-center lg:justify-start">
+            <p className=" text-[14px] leading-[1.7] text-[#373737] sm:text-[15px] md:text-[22px] lg:text-[20px]">
+              Creative Director with 20+ years of experience across education,
+              consulting, healthcare, and tourism, turning complex business goals
+              into high-performing creative systems that grow long-term value and
+              revenue.
+            </p>
+          </div>
+</div>
+        </section>
+
+        {/* Section 3 */}
+        <section className="flex container-xl justify-start md:justify-end" >
+          <div className="relative w-full overflow-hidden rounded-[18px] bg-[#efefef] sm:rounded-[22px] md:w-[62%] lg:w-[52%] lg:rounded-[24px]">
+            <img
+              src="/assets/Image/Rectangle 1818.png"
+              alt="Tablet UI Mockups"
+              className="h-auto w-full object-cover"
+            />
+
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/70 via-black/25 to-transparent sm:h-20 md:h-24" />
+
+            <div className="absolute bottom-3 left-4 sm:bottom-4 sm:left-5 md:bottom-5 md:left-6">
+              <p className="text-[11px] font-medium tracking-wide text-white sm:text-[12px] md:text-[13px]">
+                Web UX &amp; UI
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+  );
 };
 
 export default IDS;

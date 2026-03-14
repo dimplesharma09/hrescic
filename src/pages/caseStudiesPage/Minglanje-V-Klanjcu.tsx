@@ -4,9 +4,10 @@ const MinglanjeVKlanjcu = () => {
     return (
         <div className="w-full bg-white pb-20 font-inter">
             {/* Top Hero Section */}
-            <section className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row mt-4 sm:mt-8 mb-16 sm:mb-24 rounded-2xl overflow-hidden shadow-sm">
+            <section className="container-xl">
+                <div className='grid lg:grid-cols-[1fr_1fr] px-4 md:px-0 py-6'>
                 {/* Left Text */}
-                <div className="flex-1 bg-[#F4F3F0] p-8 sm:p-12 md:p-16 lg:p-20 relative flex flex-col justify-start">
+                <div className="flex-1 bg-[#F4F3F0] p-8 sm:px-12 md:px-16 lg:px-20 relative flex flex-col justify-start md:rounded-s-[15px] rounded-t-[15px]">
                     <div className="flex items-center gap-2 text-[12px] sm:text-[14px] text-gray-800 font-medium mb-16 sm:mb-24">
                         <span className="font-semibold">Case Study</span>
                         <span className="w-[1px] h-3 bg-gray-400"></span>
@@ -15,35 +16,10 @@ const MinglanjeVKlanjcu = () => {
 
                     <div className="mt-8">
                         <div className="relative w-20 sm:w-24 mb-6">
-                            {/* SVG Background */}
-                            <svg viewBox="0 0 100 120" className="w-full h-auto stroke-[#4A4A4A] fill-none" strokeWidth="2" strokeMiterlimit="10">
-                                {/* Outer frame */}
-                                <path d="M 12 110 h 15 V 45 A 23 23 0 0 1 73 45 V 110 h 15" strokeLinecap="square" />
-                                {/* Inner window */}
-                                <path d="M 32 45 A 18 18 0 0 1 68 45 Z" strokeLinejoin="miter" />
-                                {/* Bars - clipped */}
-                                <g clipPath="url(#windowClip)">
-                                    <line x1="38" y1="20" x2="38" y2="45" strokeWidth="1.5" />
-                                    <line x1="44" y1="20" x2="44" y2="45" strokeWidth="1.5" />
-                                    <line x1="50" y1="20" x2="50" y2="45" strokeWidth="1.5" />
-                                    <line x1="56" y1="20" x2="56" y2="45" strokeWidth="1.5" />
-                                    <line x1="62" y1="20" x2="62" y2="45" strokeWidth="1.5" />
-                                </g>
-                                <defs>
-                                    <clipPath id="windowClip">
-                                        <path d="M 32 45 A 18 18 0 0 1 68 45 Z" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            {/* Text inside */}
-                            <div className="absolute inset-0 top-[40%] flex flex-col items-center justify-start text-center leading-[1.3] text-[#4A4A4A] text-[13px] sm:text-[15px] tracking-[0.16em]" style={{ fontFamily: '"Optima", "Times New Roman", serif' }}>
-                                <span className="ml-[0.16em] font-[500]">SA</span>
-                                <span className="ml-[0.16em] font-[500]">MO</span>
-                                <span className="ml-[0.16em] font-[500]">BOR</span>
-                            </div>
+                         <img src="/assets/Image/Samobor-logo.svg" alt="" />
                         </div>
 
-                        <h2 className="text-[24px] sm:text-[28px] md:text-[32px] text-gray-800 leading-[1.3] font-light mt-4" style={{ fontFamily: '"Optima", "Times New Roman", serif' }}>
+                        <h2 className="text-[24px] sm:text-[28px] md:text-[32px] text-[#555555] leading-[1.3] font-light mt-4 pb-14 " style={{ fontFamily: '"Optima", "Times New Roman", serif' }}>
                             One whole street decided to<br className="hidden sm:block" />
                             have the festival of their own,<br className="hidden sm:block" />
                             so we were honored when<br className="hidden sm:block" />
@@ -53,11 +29,11 @@ const MinglanjeVKlanjcu = () => {
                 </div>
 
                 {/* Right Image */}
-                <div className="flex-1 relative min-h-[400px] md:min-h-auto">
+                <div className="flex-1 relative  md:min-h-auto ">
                     <img
                         src="/assets/Image/Group 6356927.png"
                         alt="Festival Celebration"
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="absolute inset-0 w-full h-full object-cover rounded-e-[15px]"
                     />
                     {/* Text overlay on image */}
                     {/* <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -70,30 +46,31 @@ const MinglanjeVKlanjcu = () => {
                         </div>
                     </div> */}
                 </div>
+                </div>
             </section>
 
             {/* Middle Section 1 (Illustration & Text) */}
-            <section className="w-full max-w-[1000px] mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-20 px-4 md:px-0 mb-20 sm:mb-32">
+            <section className=" container-xl ">
+                <div className='w-full px-4 mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-20 px-4 md:px-0 mb-20 sm:mb-32'>
                 {/* Sketch Image */}
                 <div className="flex-1 flex justify-center flex-col items-center relative">
                     <img
-                        src="/assets/Image/Group 6356909.png"
+                        src="/assets/Image/Samobor-imgs1.png"
                         alt="Celjski dom, Celje illustration"
-                        className="w-full max-w-[400px] object-contain"
+                        className="w-full object-contain"
                     />
-                    <p className="text-gray-400 text-[11px] sm:text-[12px] mt-6 tracking-wide text-center">
-                        Celjski dom, Celje, 1914
-                    </p>
+               
                 </div>
 
                 {/* Description Text */}
-                <div className="flex-[0.8] text-gray-800 text-[13px] sm:text-[14px] md:text-[15px] leading-relaxed font-light">
-                    <p className="mb-6">
+                <div className="flex-[0.8] text-gray-800 text-[13px] sm:text-[14px] md:text-[20px] leading-relaxed font-light ">
+                    <p className="mb-6 md:text-[20px] max-w-[380px]">
                         Branding a place with such a deep, layered past is both a privilege and a challenge — especially when its history lives more in fragments, memories, and traces than in formal records.
                     </p>
-                    <p>
+                    <p className="md:text-[20px] max-w-[380px]">
                         Scarcity of documentation doesn't mean absence; in fact, what surfaced proved far richer and more evocative than expected.
                     </p>
+                </div>
                 </div>
             </section>
 
@@ -101,7 +78,7 @@ const MinglanjeVKlanjcu = () => {
             <section className="w-full max-w-[1200px] mx-auto px-4 md:px-0 mb-16 sm:mb-24">
                 <div className="w-full bg-[#f9f9f9] rounded-[20px] p-10 sm:p-16 md:p-24 flex flex-col items-center shadow-sm">
                     <div className="max-w-[500px] w-full flex flex-col items-start text-left">
-                        <p className="text-[20px] sm:text-[24px] md:text-[28px] text-gray-800 italic leading-[1.3] font-light" style={{ fontFamily: '"Optima", "Times New Roman", serif' }}>
+                        <p className="text-[20px] sm:text-[24px] md:text-[28px] text-[#444444] italic leading-[1.3] font-light" style={{ fontFamily: '"Optima", "Times New Roman", serif' }}>
                             “Samobor je grad malih uličica,
                             mirisnog cvijeća, i ljudi koji vole
                             svoj mir.”
@@ -111,21 +88,21 @@ const MinglanjeVKlanjcu = () => {
                             <div className="w-8 h-8 rounded-full bg-gray-300 overflow-hidden flex items-center justify-center">
                                 <img src="/assets/Image/Lang 1.png" alt="Milan Lang" className="w-full h-full object-cover grayscale opacity-70" />
                             </div>
-                            <span className="text-[12px] sm:text-[14px] font-[700] tracking-[0.2em] text-gray-900 uppercase">
+                            <span className="text-[12px] sm:text-[14px] font-[700] tracking-[0.5em] text-gray-900 uppercase">
                                 MILAN LANG
                             </span>
                         </div>
                     </div>
                 </div>
 
-                <p className="text-gray-400 text-[10px] sm:text-[11px] mt-4 px-2 tracking-wide font-light">
+                <p className="text-[#555555] text-[10px] sm:text-[14px] mt-4 px-2 tracking-wide font-normal ">
                     Quote from the Book “Samobor”, Milan Lang, XXXX , about the nature of the people from Samobor.
                 </p>
             </section>
 
             {/* The Result Section */}
             <section className="w-full max-w-[1200px] mx-auto px-4 lg:px-0 flex flex-col items-center">
-                <h3 className="text-[20px] sm:text-[24px] text-gray-600 mb-10 sm:mb-12 text-center" style={{ fontFamily: '"Optima", "Times New Roman", serif' }}>
+                <h3 className="text-[20px] sm:text-[40px] text-[#555555] mb-10 sm:mb-6 text-center" style={{ fontFamily: '"Optima", "Times New Roman", serif' }}>
                     The result:
                 </h3>
 

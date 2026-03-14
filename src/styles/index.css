@@ -10,9 +10,19 @@
 @font-face {
   font-family: "Optima";
   src: url(../../public//assets//Optima.ttf) format("truetype");
+  src: url(../../public//assets//Optima.ttf) format("truetype");
+
   font-weight: normal;
   font-style: normal;
 }
+
+/* @font-face {
+  font-family: "Optima";
+  src: url("/assets/Optima-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+} */
 
 h1,
 h2,
@@ -126,3 +136,9 @@ span {
   padding:0px !important;
 }
 }
+
+.hero-title span{
+  font-family: "Optima", sans-serif !important;
+  font-size: 40px !important;
+}
+

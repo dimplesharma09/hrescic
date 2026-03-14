@@ -266,24 +266,33 @@ const MyRent = () => {
     return (
         <div className="w-full">
             {/* HERO SECTION */}
-            <section className="w-full px-3 py-3 sm:px-5 sm:py-5">
+      
+
+
+            <section className="w-full px-3 pt-3 sm:px-5 sm:pt-5">
                 <div className="mx-auto container-xl">
-                    <div className="grid overflow-hidden rounded-[18px] bg-[#003C42] lg:grid-cols-[0.95fr_1.05fr]">
-                        {/* LEFT CONTENT */}
-                        <div className="order-2 flex items-center lg:order-1">
-                            <div className="w-full px-4 py-8 sm:px-8 sm:py-10 lg:ps-[40px] lg:py-[42px]">
-                                <div className="mb-10 flex flex-wrap items-center gap-3 text-white">
-                                    <span className="text-[15px] font-semibold">Case Study</span>
-                                    <span className="text-white/45">|</span>
-                                    <span className="text-[13px] italic text-white/90">
+                    <section className="overflow-hidden rounded-[18px] bg-[#003C42] shadow-[0_10px_40px_rgba(0,0,0,0.04)] sm:rounded-[22px]">
+                        <div className="grid lg:grid-cols-[1fr_1fr]">
+                            <div className="flex min-h-[360px] flex-col px-5 py-5 sm:px-8 sm:py-7 lg:min-h-[500px] lg:px-16 lg:py-6">
+                                <div className="flex flex-wrap items-center gap-2 text-[11px] text-[#7d7772]">
+                                    {/* <div className="w-[34px] sm:w-[38px]">
+                    <ArchLogo className="h-auto w-full" lineClass="stroke-[#2b2622]" />
+                    </div> */}
+                                    <span className="text-[22px] font-semibold text-[#fff]">
+                                        Case Study
+                                    </span>
+                                    <span className="h-3 w-px bg-[#bcb5af]" />
+                                    <span className="text-[14px] text-[#fff] italic">
                                         Tourism &amp; Travel
                                     </span>
                                 </div>
 
-                                <div>
+                                <div className="my-auto pt-10 sm:pt-20 lg:pl-0">
+
+
                                     <h1
-                                        className="text-[30px] sm:text-[38px] md:text-[40px] lg:text-[38px] font-normal leading-[1.08] tracking-normal text-white"
-                                        style={{ fontFamily: "Georgia, Times New Roman, serif" }}
+                                        className="hero-title text-[30px] sm:text-[38px] md:text-[40px] lg:text-[38px] font-normal leading-[1.08] tracking-normal text-white"
+                                      
                                     >
                                         <span className="text-[#49E000]">
                                             Building Clarity at Scale:
@@ -299,7 +308,7 @@ const MyRent = () => {
                                         hospitality ecosystem.
                                     </p>
 
-                                    <div className="mt-10 flex max-w-[470px] flex-wrap gap-3">
+                                    <div className="mt-8 flex max-w-[470px] flex-wrap gap-3 mb-8">
                                         <PillButton>The Challenge</PillButton>
                                         <PillButton>The Goals of Collaboration</PillButton>
                                         <PillButton>Our Strategic Role</PillButton>
@@ -307,51 +316,50 @@ const MyRent = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="relative min-h-[280px] lg:min-h-[500px]">
+                                <div className="relative h-[300px] sm:h-[420px] md:h-[520px] lg:h-full lg:min-h-[488px]">
+                                    <img
+                                        src="/assets/Image/my-rent-case-study.png"
+                                        alt="MyRent case study"
+                                        className="h-full w-full object-cover object-center"
+                                    />
+
+                                    <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,60,66,0.08)_0%,rgba(0,60,66,0)_24%,rgba(0,0,0,0.03)_100%)]" />
+
+                                    <div className="absolute bottom-6 left-6 sm:bottom-8 sm:left-8">
+                                        <button
+                                            type="button"
+                                            className="inline-flex items-center gap-3 rounded-full bg-white px-5 sm:px-7 py-3 sm:py-4 text-[14px] sm:text-[15px] font-medium text-[#003C42] shadow-[0_10px_30px_rgba(0,0,0,0.12)] transition duration-300 hover:translate-y-[-1px]"
+                                        >
+                                            Read the Case Study
+                                            <span className="text-[20px] leading-none">→</span>
+                                        </button>
+                                    </div>
+                                </div>              </div>
                         </div>
-
-                        {/* RIGHT IMAGE */}
-                        <div className="order-1 lg:order-2">
-                            <div className="relative h-[300px] sm:h-[420px] md:h-[520px] lg:h-full lg:min-h-[488px]">
-                                <img
-                                    src="/assets/Image/my-rent-case-study.png"
-                                    alt="MyRent case study"
-                                    className="h-full w-full object-cover object-center"
-                                />
-
-                                <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,60,66,0.08)_0%,rgba(0,60,66,0)_24%,rgba(0,0,0,0.03)_100%)]" />
-
-                                <div className="absolute bottom-6 left-6 sm:bottom-8 sm:left-8">
-                                    <button
-                                        type="button"
-                                        className="inline-flex items-center gap-3 rounded-full bg-white px-5 sm:px-7 py-3 sm:py-4 text-[14px] sm:text-[15px] font-medium text-[#003C42] shadow-[0_10px_30px_rgba(0,0,0,0.12)] transition duration-300 hover:translate-y-[-1px]"
-                                    >
-                                        Read the Case Study
-                                        <span className="text-[20px] leading-none">→</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </section>
 
+
             {/* STATS SECTION */}
             <section className="w-full px-3 py-8 sm:px-5 sm:py-10 lg:py-12">
-                <div className="mx-auto container-xl">
+                <div className="mx-auto container">
                     <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-4 lg:gap-x-0">
                         {stats.map((item, index) => (
                             <div
                                 key={index}
-                                className="relative px-4 sm:px-6 lg:px-8"
+                                className="relative px-4 sm:px-6 lg:ps-8 lg:pe-0"
                             >
                                 <div className="lg:min-h-[112px]">
                                     <h3
                                         className="text-[42px] sm:text-[48px] lg:text-[50px] font-normal leading-[0.95] text-[#32B100]"
-                                        style={{ fontFamily: "Georgia, Times New Roman, serif" }}
+                                        
                                     >
                                         {item.value}
                                     </h3>
-                                    <p className="mt-3 max-w-[210px] text-[14px] sm:text-[15px] leading-[1.45] text-[#5B5B5B]">
+                                    <p className="mt-3 max-w-[210px] text-[14px] sm:text-[14px] leading-[1.45] text-[#5B5B5B]">
                                         {item.text}
                                     </p>
                                 </div>

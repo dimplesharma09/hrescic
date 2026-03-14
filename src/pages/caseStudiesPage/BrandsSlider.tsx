@@ -59,7 +59,7 @@ const BrandsSlider = () => {
         <div className="flex justify-center italic text-sm font-medium text-[#555555]">
         <span className="text-center pb-6">Developed in collaboration with professionals from leading international education and consulting organizations.</span>
         </div>
-        <div className="pt-8">
+        <div className="pt-8 px-5 sm:px-5">
           <Swiper
             slidesPerView={8}
             spaceBetween={30}
