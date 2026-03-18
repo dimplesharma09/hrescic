@@ -26,6 +26,7 @@ import NavadaPage from './pages/caseStudiesPage/NavadaPages';
 import IDS from './pages/caseStudiesPage/IDS';
 import NavadaPages from './pages/caseStudiesPage/NavadaPages';
 import CDCPage from './pages/caseStudiesPage/CDCPage';
+import WhatWeDoPage from './components/sections/What-be-do-new/WhatWeDoPage';
 
 
 
@@ -54,14 +55,16 @@ export default function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/what-we-do' element={<WebPage />} />
+        <Route path='/what-we-do-new' element={<WhatWeDoPage />} />
+
         <Route path='/who-we-create-for' element={<WorkPage />} />
         <Route path='/ideas-insights' element={<IdeasInsights />} />
         <Route path='/lets-talk' element={<LetsTalkPage />} />
 
-        <Route path='/health-pharma-beauty' element={<HealthPharmaPages />} />
-        <Route path='/local-boutique-brands' element={<LocalBoutiqueBrands />} />
-        <Route path='/education-e-learning' element={<EducationELearningPage />} />
-        <Route path='/tourism-travel' element={<TourismTravelPage />} />
+        <Route path='who-we-create-for/health-pharma-beauty' element={<HealthPharmaPages />} />
+        <Route path='who-we-create-for/local-boutique-brands' element={<LocalBoutiqueBrands />} />
+        <Route path='who-we-create-for/education-e-learning' element={<EducationELearningPage />} />
+        <Route path='who-we-create-for/tourism-travel' element={<TourismTravelPage />} />
 
 
         <Route path="/case-studies/myrent" element={<MyRent />} />

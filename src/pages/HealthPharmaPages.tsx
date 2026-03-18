@@ -20,21 +20,21 @@ const caseCards = [
     title: "Case - ",
     highlight: "Intro",
     text: "One example of scaling a multi-brand health ecosystem without losing trust or authority.",
-    image: "assets/Image/case-study-1.png",
+    image: "/assets/Image/case-study-1.png",
     alt: "Case intro collage",
   },
   {
     title: "Case - ",
     highlight: "Highlight Headline",
     text: "Building a scalable medical & cosmetic ecosystem across three brands",
-    image: "assets/Image/case-study-2.png",
+    image: "/assets/Image/case-study-2.png",
     alt: "Case highlight visual",
   },
   {
     title: "Case - ",
     highlight: "Summary",
     text: "As the Poliderma ecosystem expanded across clinical services, cosmetic dermatology and skincare products, structural weaknesses became visible. The challenge wasn’t visibility, it was scaling traffic, conversions and product expansion without fragmenting trust or SEO equity.",
-    image: "assets/Image/case-study-3.png",
+    image: "/assets/Image/case-study-3.png",
     alt: "Case summary visual",
   },
 ];
@@ -110,7 +110,7 @@ const HealthPharmaPages = () => {
             <div className="order-1 lg:order-2 p-[2px]">
               <div className="relative h-[260px] overflow-hidden sm:h-[340px] md:h-[430px] lg:h-full lg:min-h-[552px]">
                 <img
-                  src="assets/hero/health-pharma-img.png"
+                  src="/assets/hero/health-pharma-img.png"
                   alt="Health pharma beauty product"
                   className="h-full w-full object-cover object-center"
                 />
@@ -198,7 +198,7 @@ const HealthPharmaPages = () => {
 
               <div className="flex items-center justify-center px-5 py-7 sm:px-8 sm:py-8 md:px-10 lg:px-[46px]">
                 <img
-                  src="assets/Image/ecosystem-img.png"
+                  src="/assets/Image/ecosystem-img.png"
                   alt="Health beauty digital ecosystem examples"
                   className="w-full max-w-[410px] object-contain"
                 />
@@ -323,7 +323,7 @@ const HealthPharmaPages = () => {
 
               <div className="h-full min-h-[220px] sm:min-h-[260px]">
                 <img
-                  src="assets/Image/medical-beauty-img.png"
+                  src="/assets/Image/medical-beauty-img.png"
                   alt="Medical beauty ecosystem structure"
                   className="h-full w-full object-cover"
                 />

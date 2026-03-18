@@ -31,7 +31,7 @@ const services = [
 
 // Simple placeholder icon (design same as before)
 const ServiceIcon = () => (
-  <div className="p-3 rounded-full bg-purple-50 text-[#6F00FF]">
+  <div className="p-3 rounded-full bg-[#37c10014] text-[#37c100]">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="h-6 w-6"

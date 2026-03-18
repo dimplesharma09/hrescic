@@ -35,7 +35,7 @@ const LetsTalk: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6  overflow-hidden ">
           {/* LEFT PURPLE PANEL */}
-          <div className="bg-[#300060] text-white p-8 md:p-10 flex flex-col min-h-[520px] rounded-[20px]">
+          <div className="bg-[#37C100] text-white p-8 md:p-10 flex flex-col min-h-[520px] rounded-[20px]">
             <div>
               <h4 className="text-xl font-semibold">Have Questions?</h4>
             </div>
@@ -207,7 +207,7 @@ const LetsTalk: React.FC = () => {
                 type="submit"
                 className="
                   inline-flex items-center gap-2
-                  bg-[#8000FF] text-white
+                  bg-[#37C100] hover:bg-[#2d9802] text-white
                   px-5 py-1.5 rounded-full
                   text-sm font-medium shadow-sm
                   hover:brightness-95 transition

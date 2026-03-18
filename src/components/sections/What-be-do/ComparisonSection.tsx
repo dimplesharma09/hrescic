@@ -7,6 +7,9 @@ type Row = {
   values: React.ReactNode[]; // [START, GROW, SCALE, CUSTOM]
 };
 
+
+
+
 const rows: Row[] = [
   {
     label: "Main issue solved",
@@ -128,7 +131,7 @@ const ComparisonSection: React.FC = () => {
             <div className="overflow-x-auto">
               <div className="min-w-[720px]">
                 {/* Header row */}
-                <div className="grid grid-cols-[1.6fr_1fr_1fr_1fr_1fr] text-xs md:text-sm font-semibold text-[#6B4BFF] bg-[#F4EFFF]">
+                <div className="grid grid-cols-[1.6fr_1fr_1fr_1fr_1fr] text-xs md:text-sm font-semibold text-[#37c100] bg-[##37c10008]">
                   <div className="px-4 py-3 border-b border-[#E2D9FF] text-left">
                     Feature / Element
                   </div>

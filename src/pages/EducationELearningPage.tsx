@@ -20,7 +20,7 @@ const caseCards = [
     title: "Case - ",
     highlight: "Intro",
     text: "One example of turning fragmented education products into a cohesive, scalable system.",
-    image: "assets/Image/educations-case-img.png",
+    image: "/assets/Image/educations-case-img.png",
     alt: "Case intro collage",
     bg: "bg-[#F7F0FF]",
   },
@@ -28,7 +28,7 @@ const caseCards = [
     title: "Case - ",
     highlight: "Headline",
     text: "From separate products to one ecosystem: Scaling Coaching.com through clarity",
-    image: "assets/Image/educations-case-1.png",
+    image: "/assets/Image/educations-case-1.png",
     alt: "Case highlight visual",
     bg: "bg-[#FFF0FD]",
   },
@@ -36,7 +36,7 @@ const caseCards = [
     title: "Case - ",
     highlight: "Summary",
     text: "Coaching.com operated across independently developed education programs, software and marketplace services. The challenge wasn’t growth,  it was unifying structure, experience and delivery without limiting future evolution.",
-    image: "assets/Image/educations-case-2.png",
+    image: "/assets/Image/educations-case-2.png",
     alt: "Case summary visual",
     bg: "bg-[#F9F3F3]",
   },
@@ -112,7 +112,7 @@ Education & e-learning brands don’t scale by adding more products. They scale 
             <div className="order-1 lg:order-2 p-[2px]">
               <div className="relative h-[260px] overflow-hidden sm:h-[340px] md:h-[430px] lg:h-full lg:min-h-[552px]">
                 <img
-                  src="assets/Image/education-imgs.png"
+                  src="/assets/Image/education-imgs.png"
                   alt="Health pharma beauty product"
                   className="h-full w-full object-cover object-center"
                 />
@@ -195,7 +195,7 @@ Education & e-learning brands don’t scale by adding more products. They scale 
 
               <div className="flex items-center justify-center px-5 py-7 sm:px-8 sm:py-8 md:px-10 lg:px-[46px]">
                 <img
-                  src="assets/Image/educations-growth-img.png"
+                  src="/assets/Image/educations-growth-img.png"
                   alt="Health beauty digital ecosystem examples"
                   className="w-full max-w-[410px] object-contain"
                 />
@@ -325,7 +325,7 @@ Education & e-learning brands don’t scale by adding more products. They scale 
       {/* BIG IMAGE */}
       <div className="col-span-1 row-span-2 rounded-[12px] overflow-hidden bg-[#F2EAF8]">
         <img
-          src="assets/Image/education-images-2.png"
+          src="/assets/Image/education-images-2.png"
           alt="Coaching software graphic"
           className="h-full w-full object-cover"
         />
@@ -334,7 +334,7 @@ Education & e-learning brands don’t scale by adding more products. They scale 
       {/* SMALL IMAGE 1 */}
       <div className="rounded-[12px] overflow-hidden bg-[#F8EAF2]">
         <img
-          src="assets/Image/education-images-1.png"
+          src="/assets/Image/education-images-1.png"
           alt="Education ad graphic"
           className="h-full w-full object-cover"
         />
@@ -343,7 +343,7 @@ Education & e-learning brands don’t scale by adding more products. They scale 
       {/* SMALL IMAGE 2 */}
       <div className="rounded-[12px] overflow-hidden bg-[#F3EAF8]">
         <img
-          src="assets/Image/education-images.png"
+          src="/assets/Image/education-images.png"
           alt="Online learning graphic"
           className="h-full w-full object-cover"
         />

@@ -8,7 +8,7 @@ import GuidesSection from './GuidesSection'
 const WorkPage = () => {
   return (
    <>
-     <section className="md:container-xl sm:container-xl max-w-[90%]  mt-2 mx-auto relative w-full bg-[#300060] rounded-2xl overflow-hidden border border-[#5A1AFF]/30">
+     <section className="md:container-xl sm:container-xl max-w-[90%]  mt-2 mx-auto relative w-full bg-[#1D2931] rounded-2xl overflow-hidden border border-[#5A1AFF]/30">
       <div className="mx-auto md:ps-16  px-4 py-20 grid md:grid-cols-[55%_45%] gap-10 items-center">
         {/* 🔹 Left Text Content */}
         <div className="max-w-xl px-2">
@@ -26,13 +26,13 @@ We help industry-driven brands stay visible, trusted and chosen — even in crow
             {/* Primary CTA */}
              <a href="/lets-talk">
 
-            <button className="bg-[#9B00FF] hover:bg-[#8000FF] text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-medium transition-all">
+            <button className="bg-[#37C100] hover:bg-[#2d9802] text-white  px-5 py-3 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-medium transition-all">
               Book a Free Demo
             </button>
             </a>
 
             {/* Secondary CTA */}
-            <button className="flex items-center gap-2 bg-[#3D0377] hover:bg-[#3B0080] text-white px-5 py-3 md:px-6 md:py-3  rounded-full text-xs md:text-sm transition-all">
+            <button className="flex items-center gap-2 bg-[#FFFFFF1A] hover:bg-[#37C100] hover:text-[#fff] text-white px-5 py-3 md:px-6 md:py-3  rounded-full text-xs md:text-sm transition-all">
               Ask Us Anything
             </button>
           </div>
@@ -44,19 +44,19 @@ We help industry-driven brands stay visible, trusted and chosen — even in crow
         {/* 🔹 Right Side Purple Boxes */}
         <div className="relative hidden md:grid grid-cols-5 grid-rows-3 gap-4 h-[350px] items-end">
           {/* Large rectangle at the top-middle */}
-          <div className="bg-[#3E0577] rounded-2xl col-span-3 row-span-2 col-start-2 h-[220px]" />
+          <div className="bg-[#FFFFFF1A] rounded-2xl col-span-3 row-span-2 col-start-2 h-[220px]" />
 
           {/* Small rectangle on the right, top */}
-          <div className="bg-[#3E0577] rounded-2xl col-span-1 row-span-1 col-start-5 h-[100px]" />
+          <div className="bg-[#FFFFFF1A] rounded-2xl col-span-1 row-span-1 col-start-5 h-[100px]" />
 
           {/* Small rectangle on the right, bottom */}
-          <div className="bg-[#3E0577] rounded-2xl col-span-1 row-span-1 col-start-5 row-start-2 h-[110px]" />
+          <div className="bg-[#FFFFFF1A] rounded-2xl col-span-1 row-span-1 col-start-5 row-start-2 h-[110px]" />
 
           {/* Small square at the bottom-left */}
-          <div className="bg-[#3E0577] rounded-2xl col-span-1 row-span-2 col-start-1 h-[100px]" />
+          <div className="bg-[#FFFFFF1A] rounded-2xl col-span-1 row-span-2 col-start-1 h-[100px]" />
 
           {/* Long rectangle at the bottom-middle */}
-          <div className="bg-[#3E0577] rounded-2xl col-span-3 row-span-1 col-start-2 h-[100px]" />
+          <div className="bg-[#FFFFFF1A] rounded-2xl col-span-3 row-span-1 col-start-2 h-[100px]" />
         </div>
       </div>
     </section> 

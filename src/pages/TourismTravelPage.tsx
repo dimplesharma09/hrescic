@@ -20,7 +20,7 @@ const caseCards = [
         title: "Case - ",
         highlight: "Intro",
         text: "Example of how clarity transforms growth in a complex tourism ecosystem.",
-        image: "assets/Image/tourism-case-study.png",
+        image: "/assets/Image/tourism-case-study.png",
         alt: "Case intro collage",
         bg: "bg-[#003C42]",
     },
@@ -28,7 +28,7 @@ const caseCards = [
         title: "Case - ",
         highlight: "Headline",
         text: "Building clarity at scale: How MyRent turned complexity into a growth system",
-        image: "assets/Image/tourism-brand-img1.png",
+        image: "/assets/Image/tourism-brand-img1.png",
         alt: "Case highlight visual",
         bg: "bg-[#003C42]",
     },
@@ -36,7 +36,7 @@ const caseCards = [
         title: "Case - ",
         highlight: "Summary",
         text: "MyRent operates within a highly complex tourism ecosystem with multiple user types and services. The challenge wasn’t building more, it was creating clarity within complexity.",
-        image: "assets/Image/tourism-brand-img2.png",
+        image: "/assets/Image/tourism-brand-img2.png",
         alt: "Case summary visual",
         bg: "bg-[#003C42]",
     },
@@ -113,7 +113,7 @@ const TourismTravelPage = () => {
                         <div className="order-1 lg:order-2 p-[2px]">
                             <div className="relative h-[260px] overflow-hidden sm:h-[340px] md:h-[430px] lg:h-full lg:min-h-[552px]">
                                 <img
-                                    src="assets/Image/tourism-hero.png"
+                                    src="/assets/Image/tourism-hero.png"
                                     alt="Health pharma beauty product"
                                     className="h-full w-full object-cover object-center"
                                 />
@@ -196,7 +196,7 @@ const TourismTravelPage = () => {
 
                             <div className="flex items-center justify-center px-5 py-7 sm:px-8 sm:py-8 md:px-10 lg:px-[46px]">
                                 <img
-                                    src="assets/Image/tourism-growth.png"
+                                    src="/assets/Image/tourism-growth.png"
                                     alt="Health beauty digital ecosystem examples"
                                     className="w-full max-w-[410px] object-contain"
                                 />

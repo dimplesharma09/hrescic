@@ -3,7 +3,7 @@ import React from 'react';
 // --- Icon Components (Placeholders for unique SVG paths) ---
 // You would replace these with specific icon imports from a library like Lucide/Shadcn.
 const SubscriptionIcon = ({ children }) => (
-  <div className="p-3 mb-6 bg-purple-100/50 text-[#6F00FF] rounded-lg inline-flex">
+  <div className="p-3 mb-6 bg-purple-100/50 text-[#37c100] rounded-lg inline-flex">
     {children}
   </div>
 );
@@ -61,26 +61,26 @@ const subscriptionFeatures = [
 const WorksSection = () => {
   return (
     <section className="container-xl mx-auto py-16 px-4 sm:px-6">
-        
+
       {/* Red Header Title */}
       {/* <h2 className="text-sm font-semibold tracking-widest text-red-600 uppercase mb-10">
         HOW OUR SUBSCRIPTION MODEL WORKS
       </h2> */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-light tracking-tight text-gray-800">
-        How Our Subscription Model Works
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
-           Every plan includes a one-time setup that fixes your foundation and a monthly rhythm that keeps your brand consistent and performing.
-          </p>
-        </div>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-light tracking-tight text-gray-800">
+          How Our Subscription Model Works
+        </h2>
+        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+          Every plan includes a one-time setup that fixes your foundation and a monthly rhythm that keeps your brand consistent and performing.
+        </p>
+      </div>
 
       {/* Grid of Feature Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {subscriptionFeatures.map((feature, index) => (
-          
-          <div 
-            key={index} 
+
+          <div
+            key={index}
             className="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 relative border border-gray-100"
           >
             {/* Icon */}

@@ -20,21 +20,21 @@ const caseCards = [
     title: "Case - ",
     highlight: "Intro",
     text: "One example of transforming a high-quality product into a premium, scalable brand.",
-    image: "assets/Image/case-brand-img.png",
+    image: "/assets/Image/case-brand-img.png",
     alt: "Case intro collage",
   },
   {
     title: "Case - ",
     highlight: "Highlight Headline",
     text: "From commodity to premium: Building Castania into a boutique brand.",
-    image: "assets/Image/case-brand-2.png",
+    image: "/assets/Image/case-brand-2.png",
     alt: "Case highlight visual",
   },
   {
     title: "Case - ",
     highlight: "Summary",
     text: "Castania began as a small producer with an excellent product, competing in a low-margin, price-driven market. The challenge wasn’t quality, it was creating identity, differentiation and a system that could support long-term growth.",
-    image: "assets/Image/case-brand-3.png",
+    image: "/assets/Image/case-brand-3.png",
     alt: "Case summary visual",
   },
 ];
@@ -110,7 +110,7 @@ const LocalBoutiqueBrands = () => {
             <div className="order-1 lg:order-2 p-[2px]">
               <div className="relative h-[260px] overflow-hidden sm:h-[340px] md:h-[430px] lg:h-full lg:min-h-[552px]">
                 <img
-                  src="assets/Image/brands-hero-img.png"
+                  src="/assets/Image/brands-hero-img.png"
                   alt="Health pharma beauty product"
                   className="h-full w-full object-cover object-center"
                 />
@@ -193,7 +193,7 @@ const LocalBoutiqueBrands = () => {
 
               <div className="flex items-center justify-center px-5 py-7 sm:px-8 sm:py-8 md:px-10 lg:px-[46px]">
                 <img
-                  src="assets/Image/brands-growth.png"
+                  src="/assets/Image/brands-growth.png"
                   alt="Health beauty digital ecosystem examples"
                   className="w-full max-w-[410px] object-contain"
                 />
@@ -319,7 +319,7 @@ const LocalBoutiqueBrands = () => {
 
               <div className="h-full min-h-[220px] sm:min-h-[260px]">
                 <img
-                  src="assets/Image/eroding-brand-img.png"
+                  src="/assets/Image/eroding-brand-img.png"
                   alt="Medical beauty ecosystem structure"
                   className="h-full w-full object-cover"
                 />
