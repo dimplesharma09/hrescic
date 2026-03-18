@@ -103,8 +103,8 @@ export default function WhoWeCreateFor() {
         </div>
 
         {/* 3. Bottom Row: Stats Block */}
-        <div className="bg-[#1A222B] text-white rounded-2xl p-10 md:p-14 mt-6 text-center">
-          <h3 className="md:text-[30px] text-[24px]  font-normal max-w-3xl mx-auto py-5 md:mb-12">
+        <div className="bg-[#1D2931] text-white rounded-2xl p-10 md:p-14 mt-6 text-center">
+          <h3 className="md:text-[40px] text-[24px]  font-normal max-w-2xl px-0 md:px-4 mx-auto py-5 md:mb-12">
             Delivering on-demand excellence
             for brands around the world
           </h3>

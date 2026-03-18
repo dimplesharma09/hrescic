@@ -178,7 +178,7 @@ const MasonryShuffleBlocks: React.FC = () => {
  *  ----------------------------------------------------- */
 export default function Hero() {
   return (
-    <section className="md:container-xl sm:container-xl max-w-[90%] mt-2 mx-auto relative w-full bg-[#300060] rounded-2xl overflow-hidden border border-[#5A1AFF]/30">
+    <section className="md:container-xl sm:container-xl max-w-[90%] mt-2 mx-auto relative w-full bg-[#1D2931] rounded-2xl overflow-hidden border border-[#5A1AFF]/30">
       <div className="mx-auto md:ps-16 px-4 py-20 grid md:grid-cols-[55%_45%] gap-10 items-center">
         {/* Left Text Content */}
         <div className="max-w-xl px-2">
@@ -197,7 +197,7 @@ export default function Hero() {
               Let&apos;s Talk
             </button>
 
-            <button className="flex items-center gap-2 bg-[#3D0377] hover:bg-[#3D0388] hover:text-[#fff] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm transition-all">
+            <button className="flex items-center gap-2 bg-[#FFFFFF1A] hover:bg-[#37C100] hover:text-[#fff] text-white md:px-6 md:py-3 px-5 py-3 text-xs rounded-full md:text-sm transition-all">
               <FaPlay className="w-4 h-4" /> Play Showreel
             </button>
           </div>
