@@ -54,8 +54,9 @@ export default function App() {
       />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/what-we-do' element={<WebPage />} />
-        <Route path='/what-we-do-new' element={<WhatWeDoPage />} />
+        
+        <Route path='/what-we-do' element={<WhatWeDoPage />} />
+        <Route path='/what-we-do-new' element={<WebPage />} />
 
         <Route path='/who-we-create-for' element={<WorkPage />} />
         <Route path='/ideas-insights' element={<IdeasInsights />} />
