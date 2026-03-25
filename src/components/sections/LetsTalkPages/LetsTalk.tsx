@@ -36,9 +36,9 @@ const LetsTalk: React.FC = () => {
   return (
     <>
       {/* ── HERO ───────────────────────────────────────────────────────────── */}
-      <section className="w-full bg-white pt-16 pb-8 md:pt-24 md:pb-12">
+      <section className="w-full bg-white pt-16 pb-8 md:pt-18 md:pb-2">
         <div className="max-w-6xl mx-auto px-4">
-          <h1 className="text-4xl md:text-[56px] font-semibold text-[#0F0F3D] leading-tight mb-4">
+          <h1 className="text-4xl md:text-[50px] font-semibold text-[#0F0F3D] leading-tight mb-4">
             Let's talk — on your terms.
           </h1>
           <p className="text-base md:text-[18px] text-[#555555] max-w-xl">
