@@ -1,91 +1,90 @@
 "use client";
+
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import {
-  Truck,
-  Star,
-  RotateCcw,
-  MessageCircle,
-  CreditCard,
-} from "lucide-react";
 
-const features = [
+const topRowBrands = [
   {
-    icon: <Truck className="w-10 h-10 text-orange-500" />,
-    title: "Free Delivery",
-    desc: "from $40",
+    img: "/assets/logo/HBS-styleguide-primary-logo-3-1024x507 1.svg",
+    alt: "Harvard Business School",
   },
   {
-    icon: <Star className="w-10 h-10 text-orange-500" />,
-    title: "Best Quality",
-    desc: "Brand",
+    img: "/assets/logo/hult-logo.svg",
+    alt: "Hult International Business School",
   },
   {
-    icon: <RotateCcw className="w-10 h-10 text-orange-500" />,
-    title: "1 Year",
-    desc: "for free Return",
+    img: "/assets/logo/HBS-logo-greyscale 1.svg",
+    alt: "Henley Business School",
   },
   {
-    icon: <MessageCircle className="w-10 h-10 text-orange-500" />,
-    title: "Feedback",
-    desc: "98% Real Data",
+    img: "/assets/logo/logo-2.svg",
+    alt: "London Business School",
   },
   {
-    icon: <CreditCard className="w-10 h-10 text-orange-500" />,
-    title: "Payment",
-    desc: "Secure",
+    img: "/assets/logo/logo-4.svg",
+    alt: "Principles Ray Dalio",
+  },
+  {
+    img: "/assets/logo/hogan-logo 1.svg",
+    alt: "Hogan",
+  },
+  {
+    img: "/assets/logo/Link → Početna.svg",
+    alt: "Profil Klett",
   },
 ];
 
-const brands = [
-  { img: "assets/Image/apple-logo.svg", alt: "Apple logo" },
-  { img: "assets/Image/Swoosh-logo.svg", alt: "Swoosh logo" },
-  { img: "assets/Image/hult-logo.svg", alt: "Hult logo" },
-  { img: "assets/Image/mercedes-logo.svg", alt: "Mercedes logo" },
-  { img: "assets/Image/logo-amazon.svg", alt: "Amazon logo" },
-  { img: "assets/Image/microsoft-logo.svg", alt: "Microsoft Logo" },
-  
+const bottomRowBrands = [
+  { img: "/assets/logo/Logo-5.svg", alt: "Coaching.com" },
+  { img: "/assets/logo/tis-main-logo 2.svg", alt: "TIS Grupa" },
+  { img: "/assets/logo/Layer_1.svg", alt: "Pliva Teva" },
+  { img: "/assets/logo/Isolation_Mode.svg", alt: "Novartis" },
+  { img: "/assets/logo/kroati-logo.svg", alt: "Kroati" },
+  { img: "/assets/logo/logo10.svg", alt: "Profil Klett" },
 ];
+
+const LogoCard = ({ img, alt }: { img: string; alt: string }) => {
+  return (
+    <div className="flex h-[80px] w-full items-center justify-center rounded-2xl  bg-white px-4 py-0 transition-all duration-300 hover:-translate-y-0.5 ">
+      <img
+        src={img}
+        alt={alt}
+        className="max-h-[34px] w-auto max-w-full object-contain grayscale transition duration-300 hover:grayscale-0"
+      />
+    </div>
+  );
+};
 
 const SliderBrand = () => {
   return (
-    <div className="bg-white py-16 container-xl ">
-      <div className=" mx-auto">
-        {/* ---------- Bottom Brand Slider ---------- */}
-        <div className="flex justify-center italic text-sm font-medium text-[#555555]">
-        <span className="text-center pb-6 pt-6">Trusted by Industry Professionals From:</span>
+    <section className="w-full bg-white py-8 sm:py-10 lg:pt-4 lg:pb-12">
+      <div className="container-xl mx-auto px-4">
+        <div className="mb-7 flex justify-center">
+          <p className="text-center text-[13px] italic font-normal text-[#666666] sm:text-[15px]">
+            Trusted by Industry Professionals From:
+          </p>
         </div>
-        <div className="pt-8 px-4 md:px-0">
-          <Swiper
-            slidesPerView={8}
-            spaceBetween={30}
-            loop={true}
-            navigation={false}
-            modules={[Navigation]}
-            breakpoints={{
-              320: { slidesPerView: 3 },
-              640: { slidesPerView: 4 },
-              1024: { slidesPerView: 6 },
-            }}
-            className="flex items-start">
-            {brands.map((brand, i) => (
-              <SwiperSlide key={i}>
-                <div className="flex items-center justify-start opacity-90 hover:opacity-100 transition-all">
-                  <img
-                    src={brand.img}
-                    alt={brand.alt}
-                    className="h-9 object-contain"
-                  />
-                </div>
-              </SwiperSlide>
+
+        <div className="space-y-5">
+          {/* Top Row - 7 logos */}
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
+            {topRowBrands.map((brand, index) => (
+              <LogoCard key={`top-${index}`} img={brand.img} alt={brand.alt} />
             ))}
-          </Swiper>
+          </div>
+
+          {/* Bottom Row - 6 logos */}
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            {bottomRowBrands.map((brand, index) => (
+              <LogoCard
+                key={`bottom-${index}`}
+                img={brand.img}
+                alt={brand.alt}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

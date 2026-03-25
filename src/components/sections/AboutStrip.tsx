@@ -1,11 +1,10 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Play, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import YouTube, { YouTubeEvent, YouTubeProps } from "react-youtube";
 
-// Services data based on the image
 const services = [
   {
     title: "Branding & Strategy",
@@ -36,10 +35,10 @@ const services = [
   },
 ];
 
-export default function WhatWeDo() {
+export default function AboutStrip() {
   const [expanded, setExpanded] = useState(false);
+  const [loadVideo, setLoadVideo] = useState(false);
 
-  // YouTube video id from: https://www.youtube.com/watch?v=VCo6_Q0-mL0
   const videoId = "VCo6_Q0-mL0";
 
   const ytOpts: YouTubeProps["opts"] = useMemo(
@@ -56,25 +55,48 @@ export default function WhatWeDo() {
     []
   );
 
+  useEffect(() => {
+    const handleOpenShowreel = () => {
+      const target = document.getElementById("showreel-section");
+
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+
+      setTimeout(() => {
+        setExpanded(true);
+        setLoadVideo(true);
+      }, 700);
+    };
+
+    window.addEventListener("open-showreel", handleOpenShowreel);
+
+    return () => {
+      window.removeEventListener("open-showreel", handleOpenShowreel);
+    };
+  }, []);
+
+  const handleManualPlay = () => {
+    setExpanded(true);
+    setLoadVideo(true);
+  };
+
   const handlePlay = (_e: YouTubeEvent<number>) => {
     setExpanded(true);
   };
 
-  const handlePause = (_e: YouTubeEvent<number>) => {
-    setExpanded(false);
-  };
-
-  const handleEnd = (_e: YouTubeEvent<number>) => {
-    setExpanded(false);
-  };
-
   return (
-    <section className="py-16 md:py-10 px-4 md:px-10 bg-white">
+    <section
+      id="showreel-section"
+      className="scroll-mt-24 bg-white px-4 py-16 md:px-10 md:py-10"
+    >
       <div className="container-xl mx-auto">
-        {/* Header */}
-        <div className="max-w-lg mx-auto text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-normal text-[#555555] mb-4">
-            What We Do 
+        <div className="mx-auto mb-12 max-w-lg text-center md:mb-16">
+          <h2 className="mb-4 text-3xl font-normal text-[#555555] md:text-4xl">
+            What We Do
           </h2>
           <p className="text-lg text-[#555555] md:text-lg">
             We combine brand strategy, web design and content to build creative
@@ -83,93 +105,86 @@ export default function WhatWeDo() {
           </p>
         </div>
 
-        {/* Main Layout Wrapper */}
         <motion.div
           layout
           transition={{ duration: 0.7, ease: "easeInOut" }}
           className={
             expanded
               ? "grid grid-cols-1 gap-8 items-start"
-              : "grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 items-start"
+              : "grid grid-cols-1 gap-12 items-start lg:grid-cols-[55%_45%]"
           }
         >
-          {/* Video Block */}
           <motion.div
             layout
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className={
               expanded
-                ? "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[400px] md:h-[560px]"
-                : "relative w-full bg-[#3E0577] rounded-2xl overflow-hidden h-[400px] md:h-[450px] p-6 flex flex-col justify-between"
+                ? "relative h-[400px] w-full overflow-hidden rounded-2xl bg-[#3E0577] md:h-[560px]"
+                : "relative flex h-[400px] w-full flex-col justify-between overflow-hidden rounded-2xl bg-[#3E0577] p-6 md:h-[450px]"
             }
-
-            style={{backgroundImage: "url('/assets/Image/group-img.png')"}}
+            style={{
+              backgroundImage: !loadVideo
+                ? "url('/assets/Image/group-img.png')"
+                : "none",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
-            {/* Collapsed state overlay (logo + play button) */}
-            {!expanded && (
-              <>
-                {/* <h4 className="font-light text-white text-3xl">hrescic</h4> */}
-
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button
-                    onClick={() => setExpanded(true)}
-                    className="w-20 h-20 bg-black/20 hover:bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all"
-                    aria-label="Play showreel"
-                  >
-                    <Play className="w-8 h-8 fill-white" />
-                  </button>
-                </div>
-
-                {/* <span className="text-white text-sm">Showreel, 2026</span> */}
-              </>
+            {!loadVideo && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <button
+                  onClick={handleManualPlay}
+                  className="flex h-20 w-20 items-center justify-center rounded-full bg-black/20 text-white backdrop-blur-sm transition-all hover:bg-black/30"
+                  aria-label="Play showreel"
+                  type="button"
+                >
+                  <Play className="h-8 w-8 fill-white" />
+                </button>
+              </div>
             )}
 
-            {/* Expanded state: actual YouTube player */}
-            {expanded && (
+            {loadVideo && (
               <div className="absolute inset-0">
                 <YouTube
                   videoId={videoId}
                   opts={ytOpts}
-                  className="w-full h-full"
-                  iframeClassName="w-full h-full"
+                  className="h-full w-full"
+                  iframeClassName="h-full w-full"
                   onPlay={handlePlay}
-                  onPause={handlePause}
-                  onEnd={handleEnd}
                 />
               </div>
             )}
           </motion.div>
 
-          {/* Cards Block */}
           <motion.div
             layout
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className={
               expanded
-                ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-                : "grid grid-cols-1 sm:grid-cols-2 gap-6"
+                ? "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+                : "grid grid-cols-1 gap-6 sm:grid-cols-2"
             }
           >
             {services.map((service) => (
               <motion.div
                 layout
                 key={service.title}
-                className="bg-[#F3F3F3] border border-none rounded-2xl p-6 h-full flex flex-col"
+                className="flex h-full flex-col rounded-2xl border border-none bg-[#F3F3F3] p-6"
               >
-                <h4 className="font-bold text-lg text-[#1F1F1F] mb-2">
+                <h4 className="mb-2 text-lg font-bold text-[#1F1F1F]">
                   {service.title}
                 </h4>
-                <p className="text-[#4B4B4B] text-md mb-4">
+                <p className="mb-4 text-md text-[#4B4B4B]">
                   {service.description}
                 </p>
 
                 <hr className="mt-auto" />
                 <a
                   href={service.href}
-                  className="text-[#41C717] hover:text-[#3aa914] text-sm font-medium pt-2 group flex items-center gap-1 transition-all"
+                  className="group flex items-center gap-1 pt-2 text-sm font-medium text-[#41C717] transition-all hover:text-[#3aa914]"
                 >
                   {service.linkText}
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </motion.div>
             ))}

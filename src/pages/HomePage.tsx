@@ -12,6 +12,7 @@ import BrandPartnerSec from "@/components/sections/BrandPartnerSec";
 import CTASection from "@/components/sections/CTASection";
 // import IdeaInSightPage from "@/components/sections/IdeaInSightPage";
 import HomeHeroSec from "@/components/sections/HomeHeroSec";
+import HomeHeroSection from "@/components/sections/HomeHeroSection";
 
 const pettyProducts: Product[] = [
   { id: "p1", name: "Petty 173mm", priceEUR: 220, image: "/assets/products/product-img.png", size: "173mm" },
@@ -32,8 +33,9 @@ const categories = [
 export default function HomePage() {
   return (
     <main>
-      <Hero />
+      {/* <Hero /> */}
       {/* <HomeHeroSec/> */}
+      <HomeHeroSection/>
       <SliderBrand />
       <AboutStrip />
       <OurWork />
