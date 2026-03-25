@@ -254,7 +254,7 @@ const LetsTalk: React.FC = () => {
 
       {/* ── WHAT HAPPENS NEXT ────────────────────────────────────────────── */}
       <WhatToExpect />
-       <CallsAvailableNote/>
+       {/* <CallsAvailableNote/> */}
     </>
   );
 };
